@@ -12,6 +12,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corrupti nulla, ab architecto soluta commodi modi consequatur maiores ipsum odit distinctio sapiente voluptatem voluptas explicabo, veniam, dolor tempore repudiandae deserunt!
 
         </p>
+</content>
 
       <?php include 'includes/footer.php';?>
     </section>

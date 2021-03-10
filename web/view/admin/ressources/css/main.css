@@ -124,7 +124,6 @@ footer {
 }
 
 .block-info {
-  width: 300px;
   margin-left: 30px;
   padding: 5px;
 
@@ -132,6 +131,10 @@ footer {
 
   /* font-size: 25px; */
   text-align: center;
+}
+
+.stat a {
+  flex: 1;
 }
 
 .block-info + .block-info {
