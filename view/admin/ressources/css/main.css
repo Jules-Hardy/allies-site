@@ -1,0 +1,194 @@
+:root {
+  --red: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+
+  /* font-size: 18px; */
+  font-family: sans-serif;
+}
+
+nav {
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  /*Flex properties*/
+  order: 1;
+  padding: 15px;
+
+  color: white;
+
+  background-color: #5b9bd6;
+}
+
+nav img {
+  height: 150px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 4;
+  order: 2;
+}
+
+content {
+  padding: 30px;
+  padding-right: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+
+  /* font-size: 35px; */
+}
+
+h2 {
+  margin-bottom: 20px;
+
+  /* font-size: 25px; */
+}
+
+h3 {
+  font-size: 30px;
+}
+
+nav p {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav #menu li:hover {
+  opacity: 0.7;
+}
+
+nav #return {
+  color: darkblue;
+}
+
+nav #active {
+  opacity: 0.8;
+}
+
+#nav-info {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  color: white;
+  text-align: center;
+
+  background-color: #535353;
+}
+
+.stat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.block-info {
+  width: 300px;
+  margin-left: 30px;
+  padding: 5px;
+
+  color: white;
+
+  /* font-size: 25px; */
+  text-align: center;
+}
+
+.block-info + .block-info {
+  margin-left: 30px;
+}
+
+.alert {
+  background-color: #d68584;
+}
+
+.info {
+  background-color: #7a7fb4;
+}
+
+.success {
+  background-color: #84b4c0;
+}
+
+.last-users ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  margin-bottom: 5px;
+  padding: 3px;
+
+  background-color: rgb(212, 212, 212);
+}
+
+.last-users li {
+  display: table-cell;
+
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+
+  list-style: none;
+}
+
+.button {
+  display: inline-block;
+
+  color: white;
+  text-decoration: none;
+
+  border: none;
+  cursor: pointer;
+}
+
+.button--small {
+  width: 60px;
+  padding: 5px;
+}
+
+.button--normal {
+  width: 60px;
+  padding: 5px;
+}
+
+.text-align-right {
+  text-align: right;
+}

@@ -1,0 +1,28 @@
+dist
+
+# Logs
+logs
+*.log*
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# npm cache directory
+.npm
+
+# Eslint cache
+.eslintcache
+
+# Temporary files
+tmp/*
+!tmp/.gitkeep
+
+# Mac files
+.DS_Store
+
+# Environnement variables
+.env
+.env.*
+!.env.schema
+!.env.defaults
