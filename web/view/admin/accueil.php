@@ -1,6 +1,6 @@
 <html>
-  <?php include 'ressources/head.php';?>
-  <?php include 'ressources/nav.php';?>
+  <?php include 'includes/head.php';?>
+  <?php include 'includes/nav.php';?>
 
   <body>
     <section>
@@ -73,7 +73,7 @@
         </div>
       </content>
 
-      <?php include 'ressources/footer.php';?>
+      <?php include 'includes/footer.php';?>
     </section>
   </body>
 </html>
