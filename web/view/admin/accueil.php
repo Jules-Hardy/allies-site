@@ -1,6 +1,8 @@
 <html>
-  <?php include 'includes/head.php';?>
-  <?php include 'includes/nav.php';?>
+<?php 
+  $navPageName = 'Accueil';
+  include 'includes/head.php';
+  include 'includes/nav.php';?>
 
   <body>
     <section>

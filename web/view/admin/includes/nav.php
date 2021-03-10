@@ -14,19 +14,22 @@
             <a href="/"><p id="return">Retour au site</p></a>
           </li>
           <li>
-            <a href="/"><p class="active">Accueil</p></a>
+            <a href="/"><p <?php if($navPageName == 'Accueil'){ ?>class="active"<?php } ?>>Accueil</p></a>
           </li>
           <li>
-            <a href="/"><p>Gérer les capteurs</p></a>
+          <a href="/"><p <?php if($navPageName == 'Gérer les capteurs'){ ?>class="active"<?php } ?>>Gérer les capteurs</p></a>
           </li>
           <li>
-            <a href="/"><p>Gérer les membres</p></a>
+          <a href="/"><p <?php if($navPageName == 'Gérer les membres'){ ?>class="active"<?php } ?>>Gérer les membres</p></a>
           </li>
           <li>
-            <a href="/"><p>Gérer la FAQ</p></a>
+          <a href="/"><p <?php if($navPageName == 'Gérer la FAQ'){ ?>class="active"<?php } ?>>Gérer la FAQ</p></a>
           </li>
           <li>
-            <a href="/"><p>Tickets support</p></a>
+          <a href="/"><p <?php if($navPageName == 'Tickets Support'){ ?>class="active"<?php } ?>>Tickets Support</p></a>
+          </li>
+          <li>
+          <a href="/"><p <?php if($navPageName == 'Sample'){ ?>class="active"<?php } ?>>Sample</p></a>
           </li>
         </ul>
       </div>
