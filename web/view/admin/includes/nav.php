@@ -29,7 +29,7 @@
           <a href="/"><p <?php if($navPageName == 'Tickets Support'){ ?>class="active"<?php } ?>>Tickets Support</p></a>
           </li>
           <li>
-          <a href="/"><p <?php if($navPageName == 'Sample'){ ?>class="active"<?php } ?>>Sample</p></a>
+          <a href="sample.php"><p <?php if($navPageName == 'Sample'){ ?>class="active"<?php } ?>>Sample</p></a>
           </li>
         </ul>
       </div>
