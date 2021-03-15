@@ -1,0 +1,78 @@
+.question
+{
+	text-align: left;
+	border: 1px solid;
+	padding:10px;
+	border-top-left-radius: 30px 30px; 
+	border-bottom-right-radius: 30px 30px; 
+	border-bottom-left-radius: 30px 30px; 
+	border-top-right-radius: 30px 30px; 
+	/*margin-right: auto;*/
+	padding-left: 1.5em;
+
+}
+
+#q_r
+{
+	padding-left: 1em;
+    padding-right: 1em;
+}
+
+.reponse
+{
+	text-align: right;
+	border: 1px solid;
+	padding: 10px;
+	border-top-left-radius: 30px 30px; 
+	border-bottom-right-radius: 30px 30px; 
+	border-bottom-left-radius: 30px 30px; 
+	border-top-right-radius: 30px 30px; 
+	padding-right: 1.5em;
+	padding-top: 0.9em;
+	/*display: block;*/
+}
+
+h1
+{
+	border: 2px solid;
+	text-align: center;
+}
+
+h2 
+{
+	padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+#FOOTER
+{
+	border : 2px solid;
+	background-color: #aeb8de; 
+	text-align: center;
+}
+
+#carte
+{
+	width: 1300px; /*largeur du bloc de 800pixel*/
+    margin:0 auto; /*place cette zone au milieu de la page*/
+    background-color: white;
+    align-content: center;
+    
+
+}
+
+img
+{
+	/*align-content: center; /* ne fonctionne pas */
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+body
+{
+	background-color: grey; /* pourquoi ca ne marche passsss*/
+
+
+
+}
