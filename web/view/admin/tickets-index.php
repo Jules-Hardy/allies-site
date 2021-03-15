@@ -17,7 +17,7 @@
             <th scope="col">Auteur</th>
             <th scope="col">Action</th>
           </tr>
-        </thead>tcryvbuino
+        </thead>
         <tbody>
           <tr>
             <th scope="row">Je désire être mis en relation avec un admin</th>
