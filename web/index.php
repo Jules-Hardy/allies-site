@@ -1,46 +1,46 @@
 <html><?php
 // On génère une constante contenant le chemin vers la racine publique du projet
-define('ROOT', str_replace('index.php','',$_SERVER['SCRIPT_FILENAME']));
+define("DIR", getcwd());
 
 // On appelle le modèle et le contrôleur principaux
-require_once(ROOT.'model/Model.php');
-require_once(ROOT.'controller/Controller.php');
+//require_once(ROOT.'model/Model.php');
+require_once(DIR.'/controller/Controller.php');
 
-// On sépare les paramètres et on les met dans le tableau $params
+// Check si le user et ou non connecté et quel type de compte il
+// utilise puis require le controller conrrespondant
+
+
+session_start();
 $params = explode('/', $_GET['p']);
+try {
+    if ($params[0] != "") {
 
-// Si au moins 1 paramètre existe
-if($params[0] != ""){
-    // On sauvegarde le 1er paramètre dans $controller en mettant sa 1ère lettre en majuscule
-    $controller = ucfirst($params[0]);
+        $controller = ucfirst($params[0]);
+        $action = isset($params[1]) ? $params[1] : 'index';
+        if (!file_exists(DIR . '/controller/'  . '.php')) {
+            header("Location: /");
+            exit();
+        }
+        if (method_exists($controller, $action)) {
+            unset($params[0]);
+            unset($params[1]);
+            call_user_func_array([$controller, $action], $params);
+        } else {
+            http_response_code(404);
+            echo "La page recherchée n'existe pas";
+        }
+    } else {
+        require_once(DIR . "/controller/home.php");
 
-    // On sauvegarde le 2ème paramètre dans $action si il existe, sinon index
-    $action = isset($params[1]) ? $params[1] : 'index';
-
-    // On appelle le contrôleur
-    require_once(ROOT.'controller/'.$controller.'.php');
-
-    // On instancie le contrôleur
-    $controller = new $controller();
-
-    if(method_exists($controller, $action)){
-        // On appelle la méthode
-        $controller->$action();    
-    }else{
-        // On envoie le code réponse 404
-        http_response_code(404);
-        echo "La page recherchée n'existe pas";
+        echo "home";
+        $home = new Home();
+        $home->index();
     }
-}else{
-    // Ici aucun paramètre n'est défini
-    // On appelle le contrôleur par défaut
-    require_once(ROOT.'controller/Controller.php');
-
-    // On instancie le contrôleur
-    $controller = new Main();
-
-    // On appelle la méthode index
-    $controller->index();
+}
+catch (\PDOException $e) {
+    require_once(DIR . '/controller/Error.php');
+    $controller = new Controller\ErrorC();
+    $controller->pdo($e);
 }
 ?>
 </html>

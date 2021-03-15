@@ -7,16 +7,21 @@
 }
 
 html {
+  display: flex;
   height: 100%;
 }
 
 body {
   display: flex;
+
   flex-direction: row;
-  margin: 0;
-  padding: 0;
 
   /* font-size: 18px; */
+  flex-grow: auto;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+
   font-family: sans-serif;
 }
 
@@ -90,8 +95,8 @@ nav #return {
   color: darkblue;
 }
 
-nav #active {
-  opacity: 0.8;
+nav .active {
+  opacity: 0.5;
 }
 
 #nav-info {
@@ -183,15 +188,65 @@ footer {
 }
 
 .button--small {
-  width: 60px;
+  width: auto;
   padding: 5px;
 }
 
 .button--normal {
-  width: 60px;
-  padding: 5px;
+  width: auto;
+  padding: 10px;
 }
 
 .text-align-right {
   text-align: right;
+}
+
+/* espacement */
+
+table {
+  width: 100%;
+
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #c4c4c4;
+}
+
+tbody tr {
+  background-image: url(noise.png);
 }

@@ -1,4 +1,4 @@
-abstract class Model{
+<?php abstract class Model{
     // Informations de la base de données
     private $host = "localhost";
     private $db_name = "nom_de_la_base";
@@ -30,3 +30,4 @@ abstract class Model{
         }
     }   
 }
+?>

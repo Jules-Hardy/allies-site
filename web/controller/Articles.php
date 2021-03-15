@@ -1,4 +1,4 @@
-class Articles extends Controller{
+<?php class Articles extends Controller{
     /**
      * Cette méthode affiche la liste des articles
      *
@@ -8,3 +8,6 @@ class Articles extends Controller{
         echo "Ici nous aurons la liste des articles";
     }
 }
+
+?>
+

@@ -1,3 +1,3 @@
-abstract class Controller{
-
+<?php abstract class Controller{
 }
+?>
