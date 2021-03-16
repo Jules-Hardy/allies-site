@@ -21,7 +21,7 @@
         <tbody>
           <tr>
             <th scope="row">Je désire être mis en relation avec un admin</th>
-            <td>Ouvert</td>
+            <td class="open">Ouvert</td>
             <td>Jules HARDY</td>
             <td>
               <a href=""><button type="button" class="button button--small success">
@@ -33,28 +33,52 @@
                 </td>
           </tr>
           <tr>
-            <th scope="row">The Clash</th>
-            <td>1976</td>
-            <td>6</td>
-            <td>London Calling</td>
+            <th scope="row">Je désire être mis en relation avec un admin</th>
+            <td class="answered">Répondu</td>
+            <td>Jules HARDY</td>
+            <td>
+              <a href=""><button type="button" class="button button--small success">
+                  Répondre
+                </button></a>
+                <a href=""><button type="button" class="button button--small alert">
+                  Supprimer
+                </button></a>
+                </td>
           </tr>
 
           <tr>
-            <th scope="row">The Stranglers</th>
-            <td>1974</td>
-            <td>17</td>
-            <td>No More Heroes</td>
+            <th scope="row">Je désire être mis en relation avec un admin</th>
+            <td class="answered">Répondu</td>
+            <td>Jules HARDY</td>
+            <td>
+              <a href=""><button type="button" class="button button--small success">
+                  Répondre
+                </button></a>
+                <a href=""><button type="button" class="button button--small alert">
+                  Supprimer
+                </button></a>
+                </td>
+          </tr>
+          <tr>
+            <th scope="row">Je désire être mis en relation avec un admin</th>
+            <td class="open">Ouvert</td>
+            <td>Jules HARDY</td>
+            <td>
+              <a href=""><button type="button" class="button button--small success">
+                  Répondre
+                </button></a>
+                <a href=""><button type="button" class="button button--small alert">
+                  Supprimer
+                </button></a>
+                </td>
+                
           </tr>
         </tbody>
-        <tfoot>
-          <tr>
-            <th scope="row" colspan="2">Nombre total de tickets</th>
-            <td colspan="2">77</td>
-          </tr>
-        </tfoot>
       </table>
-
-
+      <a href=""><button type="button" class="button-align-right button button--border">
+                  Voir tout
+                </button></a>
+      <h2>Les derniers tickets fermés</h2>
       <table>
         <thead>
           <tr>
@@ -67,7 +91,7 @@
         <tbody>
           <tr>
             <th scope="row">Je désire être mis en relation avec un admin</th>
-            <td>Ouvert</td>
+            <td class="closed">Fermé</td>
             <td>Jules HARDY</td>
             <td>
               <a href=""><button type="button" class="button button--small success">
@@ -79,23 +103,30 @@
                 </td>
           </tr>
           <tr>
-            <th scope="row">The Clash</th>
-            <td>1976</td>
-            <td>6</td>
-            <td>London Calling</td>
+            <th scope="row">Je désire être mis en relation avec un admin</th>
+            <td class="closed">Fermé</td>
+            <td>Jules HARDY</td>
+            <td>
+              <a href=""><button type="button" class="button button--small success">
+                  Répondre
+                </button></a>
+                <a href=""><button type="button" class="button button--small alert">
+                  Supprimer
+                </button></a>
+                </td>
           </tr>
-
           <tr>
-            <th scope="row">The Stranglers</th>
-            <td>1974</td>
-            <td>17</td>
-            <td>No More Heroes</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <th scope="row" colspan="2">Nombre total de tickets</th>
-            <td colspan="2">77</td>
+            <th scope="row">Je désire être mis en relation avec un admin</th>
+            <td class="closed">Fermé</td>
+            <td>Jules HARDY</td>
+            <td>
+              <a href=""><button type="button" class="button button--small success">
+                  Répondre
+                </button></a>
+                <a href=""><button type="button" class="button button--small alert">
+                  Supprimer
+                </button></a>
+                </td>
           </tr>
         </tfoot>
       </table>
