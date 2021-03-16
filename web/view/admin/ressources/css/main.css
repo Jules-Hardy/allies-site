@@ -24,7 +24,6 @@ body {
 }
 
 nav {
-  flex-grow: 1;
   flex-shrink: 0;
 
   /*Flex properties*/
@@ -66,7 +65,13 @@ h2 {
   /* font-size: 25px; */
 }
 
+body h2 {
+  margin-top: 40px;
+}
+
 h3 {
+  margin-top: 20px;
+
   font-size: 30px;
 }
 
@@ -84,11 +89,11 @@ a {
   text-decoration: none;
 }
 
-nav li {
+li {
   list-style: none;
 }
 
-nav ul {
+ul {
   padding: 0;
 }
 
@@ -145,7 +150,9 @@ footer {
 
 .seeall {
   display: inline-block;
-  hori
+  margin-top: 30px;
+
+  text-align: right;
 }
 
 .stat a {
@@ -213,6 +220,7 @@ footer {
 
 .button--border {
   width: auto;
+
   padding: 10px;
 
   color: grey;
@@ -289,4 +297,45 @@ tr .answered {
 tr .closed {
   color: rgb(188, 33, 33);
   font-weight: bold;
+}
+
+.messages-container {
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: rgb(234, 234, 234);
+}
+
+.ticket-info {
+  width: 100%;
+}
+
+.ticket-info ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.message {
+  display: flex;
+  flex-direction: colomn;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.message-info {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.message-content {
+  flex-grow: 8;
+}
+
+.message--left {
+  order: 1;
+}
+.message--right {
+  order: 2;
 }
