@@ -75,7 +75,7 @@
           </tr>
         </tbody>
       </table>
-      <a class="seeall" href=""><button type="button" class="button-align-right button button--border">
+      <a class="seeall" href=""><button type="button" class=" button button--border">
                   Voir tout
                 </button></a>
       <h2>Les derniers tickets fermés</h2>
@@ -94,11 +94,8 @@
             <td class="closed">Fermé</td>
             <td>Jules HARDY</td>
             <td>
-              <a href=""><button type="button" class="button button--small success">
-                  Répondre
-                </button></a>
-                <a href=""><button type="button" class="button button--small alert">
-                  Supprimer
+            <a href=""><button type="button" class="button button--small info">
+                  Voir
                 </button></a>
                 </td>
           </tr>
@@ -107,11 +104,8 @@
             <td class="closed">Fermé</td>
             <td>Jules HARDY</td>
             <td>
-              <a href=""><button type="button" class="button button--small success">
-                  Répondre
-                </button></a>
-                <a href=""><button type="button" class="button button--small alert">
-                  Supprimer
+            <a href=""><button type="button" class="button button--small info">
+                  Voir
                 </button></a>
                 </td>
           </tr>
@@ -120,11 +114,8 @@
             <td class="closed">Fermé</td>
             <td>Jules HARDY</td>
             <td>
-              <a href=""><button type="button" class="button button--small success">
-                  Répondre
-                </button></a>
-                <a href=""><button type="button" class="button button--small alert">
-                  Supprimer
+                <a href=""><button type="button" class="button button--small info">
+                  Voir
                 </button></a>
                 </td>
           </tr>
