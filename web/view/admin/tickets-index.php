@@ -75,7 +75,7 @@
           </tr>
         </tbody>
       </table>
-      <a href=""><button type="button" class="button-align-right button button--border">
+      <a class="seeall" href=""><button type="button" class="button-align-right button button--border">
                   Voir tout
                 </button></a>
       <h2>Les derniers tickets fermés</h2>
