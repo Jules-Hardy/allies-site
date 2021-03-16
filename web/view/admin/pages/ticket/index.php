@@ -1,8 +1,8 @@
 <html>
   <?php 
   $navPageName = 'Tickets Support';
-  include 'includes/head.php';
-  include 'includes/nav.php';?>
+  include '../../includes/head.php';
+  include '../../includes/nav.php';?>
 
   <body>
     <section>
@@ -24,7 +24,7 @@
             <td class="open">Ouvert</td>
             <td>Jules HARDY</td>
             <td>
-              <a href=""><button type="button" class="button button--small success">
+              <a href="seeone.php"><button type="button" class="button button--small success">
                   Répondre
                 </button></a>
                 <a href=""><button type="button" class="button button--small alert">
@@ -75,9 +75,9 @@
           </tr>
         </tbody>
       </table>
-      <a class="seeall" href=""><button type="button" class=" button button--border">
-                  Voir tout
-                </button></a>
+      <div class="text-align-right">
+            <a href="seeall.php" class="button info button--normal">Tout voir</a>
+          </div>
       <h2>Les derniers tickets fermés</h2>
       <table>
         <thead>
@@ -123,7 +123,7 @@
       </table>
       </content>
 
-      <?php include 'includes/footer.php';?>
+      <?php include '../../includes/footer.php';?>
     </section>
   </body>
 </html>
