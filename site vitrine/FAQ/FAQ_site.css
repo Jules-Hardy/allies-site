@@ -9,21 +9,25 @@
 	border-top-right-radius: 30px 30px; 
 	/*margin-right: auto;*/
 	padding-left: 1.5em;
-	margin-right: 160px;
+	margin-right: 350px;
+	margin-bottom: 40px;
+	background-color: #DCEAE8;
 
 }
 
 #q_r
 {
-	padding-left: 1em;
-    padding-right: 1em;
-    margin-bottom: 80px;
+	padding-left: 5em;
+    padding-right: 5em;
+    margin-bottom: 150px;
     margin-top:80px;
+    /*background-image: url("Stylo.jpg");*/
 }
 
 .reponse
 {
-	text-align: right;
+
+	text-align: left;
 	border: 1px solid;
 	padding: 10px;
 	border-top-left-radius: 30px 30px; 
@@ -33,7 +37,15 @@
 	padding-right: 1.5em;
 	padding-top: 0.9em;
 	/*display: block;*/
-	margin-left: 160px;
+	margin-left: 350px;
+	margin-bottom: 40px;
+	background-color: #DCEAE8;
+
+}
+#test
+{
+	text-align: right;
+	font-style: normal;
 }
 
 h1
@@ -58,14 +70,12 @@ h2
 
 #carte
 {
-	width: 1300px; /*largeur du bloc de 800pixel*/
+	width: 1400px; /*largeur du bloc de 800pixel*/
     margin:0 auto; /*place cette zone au milieu de la page*/
     background-color: white;
     align-content: center;
-    
-
+    font-family: "Helvetica Neue";
 }
-
 img
 {
 	/*align-content: center; /* ne fonctionne pas */
@@ -75,7 +85,8 @@ img
 
 body
 {
-	background-color: grey; /* pourquoi ca ne marche passsss*/
+	background-color: #788181; /* pourquoi ca ne marche passsss*/
+	color: #788181
 
 
 
