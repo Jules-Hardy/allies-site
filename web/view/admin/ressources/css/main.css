@@ -21,6 +21,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-y: auto;
+
+  background-color: #f4f4f4;
 }
 
 nav {
@@ -87,6 +89,10 @@ nav p {
 a {
   color: white;
   text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 li {
@@ -210,12 +216,12 @@ footer {
 
 .button--small {
   width: auto;
-  padding: 5px;
+  padding: 5px !important;
 }
 
 .button--normal {
   width: auto;
-  padding: 10px;
+  padding: 10px !important;
 }
 
 .button--border {
@@ -230,11 +236,20 @@ footer {
 
   border: 2px solid grey;
 }
+
 .text-align-right {
   text-align: right;
 }
 
-/* espacement */
+.text-align-left {
+  text-align: right;
+}
+
+.text-align-right .button,
+.text-align-right .button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 table {
   width: 100%;
@@ -294,21 +309,32 @@ tr .answered {
   font-weight: bold;
 }
 
-tr .closed {
-  color: rgb(188, 33, 33);
+tr .closed,
+ul .closed {
+  color: rgb(222, 5, 5) !important;
   font-weight: bold;
 }
+
+/* PAGE REPONSE A UN TICKET */
 
 .messages-container {
   width: 95%;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 30px;
 
-  background-color: rgb(234, 234, 234);
+  background-color: white;
+  border-radius: 10px;
 }
 
 .ticket-info {
   width: 100%;
+  padding: 20px;
+  padding-bottom: 5px;
+
+  background-color: #354a5e;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .ticket-info ul {
@@ -317,11 +343,36 @@ tr .closed {
   justify-content: space-between;
 }
 
+.ticket-info h2 {
+  color: white;
+}
+.ticket-info li {
+  color: #ff9900;
+}
+
 .message {
   display: flex;
   flex-direction: colomn;
   justify-content: space-between;
-  padding: 30px;
+  width: 70%;
+  margin: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+
+  border-radius: 10px;
+}
+
+.message--right {
+  margin-left: auto;
+
+  background-color: #e9f7ff;
+}
+
+.message--left {
+  margin-right: auto;
+
+  background-color: #e7fbe8;
 }
 
 .message-info {
@@ -329,13 +380,141 @@ tr .closed {
   flex-shrink: 0;
 }
 
+.message--left .message-info {
+  margin-right: 20px;
+}
+
+.message--right .message-info {
+  margin-left: 20px;
+}
+
+.message-info li:nth-child(2) {
+  font-style: italic;
+}
+
+.message-info li:first-of-type {
+}
+
 .message-content {
   flex-grow: 8;
 }
 
-.message--left {
+.message--right .message-content,
+.message--left .message-info {
   order: 1;
 }
-.message--right {
+
+.message--left .message-content,
+.message--right .message-info {
   order: 2;
+}
+
+.reponse {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+
+  background-color: white;
+  border-top: solid 1px grey;
+}
+
+.reponse i {
+  flex-grow: 1;
+  order: 1;
+  margin: auto;
+  padding: 10px;
+
+  color: white;
+
+  background-color: #354a5e;
+  border-radius: 100px;
+}
+
+.contenu-message {
+  flex-grow: 10;
+  order: 0;
+  margin-right: 30px;
+  padding: 15px;
+  overflow: auto;
+
+  border-radius: 6px;
+}
+
+/* FIN REPONSE A UN TICKET */
+
+#pagination-flickr ul {
+  margin-left: auto;
+}
+
+#pagination-flickr li {
+  margin: 0;
+  padding: 0;
+
+  font-size: 15px;
+
+  list-style: none;
+  border: 0;
+}
+
+#pagination-flickr a {
+  margin-right: 2px;
+
+  border: solid 1px #dddddd;
+}
+
+#pagination-flickr .previous-off,
+#pagination-flickr .next-off {
+  display: block;
+  float: left;
+  padding: 3px 4px;
+
+  color: #666666;
+  font-weight: bold;
+}
+
+#pagination-flickr .next a,
+#pagination-flickr .previous a {
+  font-weight: bold;
+
+  border: solid 1px #ffffff;
+}
+
+#pagination-flickr .active {
+  display: block;
+  float: left;
+  padding: 4px 6px;
+
+  color: #ff0084;
+  font-weight: bold;
+}
+
+#pagination-flickr a:link,
+#pagination-flickr a:visited {
+  display: block;
+  float: left;
+  padding: 3px 6px;
+
+  color: #0063e3;
+  text-decoration: none;
+}
+
+#pagination-flickr a:hover {
+  border: solid 1px #666666;
+}
+
+/* SEE ONE MEMBER */
+
+h2 .role {
+  padding: 2px;
+
+  color: white;
+  font-size: 15px;
+  font-style: none;
+}
+
+.user-information input,
+.user-information select {
+  margin-bottom: 20px;
+  padding: 3px;
 }

@@ -1,5 +1,5 @@
 <nav>
-      <a href="/"><img src="ressources/images/logo.png" alt="logo" /></a>
+      <a href="/"><img src="../../ressources/images/logo.png" alt="logo" /></a>
       <div id="nav-info">
         <h2>Bonjour Jules,</h2>
         <ul>
@@ -14,22 +14,22 @@
             <a href="/"><p id="return">Retour au site</p></a>
           </li>
           <li>
-            <a href="/"><p <?php if($navPageName == 'Accueil'){ ?>class="active"<?php } ?>>Accueil</p></a>
+            <a href="../main/accueil.php"><p <?php if($navPageName == 'Accueil'){ ?>class="active"<?php } ?>>Accueil</p></a>
           </li>
           <li>
-          <a href="/"><p <?php if($navPageName == 'Gérer les capteurs'){ ?>class="active"<?php } ?>>Gérer les capteurs</p></a>
+          <a href="../capteur/index.php"><p <?php if($navPageName == 'Gérer les capteurs'){ ?>class="active"<?php } ?>>Gérer les capteurs</p></a>
           </li>
           <li>
-          <a href="/"><p <?php if($navPageName == 'Gérer les membres'){ ?>class="active"<?php } ?>>Gérer les membres</p></a>
+          <a href="../user/index.php"><p <?php if($navPageName == 'Gérer les membres'){ ?>class="active"<?php } ?>>Gérer les membres</p></a>
           </li>
           <li>
-          <a href="/"><p <?php if($navPageName == 'Gérer la FAQ'){ ?>class="active"<?php } ?>>Gérer la FAQ</p></a>
+          <a href="../FAQ/index.php"><p <?php if($navPageName == 'Gérer la FAQ'){ ?>class="active"<?php } ?>>Gérer la FAQ</p></a>
           </li>
           <li>
-          <a href="/"><p <?php if($navPageName == 'Tickets Support'){ ?>class="active"<?php } ?>>Tickets Support</p></a>
+          <a href="../ticket/index.php"><p <?php if($navPageName == 'Tickets Support'){ ?>class="active"<?php } ?>>Tickets Support</p></a>
           </li>
           <li>
-          <a href="sample.php"><p <?php if($navPageName == 'Sample'){ ?>class="active"<?php } ?>>Sample</p></a>
+          <a href="../main/sample.php"><p <?php if($navPageName == 'Sample'){ ?>class="active"<?php } ?>>Sample</p></a>
           </li>
         </ul>
       </div>
