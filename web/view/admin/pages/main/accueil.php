@@ -4,35 +4,35 @@
   include '../../includes/head.php';
   include '../../includes/nav.php';?>
 
-  <body>
-    <section>
-      <content>
-        <h1>Accueil</h1>
-        <h2>Les chiffres clés</h2>
-        <div class="stat">
-          <a href="#">
-            <div class="block-info alert">
-              <h3>48</h3>
-              <p>Utilisateurs</p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="block-info info">
-              <h3>48</h3>
-              <p>Utilisateurs</p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="block-info success">
-              <h3>48</h3>
-              <p>Utilisateurs</p>
-            </div>
-          </a>
-        </div>
+<body>
+  <section>
+    <content>
+      <h1>Accueil</h1>
+      <h2>Les chiffres clés</h2>
+      <div class="stat">
+        <a href="#">
+          <div class="block-info alert">
+            <h3>48</h3>
+            <p>Utilisateurs</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="block-info info">
+            <h3>48</h3>
+            <p>Utilisateurs</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="block-info success">
+            <h3>48</h3>
+            <p>Utilisateurs</p>
+          </div>
+        </a>
+      </div>
 
-        <h2>Les derniers utilisateurs</h2>
+      <h2>Les derniers utilisateurs</h2>
 
-        <table>
+      <table>
         <thead>
           <tr>
             <th scope="col">Prénom Nom</th>
@@ -50,7 +50,7 @@
               <a href="seeone.php"><button type="button" class="button button--small info">
                   Voir le membre
                 </button>
-                </td>
+            </td>
           </tr>
 
           <tr>
@@ -61,7 +61,7 @@
               <a href=""><button type="button" class="button button--small info">
                   Voir le membre
                 </button>
-                </td>
+            </td>
           </tr>
 
           <tr>
@@ -72,18 +72,19 @@
               <a href=""><button type="button" class="button button--small info">
                   Voir le membres
                 </button>
-                </td>
+            </td>
           </tr>
         </tbody>
 
 
-        </table>
+      </table>
       <div class="text-align-right">
-            <a href="../user/index.php" class="button alert button--normal">Tout voir</a>
-          </div>
-      </content>
+        <a href="../user/index.php" class="button alert button--normal">Tout voir</a>
+      </div>
+    </content>
 
-      <?php include '../../includes/footer.php';?>
-    </section>
-  </body>
+    <?php include '../../includes/footer.php';?>
+  </section>
+</body>
+
 </html>
