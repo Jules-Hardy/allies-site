@@ -1,7 +1,10 @@
 body
 {
   font-family: "Helvetica Neue";
+  background-color: #C8CAC8;
+  color: #525253;
   /*margin: 0 auto;*/
+ 
 }
 
 .cadre_connexion {
@@ -196,63 +199,69 @@ input { /*Champs de texte a remplir*/
 
 /* Partie FAQ */
 
-.question
+.question /* encadrement des question*/
 {
   text-align: left;
+  text-align: justify;
   border: 1px solid;
   padding:20px;
   /*padding-bottom: 20px;*/
-  border-top-left-radius: 30px 30px; 
-  border-bottom-right-radius: 30px 30px; 
-  border-bottom-left-radius: 30px 30px; 
-  border-top-right-radius: 30px 30px; 
+  border-top-left-radius: 40px 40px; 
+  border-bottom-right-radius: 40px 40px; 
+  border-bottom-left-radius: 40px 40px; 
+  border-top-right-radius: 40px 40px; 
   /*margin-right: auto;*/
   padding-left: 1.5em;
   margin-right: 350px;
   margin-bottom: 40px;
-  background-color: #DCEAE8;
+  background-color: #F1F1FB;
 
 }
 
+/* position des encadrements*/
 #q_r
 {
-  padding-left: 5em;
+    padding-left: 5em;
     padding-right: 5em;
     margin-bottom: 150px;
     margin-top:80px;
     /*background-image: url("Stylo.jpg");*/
 }
 
-.reponse
+.reponse /* encadremetn des reponses*/
 {
 
   text-align: left;
+  text-align: justify;
   border: 1px solid;
   padding: 10px;
   padding-left: 30px;
   padding-bottom: 20px;
-  border-top-left-radius: 30px 30px; 
-  border-bottom-right-radius: 30px 30px; 
-  border-bottom-left-radius: 30px 30px; 
-  border-top-right-radius: 30px 30px; 
+  border-top-left-radius: 40px 40px; 
+  border-bottom-right-radius: 40px 40px; 
+  border-bottom-left-radius: 40px 40px; 
+  border-top-right-radius: 40px 40px; 
   padding-right: 1.5em;
   padding-top: 0.9em;
   /*display: block;*/
   margin-left: 350px;
   margin-bottom: 40px;
-  background-color: #DCEAE8;
+  background-color: #F1F1FB;
 
 }
-#test
+.test /* position du nom de celui qui repond*/
 {
-  text-align: right;
-  font-style: normal;
+  margin-left: 520px;
+
+  
 }
 
 #titre2
 {
   padding-left: 1em;
-    padding-right: 1em;
+  padding-right: 1em;
+  font-weight: 300; /*helevetica neue light*/
+  font-size: xx-large;
 }
 
 #FOOTER
@@ -266,7 +275,7 @@ input { /*Champs de texte a remplir*/
 {
   width: 1300px; /*largeur du bloc de 800pixel*/
   margin:0 auto; /*place cette zone au milieu de la page*/
-  background-color: #aeb8de ;
+  background-color: #F6F6F9 ;
   align-content: center;
   /*font-family: "Helvetica Neue";*/
 }
@@ -278,9 +287,10 @@ input { /*Champs de texte a remplir*/
 
 }*/
 
-/*img
+img
 {
-  margin-left: 20px;
+  margin-top:0 auto;
 
-}*/
+
+}
 
