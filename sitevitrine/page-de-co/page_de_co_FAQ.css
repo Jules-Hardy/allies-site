@@ -2,9 +2,6 @@ body
 {
   font-family: "Helvetica Neue";
   /*margin: 0 auto;*/
-
-
-
 }
 
 .cadre_connexion {
@@ -110,15 +107,19 @@ input { /*Champs de texte a remplir*/
   border-top-right-radius: 20px 20px;
   border-bottom-right-radius: 20px 20px;
   border-bottom-left-radius: 20px 20px;
+
   margin-bottom: 20px;
   margin-top: 20px;
+  margin-left: 110px;
+
   font-size: medium;
   background-color: #2BAEBD; /*https://htmlcolorcodes.com/fr/*/
+
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom:10px;
   padding-top: 10px;
-  margin-left: 110px;
+ 
 
 }
 
@@ -128,15 +129,19 @@ input { /*Champs de texte a remplir*/
   border-top-right-radius: 20px 20px;
   border-bottom-right-radius: 20px 20px;
   border-bottom-left-radius: 20px 20px;
+
   margin-bottom: 20px;
   margin-top: 20px;
+  margin-left: 210px;
+
   font-size: medium;
   background-color: #2BAEBD; /*https://htmlcolorcodes.com/fr/*/
+
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom:10px;
   padding-top: 10px;
-  margin-left: 210px;
+ 
 
 }
 
@@ -273,8 +278,9 @@ input { /*Champs de texte a remplir*/
 
 }*/
 
-.image_stylo
+/*img
 {
-  margin-left: 100px;
-}
+  margin-left: 20px;
+
+}*/
 
