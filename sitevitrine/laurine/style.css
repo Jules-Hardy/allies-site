@@ -79,12 +79,17 @@ footer{
 #footer_html{
     background:#39565c;
     display:flex;
+    flex-direction: row;
     column-count: 5;
-    justify-content: space-between;
+    justify-content:space-between;
     padding:10px;
+    padding: 30px;
 }
 
-#allies_contact img{
+.column {
+}
+
+.column img{
     width: 140px;
     height: 130px;
 }
