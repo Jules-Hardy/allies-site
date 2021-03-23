@@ -1,5 +1,5 @@
 html{
-	background-color: #EAF0EF;
+	background-color: #fefefe;
 }
 
 header{
@@ -69,13 +69,19 @@ header{
 }
 
 footer{
-    display:flex;
-    background:#39565c;
     font-family : Helvetica Neue;
     font-weight:300;
     margin:auto;
     color:#FFFFFF;
-    padding:50px 0;
+    min-height: 100%;
+}
+
+#footer_html{
+    background:#39565c;
+    display:flex;
+    column-count: 5;
+    justify-content: space-between;
+    padding:10px;
 }
 
 #allies_contact img{
@@ -84,15 +90,11 @@ footer{
 }
 
 #footer_html h2 {
-  margin-top:0;
+  margin-top:40%;
   margin-bottom:12px;
   font-size:16px;
 }
 
-#footer_html{
-    column-count: 5;
-    justify-content: space-between;
-}
 
 #footer_html ul {
   padding:0;
@@ -114,6 +116,13 @@ footer{
 
 #contenu{
     margin:0px;
+    text-align: justify;
+}
+
+#copyright{
+  background:#535353;
+  padding:1px;
+  text-align: center;
 }
 
 
