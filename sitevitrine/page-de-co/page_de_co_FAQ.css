@@ -8,13 +8,8 @@ body
 }
 
 .cadre_connexion {
-  /*display: block;*/
-  /*height: auto;*/
-  /*padding: 10px;*/
-  /*padding-left: 20px;
-  padding-top: 30px;
-  padding-bottom: 40px;
-  padding-right: 30px;*/
+  display: block;
+
   padding-top: 40px;
   padding-bottom: 40px;
   padding-right: auto;
@@ -30,16 +25,19 @@ body
   border-bottom-right-radius: 20px 20px;
   border-bottom-left-radius: 20px 20px;
 
-  margin-top: 80px;
-  margin-right: 450px;
-  margin-bottom: 70px;
-  margin-left: 450px;
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 30%;
+
+
 }
 
 .cadre_inscription
 {
- /* display: block;
-  height: auto;*/
+  display: block;
+  height: auto;
+  width: auto;
 
   padding: 10px;
   padding-left: 20px;
@@ -57,10 +55,10 @@ body
   border-bottom-right-radius: 20px 20px;
   border-bottom-left-radius: 20px 20px;
 
-  margin-top: 120px;
-  margin-right: 400px;
-  margin-bottom: 70px;
-  margin-left: 400px;
+  margin-right: 30px;
+  margin-left: auto;
+
+ 
 
 }
 
@@ -78,7 +76,7 @@ h1 { /* header*/
 #centre_page {
 
   align-content: center;
-  width: 1350px; /*largeur du bloc de 800pixel*/
+  width: 100%; /*largeur du bloc de 800pixel*/
   margin: 0 auto; /*place cette zone au milieu de la page*/
   /*margin-top: 0;
   margin-bottom: 0;*/
@@ -111,9 +109,9 @@ input { /*Champs de texte a remplir*/
   border-bottom-right-radius: 20px 20px;
   border-bottom-left-radius: 20px 20px;
 
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 110px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 30px;
 
   font-size: medium;
   background-color: #2BAEBD; /*https://htmlcolorcodes.com/fr/*/
@@ -133,9 +131,11 @@ input { /*Champs de texte a remplir*/
   border-bottom-right-radius: 20px 20px;
   border-bottom-left-radius: 20px 20px;
 
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 210px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 30px;
+  
+  display: block;
 
   font-size: medium;
   background-color: #2BAEBD; /*https://htmlcolorcodes.com/fr/*/
