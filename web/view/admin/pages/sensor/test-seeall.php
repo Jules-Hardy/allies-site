@@ -1,45 +1,57 @@
 <html>
 <?php 
-  $navPageName = 'Gérer la FAQ';
+  $navPageName = 'Gérer les capteurs';
   include '../../includes/head.php';
   include '../../includes/nav.php';?>
 
 <body>
   <section>
     <content>
-      <h1>Gérer la FAQ</h1>
-      <h2>Toutes les questions</h2>
+      <h1>Gérer les capteurs</h1>
+      <h2>Tous les tests</h2>
       <table>
         <thead>
           <tr>
-            <th scope="col">Question</th>
-            <th scope="col">Auteur</th>
+            <th scope="col">Utilisateur</th>
+            <th scope="col">#Test</th>
+            <th scope="col">Date</th>
             <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Comment me connecter à mon espace client ?</th>
-            <td>Jules</td>
+            <th scope="row">Jules</th>
+            <td>#2</td>
+            <td>12/02/2021</td>
             <td>
               <a href="seeone.php"><button type="button" class="button button--small info">
-                  Voir la question
+                  Voir le test
                 </button>
             </td>
           </tr>
-
           <tr>
-            <th scope="row">Comment faire ca ?</th>
-            <td>Laurine</td>
+            <th scope="row">Jules</th>
+            <td>#2</td>
+            <td>12/02/2021</td>
             <td>
               <a href="seeone.php"><button type="button" class="button button--small info">
-                  Voir la question
+                  Voir le test
                 </button>
             </td>
           </tr>
-
+          <tr>
+            <th scope="row">Jules</th>
+            <td>#2</td>
+            <td>12/02/2021</td>
+            <td>
+              <a href="seeone.php"><button type="button" class="button button--small info">
+                  Voir le test
+                </button>
+            </td>
+          </tr>
         </tbody>
       </table>
+
 
       <div class="pagination">
         <ul id="pagination-flickr">

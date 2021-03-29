@@ -513,8 +513,44 @@ h2 .role {
   font-style: none;
 }
 
-.user-information input,
-.user-information select {
+.data-information input,
+.data-information select,
+.data-information textarea {
   margin-bottom: 20px;
   padding: 3px;
+}
+
+.data-information textarea {
+  width: 60%;
+  margin-top: 1em;
+}
+
+/* Gérer les capteurs index */
+
+.container-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.block-action {
+  width: 300px;
+  margin-left: 30px;
+  padding: 10px;
+
+  text-align: center;
+}
+
+.block-action + .block-action {
+  margin-left: 30px;
+}
+
+/* Voir un test */
+.container-sensor h3 {
+  font-size: 20px;
 }
