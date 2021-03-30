@@ -27,6 +27,8 @@ body
 
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 6%;
+  margin-top: 6%;
 
   width: 30%;
 
@@ -36,8 +38,8 @@ body
 .cadre_inscription
 {
   display: block;
-  height: auto;
-  width: auto;
+  /*height: auto;
+  width: auto;*/
 
   padding: 10px;
   padding-left: 20px;
@@ -55,8 +57,13 @@ body
   border-bottom-right-radius: 20px 20px;
   border-bottom-left-radius: 20px 20px;
 
-  margin-right: 30px;
+  
+  margin-right: auto;
   margin-left: auto;
+  margin-bottom: 6%;
+  margin-top: 6%;
+
+  width: 30%;
 
  
 
@@ -77,7 +84,7 @@ h1 { /* header*/
 
   align-content: center;
   width: 100%; /*largeur du bloc de 800pixel*/
-  margin: 0 auto; /*place cette zone au milieu de la page*/
+  margin: auto; /*place cette zone au milieu de la page*/
   /*margin-top: 0;
   margin-bottom: 0;*/
   text-align: center; /*  centre le texte */
@@ -212,8 +219,10 @@ input { /*Champs de texte a remplir*/
   border-top-right-radius: 40px 40px; 
   /*margin-right: auto;*/
   padding-left: 1.5em;
-  margin-right: 350px;
-  margin-bottom: 40px;
+
+  margin-right: 30%;
+  margin-bottom: 4%;
+
   background-color: #F1F1FB;
 
 }
@@ -234,27 +243,35 @@ input { /*Champs de texte a remplir*/
   text-align: left;
   text-align: justify;
   border: 1px solid;
+
   padding: 10px;
   padding-left: 30px;
   padding-bottom: 20px;
+  padding-right: 1.5em;
+  padding-top: 0.9em;
+
   border-top-left-radius: 40px 40px; 
   border-bottom-right-radius: 40px 40px; 
   border-bottom-left-radius: 40px 40px; 
   border-top-right-radius: 40px 40px; 
-  padding-right: 1.5em;
-  padding-top: 0.9em;
+
+  
   /*display: block;*/
-  margin-left: 350px;
-  margin-bottom: 40px;
+  margin-left: 30%;
+  margin-bottom: 4%;
+
+
   background-color: #F1F1FB;
 
 }
-.test /* position du nom de celui qui repond*/
+/*.test position du nom de celui qui repond
 {
-  margin-left: 520px;
+  margin-left: 70%;
+  text-align: right;
+  align-content: right;
 
   
-}
+}*/
 
 #titre2
 {
@@ -273,8 +290,8 @@ input { /*Champs de texte a remplir*/
 
 #carte_FAQ
 {
-  width: 1300px; /*largeur du bloc de 800pixel*/
-  margin:0 auto; /*place cette zone au milieu de la page*/
+  width: auto; /*largeur du bloc de 800pixel*/
+  margin: 3%; /*place cette zone au milieu de la page*/
   background-color: #F6F6F9 ;
   align-content: center;
   /*font-family: "Helvetica Neue";*/
