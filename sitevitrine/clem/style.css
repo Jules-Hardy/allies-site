@@ -2,38 +2,12 @@ body
 {    
 	font-family: "Helvetica Neue";
 	color: #788181;
-	background-image: 
 }
 
-#teamworking
+#bandeau
 {
-
-	width: 100%;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	top: 0;
-}
- 
-#blanc
-{
-	margin-top: 70px;
-	background-color: white;
-	background-attachment: local;
-}
-
-.photo
-{
-	display: flex; 
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-#presentation 
-{
-	text-align: justify; 
-	margin-right: 50px;
-	margin-left: 50px; 
+	align-content: center;
+	margin-left: 100px;
 }
 
 #ligneun
@@ -51,19 +25,22 @@ body
 	justify-content: space-around; 
 }
 
-#travailenequipe
+
+
+.phraseun
 {
-	margin-left: 80px;
+	display: flex;
+	flex-wrap: wrap;
 }
+
 #texteun
 {
 	position: relative;
-	left: 600px; 
+	left: 550px; 
 	bottom: 350px;
+	flex-wrap: wrap;
 	text-align: justify;
-	margin-right: 680px;
-	margin-left: 1px;
-
+	margin-right: 630px;
 }
 
 #dernierephoto
@@ -79,21 +56,11 @@ body
 {
 	position: relative;
 	right: 1px;
-	bottom: 100px;
+	bottom: 150px;
 	text-align: justify;
+	flex-wrap: wrap;
 	margin-right: 620px;
-	margin-left:  80px;
-}
-
-#pilotes
-{
-	width: 100%
-}
-
-#carte
-{
-	background-color: white; 
-
+	margin-left:  40px;
 }
 
 .icones
@@ -102,73 +69,11 @@ body
 	height: 100px;
 }
 
-#troisetapes
+#nosproduits
 {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around; 
+	flex-wrap: wrap;
 }
 
-#iconegauche
-{
-	margin-left: 200px;
-}
-
-#iconecentre
-{
-	margin-left: 200px;
-}
-
-#iconedroit
-{
-	margin-left: 170px; 
-}
-
-#textegauche
-{
-	text-align: justify; 
-	margin-left: 95px; 
-	margin-right: 95px; 
-}
-
-#textecentre
-{
-	text-align: justify;
-	margin-right: 95px;
-	margin-left: 95px;
-}
-
-#textedroite 
-{
-	text-align: justify; 
-	margin-left: 95px;
-	margin-right: 95px; 
-}
-
-#defileavion
-{
-	width: 100%; 
-}
-
-#logo-isep
-{
-	position: relative;
-	height: 12%;
-}
-
-#infinite-measures
-{
-	position: relative;
-	height: 25%
-}
-
-#logo-armee
-{
-	position: relative;
-	height: 15%;
-}
-
-#nosclients
-{
-	display: flex;
-	justify-content: space-around;
-}
