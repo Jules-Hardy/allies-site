@@ -5,7 +5,13 @@ html{
 header{
 	display:flex;
 	justify-content: space-between;
-    align-items: flex-end;
+  align-items: flex-end;
+  background-color: #fefefe;
+  position:fixed;
+  width:100%;
+  top:0;
+
+
 }
 
 #logo_header{
@@ -67,6 +73,14 @@ header{
     align-items: baseline;
 
 }
+body{
+  font-family : Helvetica Neue;
+  font-weight:300;
+  margin-top:150px;
+}
+
+
+
 
 footer{
     font-family : Helvetica Neue;
