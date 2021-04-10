@@ -234,62 +234,33 @@ footer{
 
 .cadre_connexion {
   display: block;
-
   padding-top: 40px;
   padding-bottom: 40px;
   padding-right: auto;
   padding-left: 30px;
-
   text-align: left;
   font-size: 17px;
   background-color: #fff;
-
   border: 1px solid grey;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
-  border-bottom-right-radius: 20px 20px;
-  border-bottom-left-radius: 20px 20px;
-
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 6%;
-  margin-top: 6%;
-
+  border-radius: 20px 20px;
+  margin: 6% auto;
   width: 30%;
-
-
 }
 
 .cadre_inscription
 {
   display: block;
-  /*height: auto;
-  width: auto;*/
-
   padding: 10px;
   padding-left: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-right: 30px;
-
   text-align: left;
-  
   background-color: #fff;
-
   border: 1px solid grey;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
-  border-bottom-right-radius: 20px 20px;
-  border-bottom-left-radius: 20px 20px;
-
-  
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 6%;
-  margin-top: 6%;
-
+  border-radius: 20px 20px;
+  margin: 6% auto;
   width: 30%;
-
 }
 
 h1 { /* header*/
@@ -302,38 +273,34 @@ h1 { /* header*/
   margin: 0;
 }
 
-
 #footer {
   text-align: center;
   background-color: #2BAEBD;
   border: 2px solid black;
   }
+
 #centre_page {
-
   align-content: center;
-  width: 100%; /*largeur du bloc de 800pixel*/
-  margin: auto; /*place cette zone au milieu de la page*/
-  /*margin-top: 0;
-  margin-bottom: 0;*/
-  text-align: center; /*  centre le texte */
-  /*background-color: white; /*couleur du fond de ce bloc de 800px au mileu doit etre blanc*/
+  width: 100%;
+  margin: auto; 
+  text-align: center; 
   background-image: url('../images/fond_page.png')
-
-
 }
 
+/*#fond_2_page {
+  top: 0;
+  position: sticky;
+  z-index: -1;
+  max-height: 70%;
+}
+*/
 input { /*Champs de texte a remplir*/
   border: 1.5px solid;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
-  border-bottom-right-radius: 20px 20px;
-  border-bottom-left-radius: 20px 20px;
-
+  border-radius: 20px 20px;
   padding-right: 80px;
   padding-left: 20px;
   padding-bottom:10px;
   padding-top: 10px;
-
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -341,57 +308,33 @@ input { /*Champs de texte a remplir*/
 .but_co {
   border: 1px solid #23646b;
   border-radius: 10px 10px;
-
   margin-left: 30%;
   margin-right: 25%;
   margin-bottom: 30px;
-
   font-size: medium;
   color: white;
   background-color: #23646b; /*https://htmlcolorcodes.com/fr/*/
   letter-spacing: 1px;
-
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom:10px;
-  padding-top: 10px;
-
-  
- 
-
+  padding: 10px 20px;
 }
 
 .taille_text {
   font-size: 14px;
-
 }
 
 .but_inscription {
   border: 1px solid #23646b;
   border-radius: 10px 10px;
-
   margin-left: 30%;
   margin-right: 30%;
   margin-bottom: 30px;
-  
   display: block;
-
   font-size: medium;
   background-color: #23646b; /*https://htmlcolorcodes.com/fr/*/
   color: white;
   letter-spacing: 1.5px;
   text-decoration: none;
-
-  /*padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom:10px;
-  padding-top: 10px;
-*/
   padding: 10px 20px;
-
-
- 
-
 }
 
 #connexion
@@ -401,55 +344,31 @@ input { /*Champs de texte a remplir*/
 
 #inscription
   {
-  letter-spacing: 1px;
-   
+  letter-spacing: 1px;  
 }
-
-
-
-
-
-/*-------------------------------------------------------------------*/
-
-/* Partie FAQ */
-
-
-.question
-/* encadrement des question*/
-
-{
+/*------------------------Partie FAQ-----------------------------------------*/
+.question{
     text-align: left;
     text-align: justify;
     border: 1px solid;
     padding: 20px;
-    /*padding-bottom: 20px;*/
-    /*border-top-left-radius: 40px 40px;*/
     border-bottom-right-radius: 40px 40px;
     border-bottom-left-radius: 40px 40px;
     border-top-right-radius: 40px 40px;
-    /*margin-right: auto;*/
     padding-left: 1.5em;
     margin-right: 30%;
     margin-bottom: 4%;
     background-color: #F1F1FB;
 }
 
-
-/* position des encadrements*/
-
 #q_r {
     padding-left: 5em;
     padding-right: 5em;
     margin-bottom: 150px;
-    /*margin-top: 10px;*/
     background: white;
-    /*background-image: url("Stylo.jpg");*/
 }
 
-.reponse
-/* encadremetn des reponses*/
-
-{
+.reponse{
     text-align: left;
     text-align: justify;
     border: 1px solid;
@@ -460,9 +379,7 @@ input { /*Champs de texte a remplir*/
     padding-top: 0.9em;
     border-top-left-radius: 40px 40px;
     border-bottom-right-radius: 40px 40px;
-    border-bottom-left-radius: 40px 40px;
-    /*border-top-right-radius: 40px 40px;*/
-    /*display: block;*/
+    border-bottom-left-radius: 40px 40px;  
     margin-left: 30%;
     margin-bottom: 4%;
     background-color: #F1F1FB;
@@ -473,36 +390,17 @@ input { /*Champs de texte a remplir*/
     padding-right: 1em;
     font-weight: 300;
 
-    /*helevetica neue light*/
-    /*font-size: xx-large;*/
-  }
-
-
-
+}
 #carte_FAQ {
     width: auto;
-    /*largeur du bloc de 800pixel*/
     margin: 1%;
-    /*place cette zone au milieu de la page*/
-    align-content: center;
-    /*font-family: "Helvetica Neue";*/
-    /*width: 100%;
-  height: 100%;*/
-    /*display: flex;
-  flex-direction: column;*/
+    align-content: center;    
 }
-
 .images {
     top: 0;
     position: sticky;
     z-index: -1;
 }
-
-/*.sticky1 {
-    top: 0;
-    position: sticky;
-    z-index: -1;
-}*/
 
 @media screen and (max-width:800px) {
     #q_r {
