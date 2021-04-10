@@ -279,12 +279,20 @@ h1 { /* header*/
   border: 2px solid black;
   }
 
+#essai99{
+  text-decoration: none;
+}
+
 #centre_page {
   align-content: center;
   width: 100%;
   margin: auto; 
   text-align: center; 
-  background-image: url('../images/fond_page.png')
+  background-image: url('../images/fond_page.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
 /*#fond_2_page {
