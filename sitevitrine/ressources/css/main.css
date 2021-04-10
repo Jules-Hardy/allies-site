@@ -78,7 +78,11 @@ header{
 body{
   font-family : Helvetica Neue;
   font-weight:300;
-  margin-top:150px;
+  /*margin-top:0px;*/
+}
+
+*{
+  box-sizing: border-box;
 }
 
 
@@ -418,13 +422,6 @@ input { /*Champs de texte a remplir*/
 
 
 
-
-
-
-
-
-
-
 /*-------------------------------------------------------------------*/
 
 /* Partie FAQ */
@@ -458,6 +455,9 @@ input { /*Champs de texte a remplir*/
     margin-bottom: 150px;
     margin-top:80px;
     /*background-image: url("Stylo.jpg");*/
+
+
+    
 }
 
 .reponse /* encadremetn des reponses*/
@@ -487,14 +487,7 @@ input { /*Champs de texte a remplir*/
   background-color: #F1F1FB;
 
 }
-/*.test position du nom de celui qui repond
-{
-  margin-left: 70%;
-  text-align: right;
-  align-content: right;
 
-  
-}*/
 
 #titre2
 {
@@ -518,22 +511,37 @@ input { /*Champs de texte a remplir*/
   background-color: #F6F6F9 ;
   align-content: center;
   /*font-family: "Helvetica Neue";*/
+  /*width: 100%;
+  height: 100%;*/
+  /*display: flex;
+  flex-direction: column;*/
+
 }
-/*img
+
+
+/*mg
 {
-  align-content: center;  ne fonctionne pas */
-  /*margin-left: auto;
-  margin-right: 100px; 
+  margin-top:0 auto;
+  display: flex;
+  position: static;
 
 }*/
 
-img
-{
-  margin-top:0 auto;
 
+@media screen and (max-width:800px){
+  
 
+  #q_r{
+    width: 85%;
+    font-size: 13px;
+  }
+
+  #titre2 {
+    font-size: 25px;
+  }
+
+  
 }
-
 /* FIN DU CSS DE CA */
 
 
