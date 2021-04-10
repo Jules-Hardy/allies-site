@@ -241,10 +241,10 @@ footer{
   padding-left: 30px;
 
   text-align: left;
-  font-size: medium;
-  background-color: #B8DDE1;
+  font-size: 17px;
+  background-color: #fff;
 
-  border: 2px solid;
+  border: 1px solid grey;
   border-top-left-radius: 20px 20px;
   border-top-right-radius: 20px 20px;
   border-bottom-right-radius: 20px 20px;
@@ -273,10 +273,10 @@ footer{
   padding-right: 30px;
 
   text-align: left;
-  font-size: medium;
-  background-color: #B8DDE1;
+  
+  background-color: #fff;
 
-  border: 2px solid;
+  border: 1px solid grey;
   border-top-left-radius: 20px 20px;
   border-top-right-radius: 20px 20px;
   border-bottom-right-radius: 20px 20px;
@@ -290,10 +290,7 @@ footer{
 
   width: 30%;
 
- 
-
 }
-
 
 h1 { /* header*/
   text-align: center;
@@ -310,7 +307,7 @@ h1 { /* header*/
   text-align: center;
   background-color: #2BAEBD;
   border: 2px solid black;
-}
+  }
 #centre_page {
 
   align-content: center;
@@ -320,7 +317,8 @@ h1 { /* header*/
   margin-bottom: 0;*/
   text-align: center; /*  centre le texte */
   /*background-color: white; /*couleur du fond de ce bloc de 800px au mileu doit etre blanc*/
-  background-image: url('aircraft.png')
+  background-image: url('../images/fond_page.png')
+
 
 }
 
@@ -341,33 +339,36 @@ input { /*Champs de texte a remplir*/
 }
 
 .but_co {
-  border: 1.5px solid;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
-  border-bottom-right-radius: 20px 20px;
-  border-bottom-left-radius: 20px 20px;
+  border: 1px solid #23646b;
+  border-radius: 10px 10px;
 
   margin-left: 30%;
-  margin-right: 30%;
+  margin-right: 25%;
   margin-bottom: 30px;
 
   font-size: medium;
-  background-color: #2BAEBD; /*https://htmlcolorcodes.com/fr/*/
+  color: white;
+  background-color: #23646b; /*https://htmlcolorcodes.com/fr/*/
+  letter-spacing: 1px;
 
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom:10px;
   padding-top: 10px;
+
+  
  
 
 }
 
+.taille_text {
+  font-size: 14px;
+
+}
+
 .but_inscription {
-  border: 1.5px solid;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
-  border-bottom-right-radius: 20px 20px;
-  border-bottom-left-radius: 20px 20px;
+  border: 1px solid #23646b;
+  border-radius: 10px 10px;
 
   margin-left: 30%;
   margin-right: 30%;
@@ -376,50 +377,32 @@ input { /*Champs de texte a remplir*/
   display: block;
 
   font-size: medium;
-  background-color: #2BAEBD; /*https://htmlcolorcodes.com/fr/*/
+  background-color: #23646b; /*https://htmlcolorcodes.com/fr/*/
+  color: white;
+  letter-spacing: 1.5px;
+  text-decoration: none;
 
-  padding-right: 20px;
+  /*padding-right: 20px;
   padding-left: 20px;
   padding-bottom:10px;
   padding-top: 10px;
+*/
+  padding: 10px 20px;
+
+
  
 
 }
 
 #connexion
 {
-  font-size: large;
-  /*text-align: center;*/
-  margin-bottom: 30px;
-  margin-top: 30px;
-  /*margin-left: 30px;*/
-  /*align-content: center;*/
-  border: 2px solid black;
-  border-top-left-radius: 10px 10px;
-  border-top-right-radius: 10px 10px;
-  border-bottom-right-radius: 10px 10px;
-  border-bottom-left-radius: 10px 10px;
-  background-color: #2BAEBD;
-  padding: 10px; 
-
+  letter-spacing: 1px;
 }
 
 #inscription
   {
-  font-size: large;
-  /*text-align: center;*/
-  margin-bottom: 30px;
-  margin-top: 30px;
-  /*margin-left: 30px;*/
-  /*align-content: center;*/
-  border: 2px solid black;
-  border-top-left-radius: 10px 10px;
-  border-top-right-radius: 10px 10px;
-  border-bottom-right-radius: 10px 10px;
-  border-bottom-left-radius: 10px 10px;
-  background-color: #2BAEBD;
-  padding: 10px; 
-
+  letter-spacing: 1px;
+   
 }
 
 
@@ -494,11 +477,7 @@ input { /*Champs de texte a remplir*/
     /*font-size: xx-large;*/
   }
 
-#FOOTER {
-    border: 2px solid;
-    background-color: #aeb8de;
-    text-align: center;
-}
+
 
 #carte_FAQ {
     width: auto;
@@ -533,6 +512,8 @@ input { /*Champs de texte a remplir*/
     #titre2 {
         font-size: 25px;
     }
+
+    
 }
 /* FIN DU CSS DE CA */
 
