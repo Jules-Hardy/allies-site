@@ -322,7 +322,7 @@ h1 { /* header*/
 }
 */
 input { /*Champs de texte a remplir*/
-  border: 1.5px solid;
+  border: 1px solid grey;
   border-radius: 20px 20px;
   padding-right: 80px;
   padding-left: 20px;
@@ -330,6 +330,7 @@ input { /*Champs de texte a remplir*/
   padding-top: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+  max-width: 40%;
 }
 
 .but_co {
@@ -353,16 +354,22 @@ input { /*Champs de texte a remplir*/
 .but_inscription {
   border: 1px solid #23646b;
   border-radius: 10px 10px;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-bottom: 30px;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 2%;
+  margin-bottom: 1%;
   display: block;
   font-size: medium;
   background-color: #23646b; /*https://htmlcolorcodes.com/fr/*/
   color: white;
   letter-spacing: 1.5px;
   text-decoration: none;
-  padding: 10px 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  align-items: center;
 }
 
 #connexion
@@ -442,6 +449,21 @@ input { /*Champs de texte a remplir*/
     .cadre_connexion_2 {
       font-size: 16px;
       min-width: 50%;
+    }
+
+    .cadre_connexion {
+      min-width: 50%;
+    }
+
+    .cadre_inscription {
+      min-width: 45%;
+    }
+
+    .but_inscription {
+      margin-top: 6%;
+      margin-bottom: -4%;
+      margin-left: 30%;
+      margin-right:30%;
     }
 
     
