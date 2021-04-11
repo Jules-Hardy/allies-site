@@ -245,6 +245,25 @@ footer{
   border-radius: 20px 20px;
   margin: 6% auto;
   width: 30%;
+  
+}
+
+.cadre_connexion_2 {
+  display: block;
+  padding: 3% 4%;
+
+  text-align: left;
+  text-align: justify;
+  font-size: 19px;
+
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: 20px 20px;
+
+  margin: 15% auto;
+
+  width: 40%;
+  letter-spacing: 0.5px;
 }
 
 .cadre_inscription
@@ -328,6 +347,7 @@ input { /*Champs de texte a remplir*/
 
 .taille_text {
   font-size: 14px;
+  text-decoration: none;
 }
 
 .but_inscription {
@@ -417,6 +437,11 @@ input { /*Champs de texte a remplir*/
     }
     #titre2 {
         font-size: 25px;
+    }
+
+    .cadre_connexion_2 {
+      font-size: 16px;
+      min-width: 50%;
     }
 
     
