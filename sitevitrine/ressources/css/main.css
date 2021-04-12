@@ -7,10 +7,12 @@ header{
 	display:flex;
 	justify-content: space-between;
   align-items: flex-end;
-  background-color: #fefefe;
+  /*background-color: #fefefe;*/
+  background-color: #23646b;
   position:fixed;
-  width:100%;
+  /*width:100%;*/
   top:0;
+  width: 100%;
 
 
 }
@@ -35,7 +37,11 @@ header{
 #bloc_page{
 	font-family : Helvetica Neue;
 	font-weight:300;
-	margin:auto;
+	/*margin:auto;*/
+  width: auto;
+ /* margin: 1%;*/
+  align-content: center; 
+
 }
 
 #loupe{
@@ -294,7 +300,7 @@ h1 { /* header*/
 
 #footer {
   text-align: center;
-  background-color: #2BAEBD;
+  background-color: #23646b;
   border: 2px solid black;
   }
 
@@ -401,6 +407,8 @@ input { /*Champs de texte a remplir*/
     padding-right: 5em;
     margin-bottom: 150px;
     background: white;
+    padding-bottom: 10%;
+    padding-top: 1.5%;
 }
 
 .reponse{
