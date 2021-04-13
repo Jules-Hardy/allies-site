@@ -17,7 +17,7 @@ try {
 
         $controller = ucfirst($params[0]);
         $action = isset($params[1]) ? $params[1] : 'index';
-        if (!file_exists(DIR . '/controller/'  . '.php')) {
+        if (!file_exists(DIR . '/controller/'.$controller . '.php')) {
             header("Location: /");
             exit();
         }
@@ -32,7 +32,6 @@ try {
     } else {
         require_once(DIR . "/controller/home.php");
 
-        echo "home";
         $home = new Home();
         $home->index();
     }
@@ -43,4 +42,5 @@ catch (\PDOException $e) {
     $controller->pdo($e);
 }
 ?>
+
 </html>

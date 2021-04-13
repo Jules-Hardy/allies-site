@@ -11,7 +11,8 @@ class Home extends Controller
      * Display home page
      */
     public function index() {
-        // $this->render("index", []);
+      echo "home";
+       $this->render("index", []);
     }
 
 }
