@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8"> 
-	<title>Foire aux questions</title>
-	<link rel="stylesheet" href="../ressources/css/main.css">
-	<!-- ../page-de-co/page_de_co.css -->
+<?php include '../includes/head.php'; ?>
 
-</head>
 
 <body>
+
+	<?php include '../includes/header.php'; ?>
 	<div id="carte_FAQ">
 
 
 
 
 
-<h1>HEADER</h1>
-	
+
 
 
 
@@ -91,7 +87,7 @@
 
 
 
-		<h2 id="footer"> FOOTER </h2> 
+	
 
 		
 
@@ -99,7 +95,7 @@
 
 	</div>
 
-
+<?php include '../includes/footer.php'; ?>
 		
 	</body>
 </html>
