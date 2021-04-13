@@ -1,9 +1,9 @@
 <?php abstract class Model{
     // Informations de la base de données
     private $host = "localhost";
-    private $db_name = "nom_de_la_base";
-    private $username = "nom_utilisateur";
-    private $password = "mot_de_passe";
+    private $db_name = "website";
+    private $username = "root";
+    private $password = "root";
 
     // Propriété qui contiendra l'instance de la connexion
     protected $_connexion;
