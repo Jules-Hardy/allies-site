@@ -1,323 +1,330 @@
 /* CSS COMMUN*/
-html{
-	background-color: #fefefe;
+html {
+  background-color: #fefefe;
 }
 
-header{
-	display:flex;
-	justify-content: space-between;
-  align-items: flex-end;
-  /*background-color: #fefefe;*/
-  background-color: #23646b;
-  position:fixed;
+header {
+  position: fixed;
+
   /*width:100%;*/
-  top:0;
+  top: 0;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
   width: 100%;
 
-
+  /*background-color: #fefefe;*/
+  background-color: #23646b;
 }
 
-#logo_header{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+#logo_header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
 
-#logo_header img{
-    width: 140px;
-    height: 130px;
+#logo_header img {
+  width: 140px;
+  height: 130px;
 }
 
-#titre_principal
-{
-    display: flex;
-    flex-direction: column;
+#titre_principal {
+  display: flex;
+  flex-direction: column;
 }
 
-#bloc_page{
-	font-family : Helvetica Neue;
-	font-weight:300;
-	/*margin:auto;*/
+#bloc_page {
+  /* margin: 1%;*/
+  align-content: center;
+
+  /*margin:auto;*/
   width: auto;
- /* margin: 1%;*/
-  align-content: center; 
 
+  font-weight: 300;
+  font-family: Helvetica Neue;
 }
 
-#loupe{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    width: 20px;
-    height: 20px;
+#loupe {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  width: 20px;
+  height: 20px;
 }
 
+#bloc_page nav ul {
+  display: flex;
 
-#bloc_page nav ul{
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
 }
 
-#bloc_page nav li{
-    margin-right: 15px;
+#bloc_page nav li {
+  margin-right: 15px;
 }
 
-#bloc_page nav a{
-    font-size: 1.3em;
-    color: #181818;
-    padding-bottom: 3px;
-    text-decoration: none;
+#bloc_page nav a {
+  padding-bottom: 3px;
+
+  color: white;
+  font-size: 1.3em;
+  text-decoration: none;
 }
 
-#bloc_page nav a:hover{
-    color: #439AA8;
-    border-bottom: 3px solid #439AA8;
+#bloc_page nav a:hover {
+  color: #439aa8;
+
+  border-bottom: 3px solid #439aa8;
 }
 
-#logo_footer{
-	display: flex;
-    flex-direction: row;
-    align-items: baseline;
-
+#logo_footer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
 
-body{
-  font-family : Helvetica Neue;
-  font-weight:300;
+body {
+  font-weight: 300;
+  font-family: Helvetica Neue;
+
   /*margin-top:0px;*/
 }
 
+footer {
+  min-height: 100%;
+  margin: auto;
 
-
-
-footer{
-    font-family : Helvetica Neue;
-    font-weight:300;
-    margin:auto;
-    color:#FFFFFF;
-    min-height: 100%;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: Helvetica Neue;
 }
 
-#footer_html{
-    background:#39565c;
-    display:flex;
-    flex-direction: row;
-    column-count: 5;
-    justify-content:space-between;
-    padding:10px;
-    padding: 30px;
+#footer_html {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  padding: 30px;
+
+  column-count: 5;
+
+  background: #39565c;
 }
 
 .column {
 }
 
-.column img{
-    width: 140px;
-    height: 130px;
+.column img {
+  width: 140px;
+  height: 130px;
 }
 
 #footer_html h2 {
-  margin-top:40%;
-  margin-bottom:12px;
-  font-size:16px;
+  margin-top: 40%;
+  margin-bottom: 12px;
+
+  font-size: 16px;
 }
 
-
 #footer_html ul {
-  padding:0;
-  list-style:none;
-  line-height:1.6;
-  font-size:14px;
-  margin-bottom:0;
+  margin-bottom: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 1.6;
+
+  list-style: none;
 }
 
 #footer_html ul a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
+  color: inherit;
+  text-decoration: none;
+
+  opacity: 0.8;
 }
 
 #footer_html ul a:hover {
-  opacity:1;
+  opacity: 1;
 }
 
-#contenu{
-    margin:0px;
-    text-align: justify;
+#contenu {
+  margin: 0;
+
+  text-align: justify;
 }
 
-#copyright{
-  background:#535353;
-  padding:1px;
+#copyright {
+  padding: 1px;
+
   text-align: center;
+
+  background: #535353;
 }
- /* CSS COMMUN */
 
-
-
+/* CSS COMMUN */
 
 /* DEBUT CSS DE CLEMENCE */
 
-#bandeau
-{
+#bandeau {
   align-content: center;
   margin-left: 100px;
 }
 
-#ligneun
-{
+#ligneun {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
-
-#lignedeux
-{
+#lignedeux {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
-
-
-.phraseun
-{
+.phraseun {
   display: flex;
   flex-wrap: wrap;
 }
 
-#texteun
-{
+#texteun {
   position: relative;
-  left: 550px; 
   bottom: 350px;
+  left: 550px;
+
   flex-wrap: wrap;
-  text-align: justify;
   margin-right: 630px;
+
+  text-align: justify;
 }
 
-#dernierephoto
-{
+#dernierephoto {
   position: relative;
-  left: 1px;
   bottom: 350px;
-  text-align: right;
+  left: 1px;
+
   margin-right: 80px;
+
+  text-align: right;
 }
 
-#textedeux
-{
+#textedeux {
   position: relative;
   right: 1px;
   bottom: 150px;
-  text-align: justify;
+
   flex-wrap: wrap;
   margin-right: 620px;
-  margin-left:  40px;
+  margin-left: 40px;
+
+  text-align: justify;
 }
 
-.icones
-{
+.icones {
   width: 100px;
   height: 100px;
 }
 
-#nosproduits
-{
+#nosproduits {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; 
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* FIN DU CSS DE CLEMENCE */
-
-
-
 
 /* DEBUT CSS DE CA */
 
 .cadre_connexion {
   display: block;
+  width: 30%;
+  margin: 10% auto;
   padding-top: 40px;
-  padding-bottom: 40px;
   padding-right: auto;
+  padding-bottom: 40px;
   padding-left: 30px;
-  text-align: left;
+
   font-size: 17px;
+  text-align: left;
+
   background-color: #fff;
   border: 1px solid grey;
   border-radius: 20px 20px;
-  margin: 10% auto;
-  width: 30%;
-  
 }
 
 .cadre_connexion_2 {
   display: block;
+
+  width: 40%;
+
+  margin: 15% auto;
   padding: 3% 4%;
+
+  font-size: 19px;
+  letter-spacing: 0.5px;
 
   text-align: left;
   text-align: justify;
-  font-size: 19px;
 
   background-color: #fff;
   border: 1px solid grey;
   border-radius: 20px 20px;
-
-  margin: 15% auto;
-
-  width: 40%;
-  letter-spacing: 0.5px;
 }
 
-.cadre_inscription
-{
+.cadre_inscription {
   display: block;
+  width: 30%;
+  margin: 6% auto;
   padding: 10px;
-  padding-left: 20px;
   padding-top: 40px;
-  padding-bottom: 40px;
   padding-right: 30px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+
   text-align: left;
+
   background-color: #fff;
   border: 1px solid grey;
   border-radius: 20px 20px;
-  margin: 6% auto;
-  width: 30%;
 }
 
-h1 { /* header*/
-  text-align: center;
-  background-color: #2BAEBD;
-  border: 2px solid black;
-  top: 0;
+h1 {
+  /* header*/
   position: sticky;
+  top: 0;
   z-index: 1;
+
   margin: 0;
+
+  text-align: center;
+
+  background-color: #2baebd;
+  border: 2px solid black;
 }
 
 #footer {
   text-align: center;
+
   background-color: #23646b;
   border: 2px solid black;
-  }
+}
 
-#essai99{
+#essai99 {
   text-decoration: none;
 }
 
 #centre_page {
   align-content: center;
   width: 100%;
-  margin: auto; 
-  text-align: center; 
+  margin: auto;
+
+  text-align: center;
+
   background-image: url('../images/fond_page.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
 }
 
 /*#fond_2_page {
@@ -327,29 +334,33 @@ h1 { /* header*/
   max-height: 70%;
 }
 */
-input { /*Champs de texte a remplir*/
-  border: 1px solid grey;
-  border-radius: 20px 20px;
-  padding-right: 80px;
-  padding-left: 20px;
-  padding-bottom:10px;
-  padding-top: 10px;
+input {
+  /*Champs de texte a remplir*/
+  max-width: 40%;
   margin-top: 20px;
   margin-bottom: 20px;
-  max-width: 40%;
+  padding-top: 10px;
+  padding-right: 80px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+  border: 1px solid grey;
+  border-radius: 20px 20px;
 }
 
 .but_co {
-  border: 1px solid #23646b;
-  border-radius: 10px 10px;
-  margin-left: 30%;
   margin-right: 25%;
   margin-bottom: 30px;
-  font-size: medium;
-  color: white;
-  background-color: #23646b; /*https://htmlcolorcodes.com/fr/*/
-  letter-spacing: 1px;
+  margin-left: 30%;
   padding: 10px 20px;
+
+  color: white;
+  font-size: medium;
+  letter-spacing: 1px;
+
+  background-color: #23646b; /*https://htmlcolorcodes.com/fr/*/
+  border: 1px solid #23646b;
+  border-radius: 10px 10px;
 }
 
 .taille_text {
@@ -358,129 +369,133 @@ input { /*Champs de texte a remplir*/
 }
 
 .but_inscription {
-  border: 1px solid #23646b;
-  border-radius: 10px 10px;
-  margin-left: 35%;
-  margin-right: 35%;
-  margin-top: 2%;
-  margin-bottom: 1%;
   display: block;
-  font-size: medium;
-  background-color: #23646b; /*https://htmlcolorcodes.com/fr/*/
-  color: white;
-  letter-spacing: 1.5px;
-  text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
 
   align-items: center;
+  margin-top: 2%;
+  margin-right: 35%;
+  margin-bottom: 1%;
+  margin-left: 35%;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+  color: white;
+  font-size: medium;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+
+  background-color: #23646b; /*https://htmlcolorcodes.com/fr/*/
+  border: 1px solid #23646b;
+  border-radius: 10px 10px;
 }
 
-#connexion
-{
+#connexion {
   letter-spacing: 1px;
 }
 
-#inscription
-  {
-  letter-spacing: 1px;  
+#inscription {
+  letter-spacing: 1px;
 }
+
 /*------------------------Partie FAQ-----------------------------------------*/
-.question{
-    text-align: left;
-    text-align: justify;
-    border: 1px solid;
-    padding: 20px;
-    border-bottom-right-radius: 40px 40px;
-    border-bottom-left-radius: 40px 40px;
-    border-top-right-radius: 40px 40px;
-    padding-left: 1.5em;
-    margin-right: 30%;
-    margin-bottom: 4%;
-    background-color: #F1F1FB;
+.question {
+  margin-right: 30%;
+  margin-bottom: 4%;
+  padding: 20px;
+  padding-left: 1.5em;
+
+  text-align: left;
+  text-align: justify;
+
+  background-color: #f1f1fb;
+  border: 1px solid;
+  border-top-right-radius: 40px 40px;
+  border-bottom-right-radius: 40px 40px;
+  border-bottom-left-radius: 40px 40px;
 }
 
 #q_r {
-    padding-left: 5em;
-    padding-right: 5em;
-    margin-bottom: 150px;
-    background: white;
-    padding-bottom: 10%;
-    padding-top: 1.5%;
+  margin-bottom: 150px;
+  padding-top: 1.5%;
+  padding-right: 5em;
+  padding-bottom: 10%;
+  padding-left: 5em;
+
+  background: white;
 }
 
-.reponse{
-    text-align: left;
-    text-align: justify;
-    border: 1px solid;
-    padding: 10px;
-    padding-left: 30px;
-    padding-bottom: 20px;
-    padding-right: 1.5em;
-    padding-top: 0.9em;
-    border-top-left-radius: 40px 40px;
-    border-bottom-right-radius: 40px 40px;
-    border-bottom-left-radius: 40px 40px;  
-    margin-left: 30%;
-    margin-bottom: 4%;
-    background-color: #F1F1FB;
+.reponse {
+  margin-bottom: 4%;
+  margin-left: 30%;
+  padding: 10px;
+  padding-top: 0.9em;
+  padding-right: 1.5em;
+  padding-bottom: 20px;
+  padding-left: 30px;
+
+  text-align: left;
+  text-align: justify;
+
+  background-color: #f1f1fb;
+  border: 1px solid;
+  border-top-left-radius: 40px 40px;
+  border-bottom-right-radius: 40px 40px;
+  border-bottom-left-radius: 40px 40px;
 }
 
 #titre2 {
-    padding-left: 1em;
-    padding-right: 1em;
-    font-weight: 300;
+  padding-right: 1em;
+  padding-left: 1em;
 
+  font-weight: 300;
 }
 #carte_FAQ {
-    width: auto;
-    margin: 1%;
-    align-content: center;    
+  align-content: center;
+  width: auto;
+  margin: 1%;
 }
 .images {
-    top: 0;
-    position: sticky;
-    z-index: -1;
+  position: sticky;
+  top: 0;
+  z-index: -1;
 }
 
-@media screen and (max-width:800px) {
-    #q_r {
-        width: 85%;
-        font-size: 13px;
-    }
-    #titre2 {
-        font-size: 25px;
-    }
+@media screen and (max-width: 800px) {
+  #q_r {
+    width: 85%;
 
-    .cadre_connexion_2 {
-      font-size: 16px;
-      min-width: 50%;
-    }
+    font-size: 13px;
+  }
+  #titre2 {
+    font-size: 25px;
+  }
 
-    .cadre_connexion {
-      min-width: 50%;
-    }
+  .cadre_connexion_2 {
+    min-width: 50%;
 
-    .cadre_inscription {
-      min-width: 45%;
-    }
+    font-size: 16px;
+  }
 
-    .but_inscription {
-      margin-top: 6%;
-      margin-bottom: -4%;
-      margin-left: 30%;
-      margin-right:30%;
-    }
+  .cadre_connexion {
+    min-width: 50%;
+  }
 
-    
+  .cadre_inscription {
+    min-width: 45%;
+  }
+
+  .but_inscription {
+    margin-top: 6%;
+    margin-right: 30%;
+    margin-bottom: -4%;
+    margin-left: 30%;
+  }
 }
+
 /* FIN DU CSS DE CA */
 
-
-
 /* DEBUT CSS DE PAUL */
-
 
 /* FIN DU CSS DE PAUL */
