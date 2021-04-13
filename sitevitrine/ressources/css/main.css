@@ -165,72 +165,175 @@ footer {
 
 /* DEBUT CSS DE CLEMENCE */
 
-#bandeau {
-  align-content: center;
-  margin-left: 100px;
+#teamworking
+{
+
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  top: 0;
+}
+ 
+#blanc
+{
+  margin-top: 70px;
+  background-color: white;
+  background-attachment: local;
 }
 
-#ligneun {
+.photo
+{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#presentation 
+{
+  text-align: justify; 
+  margin-right: 50px;
+  margin-left: 50px; 
+}
+
+#ligneun
+{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-around; 
 }
 
-#lignedeux {
+
+#lignedeux
+{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-around; 
 }
 
-.phraseun {
-  display: flex;
-  flex-wrap: wrap;
+#travailenequipe
+{
+  margin-left: 80px;
 }
-
-#texteun {
+#texteun
+{
   position: relative;
+  left: 600px; 
   bottom: 350px;
-  left: 550px;
-
-  flex-wrap: wrap;
-  margin-right: 630px;
-
   text-align: justify;
+  margin-right: 680px;
+  margin-left: 1px;
+
 }
 
-#dernierephoto {
+#dernierephoto
+{
   position: relative;
-  bottom: 350px;
   left: 1px;
-
-  margin-right: 80px;
-
+  bottom: 350px;
   text-align: right;
+  margin-right: 80px;
 }
 
-#textedeux {
+#textedeux
+{
   position: relative;
   right: 1px;
-  bottom: 150px;
-
-  flex-wrap: wrap;
-  margin-right: 620px;
-  margin-left: 40px;
-
+  bottom: 100px;
   text-align: justify;
+  margin-right: 620px;
+  margin-left:  80px;
 }
 
-.icones {
+#pilotes
+{
+  width: 100%
+}
+
+#carte
+{
+  background-color: white; 
+
+}
+
+.icones
+{
   width: 100px;
   height: 100px;
 }
 
-#nosproduits {
+#troisetapes
+{
+  display: flex;
+  justify-content: space-around; 
+}
+
+#iconegauche
+{
+  margin-left: 200px;
+}
+
+#iconecentre
+{
+  margin-left: 200px;
+}
+
+#iconedroit
+{
+  margin-left: 170px; 
+}
+
+#textegauche
+{
+  text-align: justify; 
+  margin-left: 95px; 
+  margin-right: 95px; 
+}
+
+#textecentre
+{
+  text-align: justify;
+  margin-right: 95px;
+  margin-left: 95px;
+}
+
+#textedroite 
+{
+  text-align: justify; 
+  margin-left: 95px;
+  margin-right: 95px; 
+}
+
+#defileavion
+{
+  width: 100%; 
+}
+
+#logo-isep
+{
+  position: absolute;
+  height: 12%;
+}
+
+#infinite-measures
+{
+  position: absolute;
+  height: 15%
+}
+
+#logo-armee
+{
+  position: absolute;
+  height: 15%;
+}
+
+.nosclients
+{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
+
 
 /* FIN DU CSS DE CLEMENCE */
 
