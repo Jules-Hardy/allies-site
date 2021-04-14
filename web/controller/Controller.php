@@ -1,14 +1,14 @@
 <?php abstract class Controller{
-    /**
-     * Render a View
-     *
-     * @param string $fichier File to render
-     * @param array $data Data to be passed for the view to work
-     */
-    public function render(string $fichier, Array $data = []) : void {
-      extract($data);
-      $name = explode("\\", strtolower(get_class($this)));
-      require_once(DIR . "/view/" . end($name) . "/" . $fichier . ".php");
+  var $vars = array();
+  
+  public function set($d){
+    $this->vars = array_merge($this->vars,$d);
+  }
+
+  
+  public function render($filename) {
+    extract($this->vars);
+    require(ROOT.'/view/admin/pages/'.get_class($this).'/'.$filename.'.php');
   }
 }
   

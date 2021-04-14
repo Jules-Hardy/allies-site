@@ -1,12 +1,13 @@
 <html>
 <?php 
   $navPageName = 'Accueil';
-  include '../../includes/head.php';
-  include '../../includes/nav.php';?>
+  include ROOT.'view/admin/includes/head.php';
+  include ROOT.'view/admin/includes/nav.php';?>
 
 <body>
   <section>
     <content>
+      <?php echo $tuto['titre']?>
       <h1>Accueil</h1>
       <h2>Les chiffres clés</h2>
       <div class="stat">
@@ -136,7 +137,7 @@
 
     </content>
 
-    <?php include '../../includes/footer.php';?>
+    <?php ROOT.'view/admin/includes/footer.php';?>
   </section>
 </body>
 
