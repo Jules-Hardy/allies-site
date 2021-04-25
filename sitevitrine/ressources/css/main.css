@@ -1,6 +1,6 @@
 /* CSS COMMUN*/
 html {
-  background-color: #fefefe;
+  background-color: #23646;
 }
 
 header {
@@ -14,8 +14,8 @@ header {
   justify-content: space-between;
   width: 100%;
 
-  /*background-color: #fefefe;*/
-  background-color: #23646b;
+  /*background-color: #23646b;*/
+  background-color: #fefefe;
 }
 
 #logo_header {
@@ -66,7 +66,7 @@ header {
 #bloc_page nav a {
   padding-bottom: 3px;
 
-  color: white;
+  color: #181818;
   font-size: 1.3em;
   text-decoration: none;
 }
@@ -598,6 +598,13 @@ input {
     margin-left: 30%;
   }
 }
+/*------------------------Partie Mon Profil----------------------------------------*/
+
+.img-profil{
+
+}
+
+
 
 /* FIN DU CSS DE CA */
 
