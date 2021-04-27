@@ -50,7 +50,7 @@
           ut aiunt, in flammam traditus Phalangio Baeticae consulari cecidit funesti carnificis manu.s
   	</p>
 
-  	<img id="img-profil" scr="image-pp.jpg">
+  	<img id="img-profil" src="../ressources/images/image-pp.jpg">
 
   	
 

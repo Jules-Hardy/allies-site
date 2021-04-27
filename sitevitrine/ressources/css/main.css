@@ -602,12 +602,13 @@ input {
 }
 /*------------------------Partie Mon Profil--------------------------------------*/
 
-.contenu-profil{
+.contenu-profil {
   margin-top: 300px;
 }
 
-.img-profil{
-
+#img-profil img {
+  width: 140px;
+  height: 130px;
 }
 
 
