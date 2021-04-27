@@ -2,7 +2,7 @@
 html {
   background-color: #23646;
 }
-
+/*------------------------Partie Header----------------------------------------*/
 header {
   position: fixed;
 
@@ -76,6 +76,8 @@ header {
 
   border-bottom: 3px solid #439aa8;
 }
+
+/*------------------------Partie Footer--------------------------------------*/
 
 #logo_footer {
   display: flex;
@@ -598,7 +600,11 @@ input {
     margin-left: 30%;
   }
 }
-/*------------------------Partie Mon Profil----------------------------------------*/
+/*------------------------Partie Mon Profil--------------------------------------*/
+
+.contenu-profil{
+  margin-top: 300px;
+}
 
 .img-profil{
 
