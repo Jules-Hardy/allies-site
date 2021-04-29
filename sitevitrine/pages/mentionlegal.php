@@ -4,7 +4,7 @@
 <head>
   <!-- En-tête de la page -->
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./ressources/css/paul.css" />
     <title> Mention légales </title>
 </head>
 
