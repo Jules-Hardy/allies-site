@@ -337,11 +337,12 @@ footer {
   height: 15%;
 }
 
-.nosclients
+#nosclients
 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; 
+  align-items: center;
+  justify-content: space-between; 
 }
 
 
