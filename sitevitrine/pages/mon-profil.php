@@ -10,10 +10,12 @@
   </div>
 
   <div id="bouton_modifier">
-  	<a href="" id="bouton"><button class="bouton_modifier">MODIFIER</button></a>
-  		<!--<button class"="but_modif"> Modifier</button>-->
+  	<button class="bouton_modifier">MODIFIER</button>
   </div>
 
+  <div id="remplir_prenom">
+  	<input type="text" />
+  </div>
 
   	<p>
   		Circa hos dies Lollianus primae lanuginis adulescens, Lampadi filius ex praefecto, exploratius causam
