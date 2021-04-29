@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <?php include '../includes/head.php'; ?>
-
-
-<body>
-  <?php include '../includes/header.php'; ?>
-
-
-
+	<body>
+  		<?php include '../includes/header.php'; ?>
 
   <div id="contenu-profil">
 
+  	<img id="img-profil" src="../ressources/images/image-pp.jpg">
+
+  	<button class="modifier"
+  			type="button">
+  		Modifier
+  	</button>
 
   	<p>
   		Circa hos dies Lollianus primae lanuginis adulescens, Lampadi filius ex praefecto, exploratius causam
@@ -50,7 +52,6 @@
           ut aiunt, in flammam traditus Phalangio Baeticae consulari cecidit funesti carnificis manu.s
   	</p>
 
-  	<img id="img-profil" src="../ressources/images/image-pp.jpg">
 
   	
 
@@ -60,8 +61,6 @@
 
 
 
-   <?php include '../includes/footer.php'; ?>
-
-</body>
-
+   		<?php include '../includes/footer.php'; ?>
+	</body>
 </html>

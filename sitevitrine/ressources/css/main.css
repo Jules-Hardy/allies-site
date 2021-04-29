@@ -610,13 +610,26 @@ input {
 }
 /*------------------------Partie Mon Profil--------------------------------------*/
 
-.contenu-profil {
-  margin-top: 300px;
+#contenu-profil {
+  margin-top: 150px;
 }
 
-#img-profil img {
-  width: 140px;
-  height: 130px;
+#img-profil {
+  width: 200px;
+  height: 200px;
+}
+
+#button{
+  background: transparent;
+  color:#439aa8;
+  border: 2px solid white;
+  font-size: 20px;
+  letter-spacing: 2px ;
+  padding: 25px 80px;
+  text-transform: uppercase;
+  cursor:pointer;
+  display:inline-block;
+  margin: 15px 30px;
 }
 
 
