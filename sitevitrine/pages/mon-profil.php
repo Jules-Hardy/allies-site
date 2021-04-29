@@ -13,9 +13,21 @@
   	<button class="bouton_modifier">MODIFIER</button>
   </div>
 
-  <div id="remplir_prenom">
-  	<input type="text" />
+  <div id="remplir_champs">
+  	<div id="remplir_prenom">
+  		<p>Prénom</p>
+  		<input type="text" />
+ 	 </div>
+ 	 <div id="remplir_nom">
+  		<p>Nom</p>
+  		<input type="text" />
+ 	 </div>
+ 	 <div id="remplir_age">
+  		<p>Âge</p>
+  		<input type="text" />
+ 	 </div>
   </div>
+
 
   	<p>
   		Circa hos dies Lollianus primae lanuginis adulescens, Lampadi filius ex praefecto, exploratius causam

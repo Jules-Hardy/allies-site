@@ -449,7 +449,7 @@ h1 {
   max-height: 70%;
 }
 */
-input {
+#centre_page input {
   /*Champs de texte a remplir*/
   max-width: 40%;
   margin-top: 20px;
@@ -654,6 +654,41 @@ input {
   background-color:white;
   color:#439aa8;
   border:2px solid #439aa8;
+}
+
+#remplir_prenom{
+  position:absolute;
+  top:200px;
+  left:300px;
+}
+
+#remplir_nom{
+  position:absolute;
+  top:200px;
+  left:550px;
+}
+
+#remplir_age{
+  position:absolute;
+  top:200px;
+  left:800px;
+}
+
+#remplir_champs input {
+  /*Champs de texte a remplir*/
+  max-width: 40%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-right: 80px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+  border: 1px solid grey;
+  border-radius: 20px 20px;
+
+  font-weight: 300;
+  font-family: Helvetica Neue;
 }
 
 /* FIN DU CSS DE CA */
