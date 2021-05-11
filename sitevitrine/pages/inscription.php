@@ -6,6 +6,7 @@
 <body>
   <?php include '../includes/header.php'; ?>
   <div id="centre_page">
+    <br>
     <div class="cadre_inscription">
 
       <span id="inscription"> INSCRIPTION </span>
@@ -13,12 +14,12 @@
       <br>
       <strong>Nom* : </strong> <br />
 
-      <input type="text" />
+      <input type="text" size="50"/>
       <br>
 
       <strong>Prénom* : </strong> <br />
 
-      <input type="text" />
+      <input type="text" size="50"/><br>
 
 
       <strong>Genre :</strong> <br>
@@ -37,19 +38,19 @@
 
       <strong>Adresse mail* :</strong> <br />
 
-      <input type="text" />
+      <input type="text" size="50" />
       <!-- <span class="bordure_texte">charles-arthur.pacton@eleve.isep.fr</span
           > -->
       <br />
       <strong>Mot de passe* :</strong> <br />
 
-      <input type="password" />
+      <input type="password" size="50"/>
       <!-- <span class="bordure_texte">..........</span> <br /> -->
 
       <br>
       <strong>Confirmer mot de passe* : </strong> <br />
 
-      <input type="password" />
+      <input type="password" size="50"/>
       <br />
 
 
@@ -76,6 +77,8 @@
       <br>
       <u><i>Conditions génrales</u></i>
     </div>
+   <br>
+
   </div>
 
   <?php include '../includes/footer.php'; ?>
