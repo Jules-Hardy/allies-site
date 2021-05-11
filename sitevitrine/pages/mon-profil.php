@@ -38,6 +38,14 @@
   		<p>Adresse postale</p>
   		<input type="text" />
  	 </div>
+ 	 <div id="remplir_ville">
+  		<p>Ville</p>
+  		<input type="text" />
+ 	 </div>
+ 	 <div id="remplir_poste">
+  		<p>Code Postal</p>
+  		<input type="text" />
+ 	 </div>
   </div>
 
 

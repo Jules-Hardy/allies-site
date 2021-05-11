@@ -694,6 +694,18 @@ h1 {
   left:300px;
 }
 
+#remplir_ville{
+  position:absolute;
+  top:400px;
+  left:550px;
+}
+
+#remplir_poste{
+  position:absolute;
+  top:400px;
+  left:800px;
+}
+
 #remplir_champs input {
   /*Champs de texte a remplir*/
   max-width: 40%;
