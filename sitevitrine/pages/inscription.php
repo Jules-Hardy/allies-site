@@ -6,6 +6,7 @@
 <body>
   <?php include '../includes/header.php'; ?>
   <div id="centre_page">
+    <br>
     <div class="cadre_inscription">
 
       <span id="inscription"> INSCRIPTION </span>
@@ -76,6 +77,8 @@
       <br>
       <u><i>Conditions génrales</u></i>
     </div>
+   <br>
+
   </div>
 
   <?php include '../includes/footer.php'; ?>
