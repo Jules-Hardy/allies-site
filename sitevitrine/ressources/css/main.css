@@ -625,7 +625,8 @@ h1 {
 }
 
 #img-profil:hover{
-  border-radius: 20px 20px;
+  /*border-radius: 20px 20px;*/
+  transform: scale(1.05);
 }
 
 .bouton_modifier {
@@ -675,13 +676,31 @@ h1 {
   left:800px;
 }
 
+#remplir_tel{
+  position:absolute;
+  top:300px;
+  left:300px;
+}
+
+#remplir_mail{
+  position:absolute;
+  top:300px;
+  left:550px;
+}
+
+#remplir_adresse{
+  position:absolute;
+  top:400px;
+  left:300px;
+}
+
 #remplir_champs input {
   /*Champs de texte a remplir*/
   max-width: 40%;
   margin-top: 5px;
   margin-bottom: 20px;
   padding-top: 10px;
-  padding-right: 80px;
+  padding-right: 100px;
   padding-bottom: 10px;
   padding-left: 20px;
 
@@ -727,8 +746,8 @@ h1 {
   font-family:'Helvetica Neue';
 }
 
-
-button{
+/*
+button {
   font-family:'Helvetica Neue';
   background-color: grey;
   border-color: grey;
@@ -739,6 +758,6 @@ button{
   width: 100px;
   margin-bottom: 20px;
   margin-top: 20px;
-}
+}*/
 
 /* FIN DU CSS DE PAUL */

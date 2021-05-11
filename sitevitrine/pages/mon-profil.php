@@ -26,6 +26,18 @@
   		<p>Âge</p>
   		<input type="text" />
  	 </div>
+ 	 <div id="remplir_tel">
+  		<p>Téléphone</p>
+  		<input type="text" />
+ 	 </div>
+ 	 <div id="remplir_mail">
+  		<p>Adresse mail</p>
+  		<input type="text" />
+ 	 </div>
+ 	 <div id="remplir_adresse">
+  		<p>Adresse postale</p>
+  		<input type="text" />
+ 	 </div>
   </div>
 
 
