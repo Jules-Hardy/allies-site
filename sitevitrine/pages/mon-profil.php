@@ -6,7 +6,8 @@
   		<?php include '../includes/header.php'; ?>
 
   <div id="image_profil">
-  	<img id="img-profil" src="../ressources/images/image-pp.jpg">
+  	<img id="img-profil" src="../ressources/images/imagepp.jpg">
+  	<img src="images/<?=$image_imagepp?>"/>
   </div>
 
   <div id="bouton_modifier">
