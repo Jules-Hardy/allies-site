@@ -433,12 +433,12 @@ h1 {
   border: 2px solid black;
 }
 
-#footer {
+/*#footer {
   text-align: center;
 
   background-color: #23646b;
   border: 2px solid black;
-}
+}*/
 
 #essai99 {
   text-decoration: none;
@@ -497,6 +497,12 @@ h1 {
   border-radius: 10px 10px;
 }
 
+.but_co:hover{
+  background-color:white;
+  color:#439aa8;
+  border:1px solid #439aa8;
+}
+
 .taille_text {
   font-size: 14px;
   text-decoration: none;
@@ -525,6 +531,13 @@ h1 {
   border: 1px solid #23646b;
   border-radius: 10px 10px;
 }
+
+.but_inscription:hover{
+  background-color:white;
+  color:#439aa8;
+  border:1px solid #439aa8;
+}
+
 
 #connexion {
   letter-spacing: 1px;
