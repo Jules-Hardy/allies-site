@@ -367,18 +367,19 @@ footer {
   border-radius: 20px 20px;
 }
 
-.cadre_connexion_2 {
+.cadre_connexion_2 { /* cadre mot de passe oublié*/
   display: block;
 
   width: 40%;
 
   margin: 15% auto;
+
   padding: 3% 4%;
 
   font-size: 19px;
   letter-spacing: 0.5px;
 
-  text-align: left;
+  /*text-align: left;*/
   text-align: justify;
 
   background-color: #fff;
@@ -389,7 +390,9 @@ footer {
 .cadre_inscription {
   display: block;
   width: 30%;
-  margin: 6% auto;
+  margin: 20% auto;
+
+
   padding: 10px;
   padding-top: 40px;
   padding-right: 30px;
@@ -436,7 +439,7 @@ h1 {
   text-align: center;
 
 
-  background-image: url('../images/patrouille.jpg');
+  background-image: url('../images/patrouille_2.jpg');
  
   background-repeat: no-repeat;
   background-size: cover;
@@ -455,10 +458,7 @@ h1 {
   max-width: 40%;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-top: 10px;
-  padding-right: 80px;
-  padding-bottom: 10px;
-  padding-left: 20px;
+  padding: 10px;
 
   border: 1px solid grey;
   border-radius: 20px 20px;
@@ -485,6 +485,7 @@ h1 {
 .taille_text {
   font-size: 14px;
   text-decoration: none;
+  color: black;
 }
 
 .but_inscription {
@@ -528,7 +529,7 @@ h1 {
   text-align: left;
   text-align: justify;
 
-  background-color: #f1f1fb;
+  background-color: #DCEDF2;
   border: 1px solid;
   border-top-right-radius: 40px 40px;
   border-bottom-right-radius: 40px 40px;
@@ -539,10 +540,12 @@ h1 {
   margin-bottom: 150px;
   padding-top: 1.5%;
   padding-right: 5em;
-  padding-bottom: 10%;
+  padding-bottom: 1%;
   padding-left: 5em;
 
+
   background: white;
+
 }
 
 .reponse {
@@ -557,7 +560,7 @@ h1 {
   text-align: left;
   text-align: justify;
 
-  background-color: #f1f1fb;
+  background-color: #DCEDF2;
   border: 1px solid;
   border-top-left-radius: 40px 40px;
   border-bottom-right-radius: 40px 40px;
@@ -596,6 +599,9 @@ h1 {
 
     font-size: 16px;
   }
+
+
+
 
   .cadre_connexion {
     min-width: 50%;

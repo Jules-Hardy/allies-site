@@ -29,9 +29,9 @@
             <br />
 
 
-            <a href="mdp_oublie.html" class="taille_text"><u > J'ai oublié mon mot de passe </u> </a>
+            <a href="mdp_oublie.php" class="taille_text"><u > J'ai oublié mon mot de passe </u> </a>
             <br />
-            <a href="page_inscri.html" class="taille_text"><u > S'inscrire </u> <!-- </span> --><br /></a>
+            <a href="page_inscri.php" class="taille_text"><u > S'inscrire </u> <!-- </span> --><br /></a>
             
 
 
