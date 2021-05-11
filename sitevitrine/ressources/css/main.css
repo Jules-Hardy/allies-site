@@ -172,21 +172,25 @@ footer {
 
 /*------------------------A propos----------------------------------------*/
 
+@media screen and (max-width: 800px) {
+ #blanc
+{
+  margin-top: 70px;
+  background-color: white;
+  background-attachment: local;
+}
+
+  
+}
+
 #teamworking
 {
-
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   top: 0;
 }
  
-#blanc
-{
-  margin-top: 70px;
-  background-color: white;
-  background-attachment: local;
-}
 
 .photo
 {
@@ -570,8 +574,6 @@ h1 {
   padding-right: 5em;
   padding-bottom: 1%;
   padding-left: 5em;
-
-
   background: white;
 
 }
@@ -627,9 +629,6 @@ h1 {
 
     font-size: 16px;
   }
-
-
-
 
   .cadre_connexion {
     min-width: 50%;

@@ -4,13 +4,12 @@
 
 <body>
 	<?php include '../includes/header.php'; ?>
+
+	<div id="blanc">
 	
 		<img id="teamworking" src="../ressources/images/teamworking.png">
 
 	
-
-<div id="blanc">
-
 
 		<div id="espace">
 		</div>
@@ -90,7 +89,9 @@
 		<img src="../ressources/images/travailenequipe.png">
 		</div>
 
-</div>
+	</div>
+
+
   <?php include '../includes/footer.php'; ?>
 
 	</body>

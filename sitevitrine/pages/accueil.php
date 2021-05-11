@@ -67,7 +67,7 @@
     <br>
 
 
-  <div class="nosclients">
+  <div id="nosclients">
     <img id="logo-isep" src="../ressources/images/logo-isep.png">
     <img id="infinite-measures"  src="../ressources/images/Infinite-measures.png">
     <img id="logo-armee" src="../ressources/images/logo-armee.png">
