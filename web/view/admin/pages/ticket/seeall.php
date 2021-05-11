@@ -1,15 +1,42 @@
 <html>
-  <?php 
+<?php 
   $navPageName = 'Tickets Support';
   include '../../includes/head.php';
   include '../../includes/nav.php';?>
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "website";
 
-  <body>
-    <section>
-      <content>
-        <h1>Tickets Support</h1>
-        <h2>Tous les tickets</h2>
-        <table>
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+$sql = "SELECT id FROM ticket";
+$result = mysqli_query($conn, $sql);
+$author=mysql_query($conn, "SELECT firstname, lastname FROM user WHERE userid = '$row["id_author']'")
+if (mysqli_num_rows($result) > 0) {
+  // output data of each row
+  while($row = mysqli_fetch_assoc($result)) {
+    echo "id: " . $row["id"]."<br>";
+  }
+} else {
+  echo "0 results";
+}
+
+mysqli_close($conn);
+?>
+
+<body>
+  <section>
+    <content>
+      <h1>Tickets Support</h1>
+      <h2>Tous les tickets</h2>
+      <table>
         <thead>
           <tr>
             <th scope="col">Titre du ticket</th>
@@ -27,10 +54,10 @@
               <a href=""><button type="button" class="button button--small success">
                   Répondre
                 </button></a>
-                <a href=""><button type="button" class="button button--small alert">
+              <a href=""><button type="button" class="button button--small alert">
                   Supprimer
                 </button></a>
-                </td>
+            </td>
           </tr>
           <tr>
             <th scope="row">Je désire être mis en relation avec un admin</th>
@@ -40,10 +67,10 @@
               <a href=""><button type="button" class="button button--small success">
                   Répondre
                 </button></a>
-                <a href=""><button type="button" class="button button--small alert">
+              <a href=""><button type="button" class="button button--small alert">
                   Supprimer
                 </button></a>
-                </td>
+            </td>
           </tr>
 
           <tr>
@@ -54,20 +81,20 @@
               <a href=""><button type="button" class="button button--small success">
                   Répondre
                 </button></a>
-                <a href=""><button type="button" class="button button--small alert">
+              <a href=""><button type="button" class="button button--small alert">
                   Supprimer
                 </button></a>
-                </td>
+            </td>
           </tr>
           <tr>
             <th scope="row">Je désire être mis en relation avec un admin</th>
             <td class="closed">Fermé</td>
             <td>Jules HARDY</td>
             <td>
-                <a href=""><button type="button" class="button button--small info">
+              <a href=""><button type="button" class="button button--small info">
                   Voir
                 </button></a>
-                </td>
+            </td>
           </tr>
           <tr>
             <th scope="row">Je désire être mis en relation avec un admin</th>
@@ -77,10 +104,10 @@
               <a href=""><button type="button" class="button button--small success">
                   Répondre
                 </button></a>
-                <a href=""><button type="button" class="button button--small alert">
+              <a href=""><button type="button" class="button button--small alert">
                   Supprimer
                 </button></a>
-                </td>
+            </td>
           </tr>
           <tr>
             <th scope="row">Je désire être mis en relation avec un admin</th>
@@ -90,10 +117,10 @@
               <a href=""><button type="button" class="button button--small success">
                   Répondre
                 </button></a>
-                <a href=""><button type="button" class="button button--small alert">
+              <a href=""><button type="button" class="button button--small alert">
                   Supprimer
                 </button></a>
-                </td>
+            </td>
           </tr>
 
           <tr>
@@ -104,20 +131,20 @@
               <a href=""><button type="button" class="button button--small success">
                   Répondre
                 </button></a>
-                <a href=""><button type="button" class="button button--small alert">
+              <a href=""><button type="button" class="button button--small alert">
                   Supprimer
                 </button></a>
-                </td>
+            </td>
           </tr>
           <tr>
             <th scope="row">Je désire être mis en relation avec un admin</th>
             <td class="closed">Fermé</td>
             <td>Jules HARDY</td>
             <td>
-                <a href=""><button type="button" class="button button--small info">
+              <a href=""><button type="button" class="button button--small info">
                   Voir
                 </button></a>
-                </td>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -136,10 +163,11 @@
           <li class="next"><a href="/?page=2">Suivant »</a></li>
         </ul>
       </div>
-    
-      </content>
 
-      <?php include '../../includes/footer.php';?>
-    </section>
-  </body>
+    </content>
+
+    <?php include '../../includes/footer.php';?>
+  </section>
+</body>
+
 </html>
