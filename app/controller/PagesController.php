@@ -17,5 +17,7 @@ class PagesController extends AbstactController
     ]);
   }
 
-  public function faq()
+  public function faq(){
+    $this->render('vitrine', 'accueil');
+  }
 }

@@ -14,11 +14,11 @@ abstract class AbstactController
     $this->request = $request;
   }
 
-  public function render($view, $vars = []) {
+  public function render($space, $view, $vars = []) { //On précise si on est dans l'admin ou dans la vitrine
     extract($vars);
     extract($this->vars);
   
-    $view = ROOT . '/app/view/' . $view . '.php';
+    $view = ROOT . '/app/view/' . $space . '/'. $view . '.php';
     
     if (!file_exists($view))
       throw new Exception('La vue : '. $view .' vue n\'existe pas ');
