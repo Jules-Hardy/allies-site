@@ -6,10 +6,10 @@
 	<?php include '../includes/header.php'; ?>
 
 	<div id="blanc">
-	
-		<img id="teamworking" src="../ressources/images/teamworking.png">
 
-	
+		
+	<img id="teamworking" src="../ressources/images/teamworking.png">
+
 
 		<div id="espace">
 		</div>
