@@ -10,11 +10,13 @@
 </head>
 
 <body>
+
   <?php require(WEBROOT. '/includes/admin/nav.php'); ?>
 
   <?= $content ?>
 
   <?php require(WEBROOT. '/includes/admin/footer.php'); ?>
+  </section>
 
 </body>
 

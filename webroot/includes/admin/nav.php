@@ -36,7 +36,7 @@
         </a>
       </li>
       <li>
-        <a href="/admin/support">
+        <a href="/admin/ticket">
           <p <?php if($title == 'Tickets Support'){ ?>class="active" <?php } ?>>Tickets Support</p>
         </a>
       </li>

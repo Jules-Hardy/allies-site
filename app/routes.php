@@ -24,7 +24,6 @@ return [
   '/support/ticket' => 'TicketController::afficher',
   '/support/ticket/:id' => 'TicketController::repondre',
 
-  '/:id/:test' => 'PagesController::index',
 
 
   // ADMINISTRATION 
@@ -48,5 +47,4 @@ return [
   '/admin/user/edit' => 'Admin\UserController::touslesutilisateurs',
   '/admin/user/edit/:id' => 'Admin\UserController::editerutilisateur',
 
-  '/admin/ticket/:id' => 'Admin\AdminController::index'
 ];
