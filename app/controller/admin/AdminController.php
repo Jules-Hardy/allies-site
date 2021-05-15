@@ -10,6 +10,5 @@ class AdminController extends AbstactController
   public function accueil()
   {
     $this->render('admin', 'accueil');
-
   }
 }

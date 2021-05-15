@@ -7,11 +7,13 @@ use App\Core\AbstactController;
 class TicketController extends AbstactController
 {
   
-  public function view($nom)
+  public function touslestickets()
   {
-    $this->render('index', [
-      'nom' => 'ok',
-      'test' => 'test'
-    ]);
+    $this->render('admin', 'ticket-seeall');
+  }
+
+  public function repondre()
+  {
+    $this->render('admin', 'ticket-seeone');
   }
 }

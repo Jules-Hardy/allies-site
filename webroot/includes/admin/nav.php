@@ -26,7 +26,7 @@
         </a>
       </li>
       <li>
-        <a href="/admin/member">
+        <a href="/admin/user">
           <p <?php if($title == 'Gérer les membres'){ ?>class="active" <?php } ?>>Gérer les membres</p>
         </a>
       </li>

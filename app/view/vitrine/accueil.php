@@ -79,7 +79,6 @@
     <img id="logo-armee" src="../ressources/images/logo-armee.png">
   </div>
 </div>
-<br><br><br><br><br><br><br><br><br>
 
 <?php $content = ob_get_clean(); ?>
 

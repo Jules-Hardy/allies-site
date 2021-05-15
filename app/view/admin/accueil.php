@@ -7,7 +7,7 @@
     <h1>Accueil</h1>
     <h2>Les chiffres clés</h2>
     <div class="stat">
-      <a href="#">
+      <a href="/admin/member">
         <div class="block-info alert">
           <h3>48</h3>
           <p>Utilisateurs</p>

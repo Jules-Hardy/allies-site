@@ -9,14 +9,11 @@
 
     <nav>
       <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Connexion</a></li>
-        <li><a href="#"><img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png"
-              id="loupe"></a></li>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/apropos">À propos</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/connexion">Connexion</a></li>
       </ul>
     </nav>
   </header>
