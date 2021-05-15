@@ -14,6 +14,7 @@ abstract class AbstactController
     $this->request = $request;
   }
 
+
   public function render($space, $view, $vars = []) { //On précise si on est dans l'admin ou dans la vitrine
     extract($vars);
     extract($this->vars);
@@ -24,5 +25,12 @@ abstract class AbstactController
       throw new Exception('La vue : '. $view .' vue n\'existe pas ');
 
     require($view);
+  }
+  
+  public function load_model(string $model, ...$params)
+  {
+    require_once(ROOT . "/app/model/" . $model . "Model.php");
+    $fmodel = "\App\Model\\" . $model."Model";
+    $this->$model = new $fmodel(...$params);
   }
 }
