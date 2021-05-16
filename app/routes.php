@@ -44,7 +44,10 @@ return [
   '/admin/ticket/answer/:id' => 'Admin\TicketController::repondre',
 
   '/admin/user' => 'Admin\UserController::touslesutilisateurs',
+  '/admin/user/edit/:id' => 'Admin\UserController::voirprofil',
+
   '/admin/user/edit' => 'Admin\UserController::touslesutilisateurs',
-  '/admin/user/edit/:id' => 'Admin\UserController::editerutilisateur',
+  '/admin/user/delete/' => 'Admin\UserController::touslesutilisateurs',
+  '/admin/user/delete/:id' => 'Admin\UserController::supprimerutilisateur',
 
 ];

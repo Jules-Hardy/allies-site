@@ -18,71 +18,20 @@
         </tr>
       </thead>
       <tbody>
+        <?php
+        foreach($vars as $user){
+        ?>
         <tr>
-          <th scope="row">Jules HARDY</th>
-          <td>Gestionnaire</td>
-          <td>juleshardy78@gmail.com</td>
+          <th scope="row"><?= $user['lastname']?> <?= $user['firstname']?></th>
+          <td><?= $user['role']?></td>
+          <td><?= $user['email']?></td>
           <td>
-            <a href="seeone.php"><button type="button" class="button button--small info">
+            <a href="/admin/user/edit/<?= $user['id']?>"><button type="button" class="button button--small info">
                 Voir le membre
               </button>
           </td>
         </tr>
-
-        <tr>
-          <th scope="row">Laurine RECH</th>
-          <td>Administrateur</td>
-          <td>juleshardy78@gmail.com</td>
-          <td>
-            <a href=""><button type="button" class="button button--small info">
-                Voir le membre
-              </button>
-          </td>
-        </tr>
-
-        <tr>
-          <th scope="row">Machinette</th>
-          <td>Utilisateur</td>
-          <td>juleshardy78@gmail.com</td>
-          <td>
-            <a href=""><button type="button" class="button button--small info">
-                Voir le membres
-              </button>
-          </td>
-        </tr>
-
-        <tr>
-          <th scope="row">Jules HARDY</th>
-          <td>Gestionnaire</td>
-          <td>juleshardy78@gmail.com</td>
-          <td>
-            <a href="seeone.php"><button type="button" class="button button--small info">
-                Voir le membre
-              </button>
-          </td>
-        </tr>
-
-        <tr>
-          <th scope="row">Laurine RECH</th>
-          <td>Administrateur</td>
-          <td>juleshardy78@gmail.com</td>
-          <td>
-            <a href=""><button type="button" class="button button--small info">
-                Voir le membre
-              </button>
-          </td>
-        </tr>
-
-        <tr>
-          <th scope="row">Machinette</th>
-          <td>Utilisateur</td>
-          <td>juleshardy78@gmail.com</td>
-          <td>
-            <a href=""><button type="button" class="button button--small info">
-                Voir le membres
-              </button>
-          </td>
-        </tr>
+        <?php } ?>
       </tbody>
     </table>
 
