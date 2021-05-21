@@ -36,4 +36,12 @@ class UserModel extends AbstractModel {
     
   }
 
+  public function verify_email($email){
+    $sql = "SELECT * FROM user as u WHERE u.email=:email";
+    $stmt = $this->conn->prepare($sql);
+    $stmt->execute([":email" => $email]);
+    $result = $stmt->fetch();
+    return $result;
+  }
+
 }

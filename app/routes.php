@@ -3,7 +3,7 @@
 return [
 
   // SITE VITRINE
-  '/' => 'Admin\UserController::touslesutilisateurs',
+  '/' => 'PagesController::accueil',
 
   '/connexion' => 'ConnexionController::connexion',
   '/inscription' => 'ConnexionController::inscription',
