@@ -4,7 +4,7 @@ return [
 
   // SITE VITRINE
   '/' => 'Admin\UserController::touslesutilisateurs',
-
+  
   '/connexion' => 'ConnexionController::connexion',
   '/inscription' => 'ConnexionController::inscription',
   '/oublie' => 'ConnexionController::oublie',

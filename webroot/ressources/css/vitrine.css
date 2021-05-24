@@ -33,7 +33,11 @@ header {
   display: flex;
   flex-direction: column;
 }
-
+.error{
+  color: red;
+  margin-bottom: 0;
+  font-weight: bold;
+}
 #bloc_page {
   /* margin: 1%;*/
   align-content: center;

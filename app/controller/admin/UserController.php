@@ -11,8 +11,13 @@ class UserController extends AbstactController
   public function touslesutilisateurs()
   {
     $this->load_model("User");
+    $loggedUser = $this->User->get_logged_user_if_exists();
+    if($loggedUser === NULL){
+      header("Location: /connexion");
+      return;
+    }
     $data = $this->User->get_all_informations();
-    $this->render('admin', 'user-index', $data);
+    $this->render('admin', 'user-index', $data, $loggedUser);
   }
 
   public function voirprofil(int $id)
