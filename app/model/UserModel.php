@@ -46,9 +46,8 @@ class UserModel extends AbstractModel {
   public function logout(){
     $this->_internalCheckSession();
     unset($_SESSION["loggedUser"]);
-
   }
- 
+  
   public function get_logged_user_if_exists(){
     $this->_internalCheckSession();
     

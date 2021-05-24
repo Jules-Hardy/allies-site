@@ -9,19 +9,19 @@
     <div class="stat">
       <a href="">
         <div class="block-info alert">
-          <h3>48</h3>
+          <h3><?php echo $vars[1]["userCount"]; ?></h3>
           <p>Utilisateurs</p>
         </div>
       </a>
       <a href="#">
         <div class="block-info info">
-          <h3>48</h3>
+          <h3><?php echo $vars[1]["userCount"]; ?></h3>
           <p>Utilisateurs</p>
         </div>
       </a>
       <a href="#">
         <div class="block-info success">
-          <h3>48</h3>
+          <h3><?php echo $vars[1]["userCount"]; ?></h3>
           <p>Utilisateurs</p>
         </div>
       </a>

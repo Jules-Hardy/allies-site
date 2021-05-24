@@ -1,5 +1,5 @@
 <nav>
-  <a href="/"><img src="../../ressources/images/logo.png" alt="logo" /></a>
+  <a href="/"><img src="/ressources/images/logo.png" alt="logo" /></a>
   <div id="nav-info">
     <h2>Bonjour <?php echo $vars[0]["firstname"]; ?>,</h2>
     <ul>

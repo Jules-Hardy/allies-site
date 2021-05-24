@@ -9,11 +9,21 @@ class TicketController extends AbstactController
   
   public function touslestickets()
   {
-    $this->render('admin', 'ticket-seeall');
+    $this->load_model("User");
+    $u = $this->User->get_logged_user_if_exists();
+    if($u == null)header("Location: /");
+    else{
+      $this->render('admin', 'ticket-seeall', array($u));
+    }
   }
 
   public function repondre()
   {
-    $this->render('admin', 'ticket-seeone');
+    $this->load_model("User");
+    $u = $this->User->get_logged_user_if_exists();
+    if($u == null)header("Location: /");
+    else{
+      $this->render('admin', 'ticket-seeone', array($u));
+    }
   }
 }

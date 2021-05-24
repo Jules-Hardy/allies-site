@@ -9,7 +9,14 @@ class SensorController extends AbstactController
   
   public function touslescapteurs()
   {
-    $this->render('admin', 'sensor-index');
+    $this->load_model("User");
+    $u = $this->User->get_logged_user_if_exists();
+    if($u == null){
+      header("Location: /");
+      return;
+    }
+
+    $this->render('admin', 'sensor-index', array($u));
   }
 
   public function modifiercapteur()
