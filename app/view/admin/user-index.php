@@ -19,7 +19,7 @@
       </thead>
       <tbody>
         <?php
-        foreach($vars as $user){
+        foreach($vars[1] as $user){
         ?>
         <tr>
           <th scope="row"><?= $user['lastname']?> <?= $user['firstname']?></th>

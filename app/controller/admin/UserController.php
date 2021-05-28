@@ -17,8 +17,8 @@ class UserController extends AbstactController
       return;
     }
     $data = $this->User->get_all_informations();
-    header("Location: /admin/");
-    }
+    $this->render("admin", "user-index", array($loggedUser, $data));
+  }
 
   public function voirprofil(int $id)
   {

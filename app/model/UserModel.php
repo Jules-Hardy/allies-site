@@ -14,8 +14,10 @@ class UserModel extends AbstractModel {
   
     public function get_user_for_credentials($mail, $password){
       $users = $this->get_all_informations();
+      $hashed = hash("tiger192,3", $password);
+      echo $hashed, PHP_EOL;
       foreach($users as $u){
-        if($u["email"] == $mail && $u["password"] == $password)return $u;
+        if($u["email"] == $mail && hash("tiger192,3", $password) == $u["password"])return $u;
       }
       return NULL;
     }

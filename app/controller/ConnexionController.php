@@ -8,7 +8,7 @@ class ConnexionController extends AbstactController
 {
   public function connexion(){
     $this->load_model("User");
-    $this->User->logout();     
+    $this->User->logout();
     if(!isset($_POST["mail"]) || !isset($_POST["password"])){
       $this->render('vitrine', 'connexion');
       return;
@@ -21,7 +21,7 @@ class ConnexionController extends AbstactController
     }
 
     $_SESSION["loggedUser"] = $u;
-    header("Location: /");
+    header("Location: /admin/");
   }
   
 
