@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Model;
+use \App\Utils\Roles;
 
 class UserModel extends AbstractModel {
   
@@ -81,5 +82,33 @@ class UserModel extends AbstractModel {
     $stmt->execute();
     $result = $stmt->fetchAll();
     return $result;
+  }
+
+  public function updateUser($id, $firstname, $lastname, $email, $password, $role){
+    $updatePassword = $password != "**********";
+    $sql = "UPDATE " . $this->table . " SET email=:email,firstname=:firstname,lastname=:lastname,role=:role" . ($updatePassword ? ",password=:password" : "") . " WHERE id=:id";
+    $stmt = $this->conn->prepare($sql);
+    $updArr = [];
+    $hashed = hash("tiger192,3", $password);
+
+    if($updatePassword)
+      $stmt->execute([
+        ":email" => $email,
+        ':firstname' => $firstname,
+        ":lastname" => $lastname,
+        ":role" => Roles::get_id_from_name($role),
+        ":password" => $hashed,
+        "id:" => $id
+      ]);
+    else
+      $stmt->execute([
+        ":email" => $email,
+        ':firstname' => $firstname,
+        ":lastname" => $lastname,
+        ":role" => Roles::get_id_from_name($role),
+        ":id" => $id
+      ]);
+      $result = $stmt->fetchAll();
+      return $result;
   }
 }

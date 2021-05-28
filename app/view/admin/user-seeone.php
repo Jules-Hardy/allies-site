@@ -9,10 +9,10 @@
 
     <div class="data-information">
       <form method="POST">
-        <label name="firstname">Prénom : <input type="text" value="<?= $vars[1]['firstname'] ?> "></label><br>
-        <label>Nom : <input type="text" value="<?= $vars[1]['lastname'] ?> "></label><br>
-        <label>Adresse email : <input type="email" value="<?= $vars[1]['email'] ?> "></label></br>
-        <label>Mot de passe : <input type="password" value="**********"></label>
+        <label >Prénom : <input name="firstname" type="text" value="<?= $vars[1]['firstname'] ?> "></label><br>
+        <label>Nom : <input name="lastname" type="text" value="<?= $vars[1]['lastname'] ?> "></label><br>
+        <label>Adresse email : <input name="email" type="email" value="<?= $vars[1]['email'] ?> "></label></br>
+        <label>Mot de passe : <input name="password" type="password" value="**********"></label>
         <br>
 
         <label for="role">Rôle :</label>
@@ -25,8 +25,8 @@
         </select><br>
         <a href="/admin/user/edit/<?= $vars[1]['id'] ?>"><input type="submit" class="button button--normal info"
             value="Modifier le membre" name="modify"></a>
-        <a href="/admin/user/delete/<?= $vars[1]['id'] ?>"><input class="button button--normal alert"
-            value="Supprimer le membre" name="delete"></a>
+        <!--<a href="/admin/user/delete/<?= $vars[1]['id'] ?>"><input class="button button--normal alert"
+            value="Supprimer le membre" name="delete"></a>-->
       </form>
     </div>
 

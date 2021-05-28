@@ -16,4 +16,16 @@ class Roles{
     else 
       return "Erreur.";
     }
+
+    public static function get_id_from_name($name){
+      $n = strtolower($name);
+      if($n == "utilisateur")
+        return 0;
+      else if($n == "gestionnaire")
+        return 1;
+      else if($n == "administrateur")
+        return 2;
+      else 
+        return 0;
+      }
 }

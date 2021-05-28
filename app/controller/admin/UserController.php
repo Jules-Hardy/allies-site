@@ -28,6 +28,15 @@ class UserController extends AbstactController
       header("Location: /connexion");
       return;
     }
+    if(isset($_POST["modify"])){
+      $firstname = $_POST["firstname"];
+      $lastname = $_POST["lastname"];
+      $email = $_POST["email"];
+      $password = $_POST["password"];
+      $role = $_POST["role"];
+      $this->User->updateUser($id, $firstname, $lastname, $email, $password, $role);
+
+    }
     $data = $this->User->get_one_user_informations($id);
     $outject = array(0 => $loggedUser, 1 => $data);
     $outject[1]["roleName"] = Roles::get_role_name_for_id($outject[1]["role"]);
