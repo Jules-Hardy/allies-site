@@ -46,6 +46,30 @@ class UserModel extends AbstractModel {
     $stmt->execute([":id" => $id]);  
   }
 
+  public function doesEmailExists($mail){
+    $u = $this->get_all_informations();
+    foreach($u as $user){
+      if($user["email"] == $mail)return TRUE;
+    }
+  }
+
+  public function create_user($firstname, $lastname, $mail, $pass, $sexe){
+    $sql = "INSERT INTO " . $this->table . "(id,email,password,firstname,lastname,role,create_time,is_active) VALUES(:id,:email,:password,:firstname,:lastname,:role,CURRENT_TIMESTAMP,1)";
+    $stmt = $this->conn->prepare($sql);
+    $stmt->execute(
+      [
+        ":id" => 0,
+        ":email" => $mail,
+        ":password" => $pass,
+        ":firstname" => $firstname,
+        ":lastname" => $lastname,
+        ":role" => 0
+      ]
+    );
+    $result = $stmt->fetch();
+    return $result;
+  }
+
   public function logout(){
     $this->_internalCheckSession();
     unset($_SESSION["loggedUser"]);

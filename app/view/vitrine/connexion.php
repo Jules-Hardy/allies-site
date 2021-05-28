@@ -36,7 +36,7 @@
 
     <a href="mdp_oublie.php" class="taille_text"><u> J'ai oublié mon mot de passe </u> </a>
     <br />
-    <a href="inscription.php" class="taille_text"><u> S'inscrire </u> <!-- </span> --><br /></a>
+    <a href="/inscription" class="taille_text"><u> S'inscrire </u> <!-- </span> --><br /></a>
 
 
 
