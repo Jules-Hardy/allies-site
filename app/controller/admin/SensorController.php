@@ -16,12 +16,28 @@ class SensorController extends AbstactController
       return;
     }
 
-    $this->render('admin', 'sensor-index', array($u));
+    $this->load_model("Sensor");
+    $this->load_model("Test");
+    $allCapteurs = $this->Sensor->get_all_informations();
+    $allTests = $this->Test->get_all_informations();
+    $lastTests = $this->Test->get_five_last_tests();
+    $allUsers = $this->User->get_all_informations();
+    $this->render('admin', 'sensor-index', array($u, $allCapteurs, $allTests, $lastTests, $allUsers));
   }
 
-  public function modifiercapteur()
+  public function modifiercapteur($i)
   {
-    $this->render('admin', 'sensor-seeone');
+    $this->load_model("User");
+    $u = $this->User->get_logged_user_if_exists();
+    if($u == null){
+      header("Location: /");
+      return;
+    }
+
+    $this->load_model("Sensor");
+    $s = $this->Sensor->get_one_sensor_informations($i);
+
+    $this->render('admin', 'sensor-seeone', array($u, $i, $s));
   }
 
   public function touslestests()

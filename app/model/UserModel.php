@@ -74,4 +74,12 @@ class UserModel extends AbstractModel {
       session_start();
     }
   }
+
+  public function get_five_last_registered_users(){
+    $sql = "SELECT * FROM " . $this->table . " ORDER BY create_time DESC LIMIT 5";
+    $stmt = $this->conn->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll();
+    return $result;
+  }
 }

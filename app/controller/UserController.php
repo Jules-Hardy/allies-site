@@ -32,6 +32,7 @@ class UserController extends AbstactController
       $this->render('vitrine', '');
     else
       header("Location: /connexion");
-    
   }
+
+  
 }

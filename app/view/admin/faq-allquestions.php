@@ -1,5 +1,12 @@
 <?php $title = 'FAQ - Toutes les questions'; ?>
-
+<?php
+  function get_author_faq($vars, $id){
+    foreach($vars[2] as $u){
+      if($u["id"] == $id)return $u["firstname"];
+    }
+    return "";
+  }
+?>
 <?php ob_start(); ?>
 <section>
   <content>
@@ -14,26 +21,22 @@
         </tr>
       </thead>
       <tbody>
+      <?php 
+      foreach($vars[1] as $faq){
+      ?>
         <tr>
-          <th scope="row">Comment me connecter à mon espace client ?</th>
-          <td>Jules</td>
+          <th scope="row"><?php echo $faq["question"]; ?></th>
+          <td><?php echo get_author_faq($vars, $faq["id_author"]); ?></td>
           <td>
-            <a href="seeone.php"><button type="button" class="button button--small info">
+            <a href="/admin/faq/modify/<?php echo $faq['id']; ?>"><button type="button" class="button button--small info">
                 Voir la question
               </button>
           </td>
         </tr>
-
-        <tr>
-          <th scope="row">Comment faire ca ?</th>
-          <td>Laurine</td>
-          <td>
-            <a href="seeone.php"><button type="button" class="button button--small info">
-                Voir la question
-              </button>
-          </td>
-        </tr>
-
+      <?php
+      }
+      ?>
+      
       </tbody>
     </table>
 

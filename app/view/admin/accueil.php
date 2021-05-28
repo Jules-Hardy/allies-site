@@ -1,5 +1,5 @@
 <?php $title = 'Admin - Accueil'; ?>
-
+<?php use \App\Utils\Roles; ?>
 <?php ob_start(); ?>
 
 <section>
@@ -38,38 +38,22 @@
         </tr>
       </thead>
       <tbody>
+        <?php 
+          foreach($vars[1]["lastUsers"] as $u){
+            ?>
         <tr>
-          <th scope="row">Jules HARDY</th>
-          <td>Gestionnaire</td>
-          <td>juleshardy78@gmail.com</td>
+          <th scope="row"><?php echo $u["firstname"], " ", $u["lastname"]; ?></th>
+          <td><?php echo Roles::get_role_name_for_id($u["role"]); ?></td>
+          <td><?php echo $u["email"]; ?></td>
           <td>
-            <a href="seeone.php"><button type="button" class="button button--small info">
+            <a href="/admin/user/edit/<?php echo $u['id']; ?>"><button type="button" class="button button--small info">
                 Voir le membre
               </button>
           </td>
         </tr>
-
-        <tr>
-          <th scope="row">Laurine RECH</th>
-          <td>Administrateur</td>
-          <td>juleshardy78@gmail.com</td>
-          <td>
-            <a href=""><button type="button" class="button button--small info">
-                Voir le membre
-              </button>
-          </td>
-        </tr>
-
-        <tr>
-          <th scope="row">Machinette</th>
-          <td>Utilisateur</td>
-          <td>juleshardy78@gmail.com</td>
-          <td>
-            <a href=""><button type="button" class="button button--small info">
-                Voir le membres
-              </button>
-          </td>
-        </tr>
+        <?php
+          }
+        ?>
       </tbody>
 
 

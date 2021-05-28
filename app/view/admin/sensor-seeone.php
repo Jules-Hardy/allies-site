@@ -5,7 +5,7 @@
 <section>
   <content>
     <h1>Gérer les capteurs</h1>
-    <h2>Modifier le capteur #2 : Température</h2>
+    <h2>Modifier le capteur <?php echo "#",$vars[1]; ?> : <?php echo $vars[2]["name"]; ?></h2>
 
   </content>
 

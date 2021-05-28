@@ -13,8 +13,11 @@ class AdminController extends AbstactController
     $u = $this->User->get_logged_user_if_exists();
     if($u == null)header("Location: /");
     else{
+      $fiveLastUsers = $this->User->get_five_last_registered_users();
+      
       $data = array(
-          'userCount' => sizeof($this->User->get_all_informations())
+          'userCount' => sizeof($this->User->get_all_informations()),
+          'lastUsers' => $fiveLastUsers
       );
       $this->render('admin', 'accueil', array($u, $data));
     }

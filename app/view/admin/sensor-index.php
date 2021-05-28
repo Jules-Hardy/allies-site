@@ -1,6 +1,21 @@
 <?php $title = 'Tous les capteurs'; ?>
-
 <?php ob_start(); ?>
+<?php 
+  $activesCapteurs = 0;
+  $numberOfTest = sizeof($vars[2]);
+  $allTests = $vars[2];
+  krsort($allTests);
+  foreach($vars[1] as $capteur){
+    if($capteur["is_active"] == 1)$activesCapteurs++;
+  }
+
+  function user_from_id($vars, $id){
+    foreach($vars[4] as $u){
+      if($u["id"] == $id)return $u;
+    }
+    return "a";
+  }
+?>
 <section>
 
   <content>
@@ -9,13 +24,13 @@
     <div class="stat">
       <a href="#">
         <div class="block-info alert">
-          <h3>4</h3>
+          <h3><?php echo $activesCapteurs; ?></h3>
           <p>Capteurs actifs</p>
         </div>
       </a>
       <a href="#">
         <div class="block-info info">
-          <h3>48</h3>
+          <h3><?php echo $numberOfTest; ?></h3>
           <p>Tests effectués</p>
         </div>
       </a>
@@ -53,36 +68,22 @@
         </tr>
       </thead>
       <tbody>
+      <?php 
+        foreach($allTests as $test){
+      ?>
         <tr>
-          <th scope="row">Jules</th>
-          <td>#2</td>
-          <td>12/02/2021</td>
+          <th scope="row"><?php echo user_from_id($vars, $test["id_user"])["firstname"]; ?></th>
+          <td>#<?php echo $test['id']; ?></td>
+          <td><?php echo $test['date']; ?></td>
           <td>
-            <a href="seeone.php"><button type="button" class="button button--small info">
+            <a href="/admin/sensor/modify/<?php echo $test['id']; ?>"><button type="button" class="button button--small info">
                 Voir le test
               </button>
           </td>
         </tr>
-        <tr>
-          <th scope="row">Jules</th>
-          <td>#2</td>
-          <td>12/02/2021</td>
-          <td>
-            <a href="seeone.php"><button type="button" class="button button--small info">
-                Voir le test
-              </button>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">Jules</th>
-          <td>#2</td>
-          <td>12/02/2021</td>
-          <td>
-            <a href="seeone.php"><button type="button" class="button button--small info">
-                Voir le test
-              </button>
-          </td>
-        </tr>
+      <?php
+        }
+      ?>
       </tbody>
     </table>
 
