@@ -1,5 +1,12 @@
 <?php $title = 'FAQ - Foire aux questions'; ?>
-
+<?php 
+  function get_author_for_faq($vars, $id){
+    $us = $vars[1];
+    foreach($us as $u){
+      if($u["id"] == $id["id"])return $u;
+    }
+  }
+?>
 <?php ob_start(); ?>
 
 <div id="carte_FAQ">
@@ -12,75 +19,22 @@
     <!-- essai -->
     <h2 id="titre2"> Foire aux Questions </h2>
 
-
-    <p class="question">
-      Question - Jules - 01/02/2021 <br>
+    <?php foreach($vars[0] as $faq){
+    ?>
+       <p class="question">
+          <b>Question</b> - <?php echo get_author_for_faq($vars, $faq)["firstname"]; ?> - <?php echo $faq["create_time"]; ?> <br>
       <br>
-      Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad
-      vestibulum volutpat. Nisl turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas
-      aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet,
-      sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Faucibus at. Arcu habitasse elementum.
-
+      <?php echo $faq["question"]; ?>
     </p>
-
     <p class="reponse">
 
-      <span class="test"> Réponse - Paul - 01/02/2021 </span><br>
+      <span class="test"><b>Réponse</b></span><br>
       <br>
-      Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad
-      vestibulum volutpat. Nisl turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas
-      aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet,
-      sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Faucibus at. Arcu habitasse elementum.
+        <?php echo $faq["answer"]; ?>
+      </p>
 
-
-    </p>
-
-
-    <p class="question">
-
-      Question - Jules - 01/02/2021 <br>
-      <br>
-      Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad
-      vestibulum volutpat. Nisl turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas
-      aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet,
-      sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Faucibus at. Arcu habitasse elementum.
-
-    </p>
-
-
-    <p class="reponse">
-
-      <span class="test"> Réponse - Paul - 01/02/2021 </span><br>
-      <br>
-      Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad
-      vestibulum volutpat. Nisl turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas
-      aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet,
-      sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Faucibus at. Arcu habitasse elementum.
-
-    </p>
-
-
-    <p class="question">
-
-      Question - Jules - 01/02/2021 <br>
-      <br>
-      Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad
-      vestibulum volutpat. Nisl turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas
-      aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet,
-      sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Faucibus at. Arcu habitasse elementum.
-
-    </p>
-
-
-    <p class="reponse">
-
-      <span class="test"> Réponse - Paul - 01/02/2021 </span><br>
-      <br>
-      Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad
-      vestibulum volutpat. Nisl turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas
-      aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet,
-      sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Faucibus at. Arcu habitasse elementum.
-    </p>
+    <?php
+    } ?>
 
   </div>
 

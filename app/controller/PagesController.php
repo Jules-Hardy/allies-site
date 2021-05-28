@@ -22,7 +22,12 @@ class PagesController extends AbstactController
   }
 
   public function faq(){
-    $this->render('vitrine', 'faq');
+    $this->load_model("Faq");
+    $this->load_model("User");
+
+    $faq = $this->Faq->get_all_informations();
+    $u = $this->User->get_all_informations();
+    $this->render('vitrine', 'faq', array($faq, $u));
   }
 
   public function apropos(){
