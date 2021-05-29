@@ -29,6 +29,7 @@ return [
   '/admin' => 'Admin\AdminController::accueil',
 
   '/admin/faq' => 'Admin\FaqController::touteslesquestions',
+  '/admin/faq/new' => 'Admin\FaqController::touteslesquestions',
   '/admin/faq/modify/:id' => 'Admin\FaqController::modifier',
 
   '/admin/sensor' => 'Admin\SensorController::touslescapteurs',

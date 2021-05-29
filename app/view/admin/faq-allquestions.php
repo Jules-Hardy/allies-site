@@ -10,8 +10,8 @@
 <?php ob_start(); ?>
 <section>
   <content>
-    <h1>Gérer la FAQ</h1>
-    <h2>Toutes les questions</h2>
+    <h1>Gérer la FAQ </h1>
+    <h2>Toutes les questions <a href="/admin/faq/new"><span class="role alert">Ajouter une question</span></a></h2>
     <table>
       <thead>
         <tr>
@@ -21,22 +21,23 @@
         </tr>
       </thead>
       <tbody>
-      <?php 
+        <?php 
       foreach($vars[1] as $faq){
       ?>
         <tr>
           <th scope="row"><?php echo $faq["question"]; ?></th>
           <td><?php echo get_author_faq($vars, $faq["id_author"]); ?></td>
           <td>
-            <a href="/admin/faq/modify/<?php echo $faq['id']; ?>"><button type="button" class="button button--small info">
+            <a href="/admin/faq/modify/<?php echo $faq['id']; ?>"><button type="button"
+                class="button button--small info">
                 Voir la question
               </button>
           </td>
         </tr>
-      <?php
+        <?php
       }
       ?>
-      
+
       </tbody>
     </table>
 
