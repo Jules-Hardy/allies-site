@@ -56,7 +56,7 @@ class UserModel extends AbstractModel {
   public function create_user($firstname, $lastname, $mail, $pass, $sexe){
     $sql = "INSERT INTO " . $this->table . "(id,email,password,firstname,lastname,role,create_time,is_active) VALUES(:id,:email,:password,:firstname,:lastname,:role,CURRENT_TIMESTAMP,1)";
     $stmt = $this->conn->prepare($sql);
-    $stmt->execute(
+    $res = $stmt->execute(
       [
         ":id" => 0,
         ":email" => $mail,
@@ -66,6 +66,14 @@ class UserModel extends AbstractModel {
         ":role" => 0
       ]
     );
+    echo $res;
+    if(!$res){
+      echo "\nPDO::errorInfo():\n";
+      echo "<pre>";
+      print_r($dbh->errorInfo());
+      echo "</pre>";
+    }
+    die();
     return TRUE;
   }
 
