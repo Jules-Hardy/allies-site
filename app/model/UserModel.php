@@ -68,12 +68,11 @@ class UserModel extends AbstractModel {
     );
     echo $res;
     if(!$res){
-      echo "\nPDO::errorInfo():\n";
+      echo "\nUne erreur est survenue:\n";
       echo "<pre>";
       print_r($dbh->errorInfo());
       echo "</pre>";
     }
-    die();
     return TRUE;
   }
 
