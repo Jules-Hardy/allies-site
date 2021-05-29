@@ -8,7 +8,6 @@
   }
 ?>
 <?php ob_start(); ?>
-<?php echo phpinfo(); ?>
 
 <div id="carte_FAQ">
   <div class="images">
