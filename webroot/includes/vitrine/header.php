@@ -26,7 +26,7 @@
         if($logged){
         ?>
         <li><a href="/mon-profil">Mon Profil</a></li>
-
+        <li><a href="/deconnexion">Deconnexion</a></li>
         <?php 
         }else {
         ?>
