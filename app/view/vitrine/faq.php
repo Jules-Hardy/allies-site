@@ -1,7 +1,7 @@
 <?php $title = 'FAQ - Foire aux questions'; ?>
 <?php 
   function get_author_for_faq($vars, $id){
-    $us = $vars[1];
+    $us = $vars[2];
     foreach($us as $u){
       if($u["id"] == $id["id"])return $u;
     }
@@ -19,7 +19,7 @@
     <!-- essai -->
     <h2 id="titre2"> Foire aux Questions </h2>
 
-    <?php foreach($vars[0] as $faq){
+    <?php foreach($vars[1] as $faq){
     ?>
        <p class="question">
           <b>Question</b> - <?php echo get_author_for_faq($vars, $faq)["firstname"]; ?> - <?php echo $faq["create_time"]; ?> <br>

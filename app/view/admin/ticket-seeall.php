@@ -1,6 +1,13 @@
 <?php $title = 'Tickets Support - Tous'; ?>
 <?php ob_start(); ?>
+<?php
 
+  function get_author_for_ticket($vars, $id){
+    foreach($vars as $u){
+      if($u['id'] == $id)return $u;
+    }
+  }
+?>
 <section>
 
   <content>
@@ -22,10 +29,10 @@
         <tr>
           <th scope="row"><?php echo $ticket["subject"]; ?></th>
           <td class="<?php echo $ticket['status'] == 2 ? 'closed' : ($ticket['is_answered'] == 1 ? 'answered' : 'open'); ?>"><?php echo $ticket["status"] == 2 ? "Fermé" : ($ticket['is_answered'] == 1 ? 'Répondu' : 'Ouvert');?></td>
-          <td>Jules HARDY</td>
+          <td><?php $u = get_author_for_ticket($vars[2], $ticket['id_author']); echo $u["firstname"], " ", $u['lastname']; ?></td>
           <td>
           <?php if($ticket['status'] == 2){
-            echo ('<a href=""><button type="button" class="button button--small info">
+            echo ('<a href="/admin/ticket/answer/' . $ticket['id'] . '"><button type="button" class="button button--small info">
             Voir
           </button></a>');
           }else{

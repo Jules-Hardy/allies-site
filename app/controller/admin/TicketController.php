@@ -14,20 +14,34 @@ class TicketController extends AbstactController
     if($u == null)
       header("Location: /");
     else{
+      if($u['role'] == 0)
+        header("Location: /");
+
       $this->load_model("Ticket");
       $tickets = $this->Ticket->get_all_informations();
-      $this->render('admin', 'ticket-seeall', array($u, $tickets));
+      $allU = $this->User->get_all_informations();
+
+      $this->render('admin', 'ticket-seeall', array($u, $tickets, $allU));
     }
     
   }
 
-  public function repondre()
+  public function repondre($id)
   {
     $this->load_model("User");
     $u = $this->User->get_logged_user_if_exists();
     if($u == null)header("Location: /");
     else{
-      $this->render('admin', 'ticket-seeone', array($u));
+      if($u['role'] == 0)
+        header("Location: /");
+
+      $this->load_model("Ticket");
+      $this->load_model("Message");
+
+      $tickets = $this->Ticket->get_ticket($id);
+      $allU = $this->User->get_all_informations();
+      $msg = $this->Message->get_messages($id);
+      $this->render('admin', 'ticket-seeone', array($u, $tickets, $allU, $msg));
     }
   }
 }
