@@ -66,8 +66,7 @@ class UserModel extends AbstractModel {
         ":role" => 0
       ]
     );
-    $result = $stmt->fetch();
-    return $result;
+    return TRUE;
   }
 
   public function logout(){
