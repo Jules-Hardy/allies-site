@@ -70,7 +70,7 @@ class UserModel extends AbstractModel {
     if(!$res){
       echo "\nUne erreur est survenue:\n";
       echo "<pre>";
-      print_r($dbh->errorInfo());
+      print_r($stmt->errorInfo());
       echo "</pre>";
     }
     return TRUE;

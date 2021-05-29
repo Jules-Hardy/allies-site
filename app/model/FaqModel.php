@@ -47,11 +47,17 @@ class FaqModel extends AbstractModel {
   public function edit_faq($id, $question, $answer){
     $sql = "UPDATE " . $this->table . " SET question=:question,answer=:answer WHERE id=:id";
     $stmt = $this->conn->prepare($sql);
-    $stmt->execute([
+    $result = $stmt->execute([
       ":question" => $question,
       ':answer' => $answer,
       ":id" => $id
       ]);
-    $result = $stmt->fetchAll();  
+    echo $result;
+    if(!$result){
+      echo "\nUne erreur est survenue:\n";
+      echo "<pre>";
+      print_r($stmt->errorInfo());
+      echo "</pre>";
+    }
   }
 }
