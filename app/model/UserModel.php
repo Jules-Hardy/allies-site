@@ -132,7 +132,7 @@ class UserModel extends AbstractModel {
         ":role" => Roles::get_id_from_name($role),
         ":id" => $id
       ]);
-      $result = $stmt->fetchAll();
+      $result = $stmt->fetch();
       return $result;
   }
 }
