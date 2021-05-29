@@ -2,6 +2,12 @@
 html {
   background-color: #23646;
 }
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 /*------------------------Partie Header----------------------------------------*/
 header {
   position: fixed;
@@ -33,9 +39,10 @@ header {
   display: flex;
   flex-direction: column;
 }
-.error{
-  color: red;
+.error {
   margin-bottom: 0;
+
+  color: red;
   font-weight: bold;
 }
 #bloc_page {
@@ -169,189 +176,168 @@ footer {
 
 /* CSS COMMUN */
 
-
-
 /* DEBUT CSS DE CLEMENCE */
-
 
 /*------------------------A propos----------------------------------------*/
 
- #blanc
-{
+#blanc {
   margin-top: 7%;
+
   background-color: white;
   background-attachment: local;
-
 }
 
-
-
-#teamworking
-{
-  width: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+#teamworking {
   top: 0;
-}
- 
 
-.photo
-{
-  display: flex; 
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.photo {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#presentation 
-{
-  text-align: justify; 
+#presentation {
   margin-right: 50px;
-  margin-left: 50px; 
+  margin-left: 50px;
+
+  text-align: justify;
 }
 
-#ligneun
-{
+#ligneun {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
-
-#lignedeux
-{
+#lignedeux {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
-#travailenequipe
-{
+#travailenequipe {
   margin-left: 80px;
 }
-#texteun
-{
+#texteun {
   position: relative;
-  left: 600px; 
   bottom: 350px;
-  text-align: justify;
+  left: 600px;
+
   margin-right: 680px;
   margin-left: 1px;
 
+  text-align: justify;
 }
 
-#dernierephoto
-{
+#dernierephoto {
   position: relative;
-  left: 1px;
   bottom: 350px;
-  text-align: right;
+  left: 1px;
+
   margin-right: 80px;
+
+  text-align: right;
 }
 
-#textedeux
-{
+#textedeux {
   position: relative;
   right: 1px;
   bottom: 100px;
-  text-align: justify;
-  margin-right: 620px;
-  margin-left:  80px;
-}
 
+  margin-right: 620px;
+  margin-left: 80px;
+
+  text-align: justify;
+}
 
 /*------------------------Accueil----------------------------------------*/
 
-#pilotes
-{
-  width: 100%
+#pilotes {
+  width: 100%;
 }
 
-#carte
-{
-  background-color: white; 
-
+#carte {
+  background-color: white;
 }
 
-.icones
-{
+.icones {
   width: 100px;
   height: 100px;
 }
 
-#troisetapes
-{
+#troisetapes {
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
-#iconegauche
-{
+#iconegauche {
   margin-left: 200px;
 }
 
-#iconecentre
-{
+#iconecentre {
   margin-left: 200px;
 }
 
-#iconedroit
-{
-  margin-left: 170px; 
+#iconedroit {
+  margin-left: 170px;
 }
 
-#textegauche
-{
-  text-align: justify; 
-  margin-left: 95px; 
-  margin-right: 95px; 
-}
-
-#textecentre
-{
-  text-align: justify;
+#textegauche {
   margin-right: 95px;
   margin-left: 95px;
+
+  text-align: justify;
 }
 
-#textedroite 
-{
-  text-align: justify; 
+#textecentre {
+  margin-right: 95px;
   margin-left: 95px;
-  margin-right: 95px; 
+
+  text-align: justify;
 }
 
-#defileavion
-{
-  width: 100%; 
+#textedroite {
+  margin-right: 95px;
+  margin-left: 95px;
+
+  text-align: justify;
 }
 
-#logo-isep
-{
+#defileavion {
+  width: 100%;
+}
+
+#logo-isep {
   position: absolute;
+
   height: 12%;
 }
 
-#infinite-measures
-{
+#infinite-measures {
   position: absolute;
-  height: 15%
-}
 
-#logo-armee
-{
-  position: absolute;
   height: 15%;
 }
 
-#nosclients
-{
+#logo-armee {
+  position: absolute;
+
+  height: 15%;
+}
+
+#nosclients {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
-
 
 /* FIN DU CSS DE CLEMENCE */
 
@@ -360,13 +346,11 @@ footer {
 .cadre_connexion {
   display: block;
   width: 30%;
-
-  margin-right:  auto;
-  margin-left:  auto;
-  margin-bottom: 4%;
   margin-top: 12%;
 
-
+  margin-right: auto;
+  margin-bottom: 4%;
+  margin-left: auto;
 
   padding-top: 2%;
   padding-right: auto;
@@ -381,15 +365,16 @@ footer {
   border-radius: 20px 20px;
 }
 
-.cadre_connexion_2 { /* cadre mot de passe oublié*/
+.cadre_connexion_2 {
+  /* cadre mot de passe oublié*/
   display: block;
 
   width: 40%;
+  margin-top: 16%;
 
   margin-right: auto;
-  margin-left: auto;
   margin-bottom: 6%;
-  margin-top: 16%;
+  margin-left: auto;
 
   padding: 3% 4%;
 
@@ -407,11 +392,10 @@ footer {
 .cadre_inscription {
   display: block;
   width: 30%;
-  margin-right:  auto;
-  margin-left:  auto;
-  margin-bottom: 5%;
   margin-top: 12%;
-
+  margin-right: auto;
+  margin-bottom: 5%;
+  margin-left: auto;
 
   padding: 10px;
   padding-top: 40px;
@@ -456,13 +440,10 @@ h1 {
   width: 100%;
   margin: auto;
 
-
-
   text-align: center;
 
-
   background-image: url('../images/patrouille_2.jpg');
- 
+
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -482,11 +463,11 @@ h1 {
   margin-bottom: 20px;
   padding: 10px;
 
-  border: 1px solid grey;
-  border-radius: 20px 20px;
-
   font-weight: 300;
   font-family: Helvetica Neue;
+
+  border: 1px solid grey;
+  border-radius: 20px 20px;
 }
 
 .but_co {
@@ -504,16 +485,17 @@ h1 {
   border-radius: 10px 10px;
 }
 
-.but_co:hover{
-  background-color:white;
-  color:#439aa8;
-  border:1px solid #439aa8;
+.but_co:hover {
+  color: #439aa8;
+
+  background-color: white;
+  border: 1px solid #439aa8;
 }
 
 .taille_text {
+  color: black;
   font-size: 14px;
   text-decoration: none;
-  color: black;
 }
 
 .but_inscription {
@@ -539,12 +521,12 @@ h1 {
   border-radius: 10px 10px;
 }
 
-.but_inscription:hover{
-  background-color:white;
-  color:#439aa8;
-  border:1px solid #439aa8;
-}
+.but_inscription:hover {
+  color: #439aa8;
 
+  background-color: white;
+  border: 1px solid #439aa8;
+}
 
 #connexion {
   letter-spacing: 1px;
@@ -564,7 +546,7 @@ h1 {
   text-align: left;
   text-align: justify;
 
-  background-color: #DCEDF2;
+  background-color: #dcedf2;
   border: 1px solid;
   border-top-right-radius: 40px 40px;
   border-bottom-right-radius: 40px 40px;
@@ -577,8 +559,8 @@ h1 {
   padding-right: 5em;
   padding-bottom: 1%;
   padding-left: 5em;
-  background: white;
 
+  background: white;
 }
 
 .reponse {
@@ -593,7 +575,7 @@ h1 {
   text-align: left;
   text-align: justify;
 
-  background-color: #DCEDF2;
+  background-color: #dcedf2;
   border: 1px solid;
   border-top-left-radius: 40px 40px;
   border-bottom-right-radius: 40px 40px;
@@ -648,6 +630,7 @@ h1 {
     margin-left: 30%;
   }
 }
+
 /*------------------------Partie Mon Profil--------------------------------------*/
 
 #image_profil {
@@ -657,10 +640,11 @@ h1 {
 #img-profil {
   width: 250px;
   height: 250px;
+
   border-radius: 10px 10px;
 }
 
-#img-profil:hover{
+#img-profil:hover {
   /*border-radius: 20px 20px;*/
   transform: scale(1.05);
 }
@@ -688,58 +672,59 @@ h1 {
   border-radius: 10px 10px;
 }
 
-.bouton_modifier:hover{
-  background-color:white;
-  color:#439aa8;
-  border:2px solid #439aa8;
+.bouton_modifier:hover {
+  color: #439aa8;
+
+  background-color: white;
+  border: 2px solid #439aa8;
 }
 
-#remplir_prenom{
-  position:absolute;
-  top:150px;
-  left:300px;
+#remplir_prenom {
+  position: absolute;
+  top: 150px;
+  left: 300px;
 }
 
-#remplir_nom{
-  position:absolute;
-  top:150px;
-  left:550px;
+#remplir_nom {
+  position: absolute;
+  top: 150px;
+  left: 550px;
 }
 
-#remplir_age{
-  position:absolute;
-  top:150px;
-  left:800px;
+#remplir_age {
+  position: absolute;
+  top: 150px;
+  left: 800px;
 }
 
-#remplir_tel{
-  position:absolute;
-  top:250px;
-  left:300px;
+#remplir_tel {
+  position: absolute;
+  top: 250px;
+  left: 300px;
 }
 
-#remplir_mail{
-  position:absolute;
-  top:250px;
-  left:550px;
+#remplir_mail {
+  position: absolute;
+  top: 250px;
+  left: 550px;
 }
 
-#remplir_adresse{
-  position:absolute;
-  top:350px;
-  left:300px;
+#remplir_adresse {
+  position: absolute;
+  top: 350px;
+  left: 300px;
 }
 
-#remplir_ville{
-  position:absolute;
-  top:350px;
-  left:550px;
+#remplir_ville {
+  position: absolute;
+  top: 350px;
+  left: 550px;
 }
 
-#remplir_poste{
-  position:absolute;
-  top:350px;
-  left:800px;
+#remplir_poste {
+  position: absolute;
+  top: 350px;
+  left: 800px;
 }
 
 #remplir_champs input {
@@ -752,46 +737,48 @@ h1 {
   padding-bottom: 10px;
   padding-left: 20px;
 
-  border: 1px solid grey;
-  border-radius: 20px 20px;
-
   font-weight: 300;
   font-family: Helvetica Neue;
+
+  border: 1px solid grey;
+  border-radius: 20px 20px;
 }
 
 /* FIN DU CSS DE CA */
 
 /* DEBUT CSS DE PAUL */
 
-/* Page Ticket */ 
+/* Page Ticket */
 .box {
-  padding-top: auto;
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around;
+  padding-top: auto;
 }
 .elements {
-  margin-top: 50px;
-  background-color: white;
-  height: 50%;
-  width: 20%;
-  border-color: grey;
-  border-style: solid;
-  border-radius: 2vw; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  width: 20%;
+  height: 50%;
+  margin-top: 50px;
   margin-bottom: 1.5%;
   padding: 1.5%;
-  font-family:'Helvetica Neue';
-  text-align: center; 
+  overflow: hidden;
 
+  font-family: 'Helvetica Neue';
+  text-align: center;
+
+  background-color: white;
+  border-color: grey;
+  border-style: solid;
+  border-radius: 2vw;
 }
 
 .elements h4 {
   margin: 0;
+
   font-size: 150%;
-  font-family:'Helvetica Neue';
+  font-family: 'Helvetica Neue';
 }
 
 /*
