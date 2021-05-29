@@ -18,7 +18,10 @@ class PagesController extends AbstactController
   }
 
   public function accueil(){
-    $this->render('vitrine', 'accueil');
+    $this->load_model("User");
+    $currentU = $this->User->get_logged_user_if_exists();
+
+    $this->render('vitrine', 'accueil', array($currentU));
   }
 
   public function faq(){
@@ -27,14 +30,22 @@ class PagesController extends AbstactController
 
     $faq = $this->Faq->get_all_informations();
     $u = $this->User->get_all_informations();
-    $this->render('vitrine', 'faq', array($faq, $u));
+    $currentU = $this->User->get_logged_user_if_exists();
+
+    $this->render('vitrine', 'faq', array($currentU, $faq, $u));
   }
 
   public function apropos(){
-    $this->render('vitrine', 'apropos');
+    $this->load_model("User");
+    $currentU = $this->User->get_logged_user_if_exists();
+
+    $this->render('vitrine', 'apropos', array($currentU));
   }
 
   public function mentions(){
-    $this->render('vitrine', 'mentions');
+    $this->load_model("User");
+    $currentU = $this->User->get_logged_user_if_exists();
+
+    $this->render('vitrine', 'mentions', array($currentU));
   }
 }

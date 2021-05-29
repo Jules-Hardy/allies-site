@@ -1,3 +1,12 @@
+<?php 
+  $logged = false;
+  $type = gettype($vars[0]);
+  if($type == "array"){
+    $logged = sizeof($vars[0]) > 0;
+  }else{
+    $logged = strlen($vars[0]) > 0;
+  }
+?>
 <div id="bloc_page">
   <header>
     <div id="titre_principal">
@@ -13,7 +22,18 @@
         <li><a href="/faq">FAQ</a></li>
         <li><a href="/apropos">À propos</a></li>
         <li><a href="/contact">Contact</a></li>
+        <?php 
+        if($logged){
+        ?>
+        <li><a href="/mon-profil">Mon Profil</a></li>
+
+        <?php 
+        }else {
+        ?>
         <li><a href="/connexion">Connexion</a></li>
+        <?php 
+        }
+        ?>
       </ul>
     </nav>
   </header>

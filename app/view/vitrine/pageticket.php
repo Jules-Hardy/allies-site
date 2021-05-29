@@ -13,7 +13,7 @@
     <div class="elements">
       <h4> Ajouter un <br /> ticket</h4>
 
-      <button onclick="window.location.href = 'ajouter_un_ticket.html';">Cliquez Ici</button>
+      <button onclick="window.location.href = '/support/nouveau';">Cliquez Ici</button>
 
     </div>
 

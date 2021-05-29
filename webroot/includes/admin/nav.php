@@ -11,7 +11,7 @@
   <div id="menu">
     <ul>
       <li>
-        <a href="/connexion">
+        <a href="/">
           <p id="return">Retour au site</p>
         </a>
       </li>

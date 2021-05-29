@@ -16,106 +16,34 @@
         </tr>
       </thead>
       <tbody>
+        <?php 
+          foreach($vars[1] as $ticket){
+        ?>
         <tr>
-          <th scope="row">Je désire être mis en relation avec un admin</th>
-          <td class="open">Ouvert</td>
+          <th scope="row"><?php echo $ticket["subject"]; ?></th>
+          <td class="<?php echo $ticket['status'] == 2 ? 'closed' : ($ticket['is_answered'] == 1 ? 'answered' : 'open'); ?>"><?php echo $ticket["status"] == 2 ? "Fermé" : ($ticket['is_answered'] == 1 ? 'Répondu' : 'Ouvert');?></td>
           <td>Jules HARDY</td>
           <td>
-            <a href=""><button type="button" class="button button--small success">
-                Répondre
-              </button></a>
-            <a href=""><button type="button" class="button button--small alert">
-                Supprimer
-              </button></a>
+          <?php if($ticket['status'] == 2){
+            echo ('<a href=""><button type="button" class="button button--small info">
+            Voir
+          </button></a>');
+          }else{
+            echo(' <a href=""><button type="button" class="button button--small success">
+            Répondre
+          </button></a>
+        <a href=""><button type="button" class="button button--small alert">
+            Supprimer
+          </button></a>');
+          }
+            ?>
           </td>
         </tr>
-        <tr>
-          <th scope="row">Je désire être mis en relation avec un admin</th>
-          <td class="answered">Répondu</td>
-          <td>Jules HARDY</td>
-          <td>
-            <a href=""><button type="button" class="button button--small success">
-                Répondre
-              </button></a>
-            <a href=""><button type="button" class="button button--small alert">
-                Supprimer
-              </button></a>
-          </td>
-        </tr>
-
-        <tr>
-          <th scope="row">Je désire être mis en relation avec un admin</th>
-          <td class="answered">Répondu</td>
-          <td>Jules HARDY</td>
-          <td>
-            <a href=""><button type="button" class="button button--small success">
-                Répondre
-              </button></a>
-            <a href=""><button type="button" class="button button--small alert">
-                Supprimer
-              </button></a>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">Je désire être mis en relation avec un admin</th>
-          <td class="closed">Fermé</td>
-          <td>Jules HARDY</td>
-          <td>
-            <a href=""><button type="button" class="button button--small info">
-                Voir
-              </button></a>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">Je désire être mis en relation avec un admin</th>
-          <td class="open">Ouvert</td>
-          <td>Jules HARDY</td>
-          <td>
-            <a href=""><button type="button" class="button button--small success">
-                Répondre
-              </button></a>
-            <a href=""><button type="button" class="button button--small alert">
-                Supprimer
-              </button></a>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">Je désire être mis en relation avec un admin</th>
-          <td class="answered">Répondu</td>
-          <td>Jules HARDY</td>
-          <td>
-            <a href=""><button type="button" class="button button--small success">
-                Répondre
-              </button></a>
-            <a href=""><button type="button" class="button button--small alert">
-                Supprimer
-              </button></a>
-          </td>
-        </tr>
-
-        <tr>
-          <th scope="row">Je désire être mis en relation avec un admin</th>
-          <td class="answered">Répondu</td>
-          <td>Jules HARDY</td>
-          <td>
-            <a href=""><button type="button" class="button button--small success">
-                Répondre
-              </button></a>
-            <a href=""><button type="button" class="button button--small alert">
-                Supprimer
-              </button></a>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">Je désire être mis en relation avec un admin</th>
-          <td class="closed">Fermé</td>
-          <td>Jules HARDY</td>
-          <td>
-            <a href=""><button type="button" class="button button--small info">
-                Voir
-              </button></a>
-          </td>
-        </tr>
+        <?php
+          }
+        ?>
+     
+        ?>
       </tbody>
     </table>
 

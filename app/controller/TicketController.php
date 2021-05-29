@@ -4,17 +4,21 @@ namespace App\Controller;
 
 use App\Core\AbstactController;
 
-class UserController extends AbstactController
+class TicketController extends AbstactController
 {
   public function affichertouslestickets(){
-    $this->render('vitrine', '');
+    $this->render('vitrine', 'pageticket');
   }
 
   public function nouveauticket(){
-    $this->render('vitrine', '');
+    if(isset($_POST["message"])){
+      $message = $_POST["message"];
+      
+    }
+    $this->render('vitrine', 'nouveauticket');
   }
 
-  public function voirunticket(){
+  public function voirunticket($id){
     $this->render('vitrine', '');
   }
 }

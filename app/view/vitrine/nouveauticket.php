@@ -10,15 +10,16 @@
   <br>
 
   <div class="cadre_inscription">
+  <form action="" method="POST">
     <br>
     <strong>Ajouter votre tiquet : </strong> <br />
 
-    <input type="text" />
+    <input type="text" name="message" />
     <br>
 
 
     <a href="" id="essai99"><button class="valider">VALIDER</button></a>
-
+    </form>
   </div>
   <br>
   <br>

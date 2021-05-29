@@ -19,10 +19,9 @@ return [
   '/mon-profil' => 'UserController::affichermonprofil',
   '/mon-profil/editer' => 'UserController::editer',
 
-  '/support' => 'TicketController::afficher',
-  '/support/nouveau' => 'TicketController::nouveau',
-  '/support/ticket' => 'TicketController::afficher',
-  '/support/ticket/:id' => 'TicketController::repondre',
+  '/support' => 'TicketController::affichertouslestickets',
+  '/support/nouveau' => 'TicketController::nouveauticket',
+  '/support/ticket/:id' => 'TicketController::voirunticket',
 
 
 
