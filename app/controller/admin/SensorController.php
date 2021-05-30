@@ -15,7 +15,10 @@ class SensorController extends AbstactController
       header("Location: /");
       return;
     }
-
+    
+    if($u["role"] != 2)
+      header("Location: /admin/");
+      
     $this->load_model("Sensor");
     $this->load_model("Test");
     $allCapteurs = $this->Sensor->get_all_informations();
@@ -34,6 +37,10 @@ class SensorController extends AbstactController
       return;
     }
 
+    
+    if($u["role"] != 2)
+      header("Location: /admin/");
+
     $this->load_model("Sensor");
     $s = $this->Sensor->get_one_sensor_informations($i);
 
@@ -42,11 +49,34 @@ class SensorController extends AbstactController
 
   public function touslestests()
   {
-    $this->render('admin', 'test-seeall');
+    $this->load_model("User");
+    $u = $this->User->get_logged_user_if_exists();
+    if($u == null){
+      header("Location: /");
+      return;
+    }
+
+    
+    if($u["role"] != 2)
+      header("Location: /admin/");
+
+
+    $this->render('admin', 'test-seeall', array($u));
   }
 
   public function modifiertest()
   {
-    $this->render('admin', 'test-seeone');
+    $this->load_model("User");
+    $u = $this->User->get_logged_user_if_exists();
+    if($u == null){
+      header("Location: /");
+      return;
+    }
+
+    
+    if($u["role"] != 2)
+      header("Location: /admin/");
+
+    $this->render('admin', 'test-seeone'; array($u));
   }
 }

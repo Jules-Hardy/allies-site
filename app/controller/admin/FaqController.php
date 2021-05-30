@@ -12,9 +12,12 @@ class FaqController extends AbstactController
     $this->load_model("User");
     $u = $this->User->get_logged_user_if_exists();
     if($u == null)header("Location: /");
+    if($u["role"] != 2){
+      header("Location: /admin");
+      return;
+    }
     else{
       $this->load_model("Faq");
-      $this->load_model("User");
       $this->render('admin', 'faq-allquestions', array($u, $this->Faq->get_all_informations(), $this->User->get_all_informations()));
     }
   }
@@ -24,6 +27,8 @@ class FaqController extends AbstactController
     $this->load_model("User");
     $u = $this->User->get_logged_user_if_exists();
     if($u == null)header("Location: /");
+    if($u["role"] != 2)
+      header("Location: /admin/");
     else{
       $this->load_model("Faq");
 

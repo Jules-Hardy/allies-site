@@ -100,6 +100,13 @@ class UserModel extends AbstractModel {
     return NULL;
   }
 
+  public function get_role_current_user(){
+    $u = $this->get_logged_user_if_exists();
+    
+    if(!$u)return -1;
+    return $u["role"];
+  }
+
   public function _internalCheckSession(){
     if (session_status() === PHP_SESSION_NONE) {
       session_start();

@@ -36,11 +36,11 @@
             Voir
           </button></a>');
           }else{
-            echo(' <a href=""><button type="button" class="button button--small success">
+            echo('<a href="/admin/ticket/answer/' . $ticket["id"] . '"><button type="button" class="button button--small success">
             Répondre
           </button></a>
         <a href=""><button type="button" class="button button--small alert">
-            Supprimer
+            Fermer
           </button></a>');
           }
             ?>
@@ -50,7 +50,6 @@
           }
         ?>
      
-        ?>
       </tbody>
     </table>
 

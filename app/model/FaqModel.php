@@ -52,12 +52,14 @@ class FaqModel extends AbstractModel {
       ':answer' => $answer,
       ":id" => $id
       ]);
-    echo $result;
     if(!$result){
-      echo "\nUne erreur est survenue:\n";
+      echo $result;
+
+      echo "\n Une erreur est survenue:\n";
       echo "<pre>";
       print_r($stmt->errorInfo());
       echo "</pre>";
+      die();
     }
   }
 }

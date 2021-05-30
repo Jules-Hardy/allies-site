@@ -59,7 +59,7 @@
 
     </table>
     <div class="text-align-right">
-      <a href="../test/index.php" class="button alert button--normal">Tout voir</a>
+      <a href="/admin/user" class="button alert button--normal">Tout voir</a>
     </div>
 
 
@@ -111,7 +111,7 @@
     </table>
 
     <div class="text-align-right">
-      <a href="../user/index.php" class="button alert button--normal">Tout voir</a>
+      <a href="/admin/test" class="button alert button--normal">Tout voir</a>
     </div>
 
 
