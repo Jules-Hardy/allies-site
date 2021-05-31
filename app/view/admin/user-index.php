@@ -6,6 +6,8 @@
 <section>
 
   <content>
+    <form action="/admin/user/search" METHOD="POST">
+
     <h1>Gérer les membres</h1>
     <h2>Tous les utilisateurs</h2>
     <fieldset>
@@ -24,6 +26,7 @@
       </label>
       <button id="foC" class="btn-link"><i class="material-icons" style="color:black;">send</i></button>
     </fieldset>
+    </form>
     <table>
       <thead>
         <tr>

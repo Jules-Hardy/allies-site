@@ -52,5 +52,5 @@ return [
   '/admin/user/edit' => 'Admin\UserController::touslesutilisateurs',
   '/admin/user/delete/' => 'Admin\UserController::touslesutilisateurs',
   '/admin/user/delete/:id' => 'Admin\UserController::supprimerutilisateur',
-
+  '/admin/user/search' => 'Admin\UserController::recherche',
 ];

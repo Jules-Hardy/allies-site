@@ -46,7 +46,36 @@ class UserController extends AbstactController
   public function supprimerutilisateur(int $id)
   {
     $this->load_model("User");
-    $data = $this->User->delete_user($id);
+    $loggedUser = $this->User->get_logged_user_if_exists();
+    if($loggedUser === NULL){
+      header("Location: /connexion");
+      return;
+    }
+    if($loggedUser["role"] != 2)
+      header("Location: /");
+    
+      $data = $this->User->delete_user($id);
     $this->render('admin', 'user-index', $data);
+  }
+
+  public function recherche(){
+    $this->load_model("User");
+    $loggedUser = $this->User->get_logged_user_if_exists();
+    if($loggedUser === NULL){
+      header("Location: /connexion");
+      return;
+    }
+    if($loggedUser["role"] == 0){
+      header("Location: /");
+      return;
+    }
+    if(isset($_POST["name"]) && isset($_POST["role"]) && isset($_POST["email"])){
+      $name = $_POST["name"];
+      $role = $_POST["role"];
+      $email = $_POST["email"];
+      $users = $this->User->search($name, $role, $email);
+
+      $this->render("admin", "user-index", array($loggedUser, $users));
+    }
   }
 }

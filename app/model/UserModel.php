@@ -177,4 +177,19 @@ class UserModel extends AbstractModel {
 
       return TRUE;
   }
+
+  public function search($name, $role, $email){
+    $sql = "SELECT *
+    FROM user  
+    WHERE (role = :role) OR (email LIKE :email) OR (firstname LIKE :name) OR (lastname LIKE :name)";
+    $stmt = $this->conn->prepare($sql);
+    $stmt->execute([
+      ":email" => $email,
+      ":name" => $name,
+      ":role" => $role
+    ]);
+    
+    $result = $stmt->fetchAll();
+    return $result;
+  }
 }
