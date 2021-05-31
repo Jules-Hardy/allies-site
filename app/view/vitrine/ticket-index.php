@@ -51,32 +51,27 @@ button {
         <th>Date et status</th>
         <th>Action</th>
       </tr>
+      <?php foreach($vars[1] as $ticket){
+      ?>
       <tr>
-        <td>Test titre</td>
-        <td>12 mai 2021 - <font color="green"><b>ouvert</b></font>
+        <td><?php echo $ticket["subject"]; ?></td>
+        <?php 
+          $color = $ticket["status"] == 0 ? "red" : ($ticket["is_answered"] == 1 ? "orange" : "green");
+        ?>
+        <td><?php echo $ticket["create_date"]; ?> - <font color="<?php echo $color; ?>"><b><?php echo($ticket["status"] == 0 ? "Fermé" : ($ticket["is_answered"] == 1 ? "Répondu" : "Ouvert")); ?></b></font>
           </green>
         </td>
-        <td><a href="" style="color:blue;"><b>Répondre</b></a> | <a href="" style="color:red;"><b>Fermer</b></a></td>
+        <?php if($ticket["status"] == 1){
+          echo('<td><a href="/support/ticket/' . $ticket['id'] . '" style="color:blue;"><b>Répondre</b></a> | <a href="/support/ticket/' . $ticket['id'] . '" style="color:red;"><b>Fermer</b></a></td>');
+        }else{
+          echo('<td><a href="/support/ticket/' . $ticket['id'] . '" style="color:green;"><b>Voir</b></a>');
+        }
+        ?>
       </tr>
-      <tr>
-        <td>Test titre</td>
-        <td>12 mai 2021 - <font color="orange"><b>répondu</b></font>
-          </green>
-        </td>
-        <td><a href="" style="color:blue;"><b>Répondre</b></a> | <a href="" style="color:red;"><b>Fermer</b></a></td>
-      </tr>
-      <tr>
-        <td>Test titre</td>
-        <td>12 mai 2021 - <font color="red"><b>fermé</b></font>
-          </green>
-        </td>
-        <td><a href="" style="color:blue;"><b>Voir</b></a></td>
-      </tr>
+      <?php
+      }
+      ?>
     </table>
-
-
-
-
   </div>
 </div>
 

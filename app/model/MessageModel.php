@@ -42,6 +42,12 @@ class MessageModel extends AbstractModel {
       ":content" => $message
       ]);
 
+      $sql = "UPDATE ticket SET is_answered=1 WHERE id=:id";
+      $stmt = $this->conn->prepare($sql);
+      $res = $stmt->execute([
+        ":id" => $id
+      ]);
+
       return $res;
   }
 

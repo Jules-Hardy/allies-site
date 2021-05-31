@@ -69,4 +69,13 @@ class TicketModel extends AbstractModel {
     return $res;
   }
 
+  public function get_tickets_for($id){
+    $sql = "SELECT * from ticket WHERE id_author=:id";
+    $stmt = $this->conn->prepare($sql);
+    $stmt->execute([
+      ":id" => $id
+    ]);
+    return $stmt->fetchAll();
+  }
+
 }

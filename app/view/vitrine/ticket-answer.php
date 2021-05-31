@@ -1,27 +1,32 @@
 <?php $title = 'Ticket - Répondre'; ?>
 <?php ob_start(); ?>
-<img id="pilotes" src="../ressources/images/pilotes.png">
+<img id="pilotes" src="/ressources/images/pilotes.png">
 
 <div id="carte_FAQ">
 
   <div id="q_r">
     <!-- essai -->
-    <h1 id="titre2"> Répondre au ticket #1</h1>
+    <h1 id="titre2"> Répondre au ticket #<?php echo $vars[1]["id"]; ?></h1>
     <h2> Titre du ticket <span style="color:red"><small><a href=""> Fermer le ticket</a></small></span></h2>
-    <p class="question">
-      <b>Administrateur</b> - le 12 mai 2021
-      <br>
-      <br>
-      Contenu
-    </p>
-    <p class="reponse">
+    <?php foreach($vars[2] as $m){
 
-      <span class="test"><b>Vous</b></span><br>
+    ?>
+      <p class='<?php echo($m["id_sender"] == $vars[0]["id"] ? 'reponse' : 'question'); ?>'>
+      <span class="test"><b><?php echo($m["id_sender"] == $vars[0]["id"] ? 'Vous' : 'Administrateur'); ?></b></span><br>
       <br>
-      Contenu
-    </p>
+      <?php echo $m["content"]; ?>
+      </p>
+    <?php
+    }
+    ?>
+  
 
   </div>
+  <?php 
+    if($vars[1]["status"] == 1){
+
+  ?> 
+ 
   <form action="" method="POST" id="fo">
     <div style="display: flex;height: auto;padding: 20px;background-color: white;border-top: solid 1px grey;">
       <textarea type="text" name="message"
@@ -30,7 +35,9 @@
       <button id="foC" class="btn-link"><i class="material-icons">send</i></button>
     </div>
   </form>
-
+  <?php  
+  }
+  ?>
 </div>
 <?php $content = ob_get_clean(); ?>
 

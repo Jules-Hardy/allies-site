@@ -10,7 +10,11 @@ class TicketController extends AbstactController
     $this->load_model("User");
     $log = $this->User->get_logged_user_if_exists();
     
-    $this->render('vitrine', 'ticket-index', array($log));
+    if($log == null)header("Location: /");
+
+    $this->load_model("Ticket");
+    $tickets = $this->Ticket->get_tickets_for($log["id"]);
+    $this->render('vitrine', 'ticket-index', array($log, $tickets));
   }
 
   public function nouveauticket(){   
@@ -35,6 +39,18 @@ class TicketController extends AbstactController
   }
 
   public function voirunticket($id){
-    $this->render('vitrine', '');
+    $this->load_model("User");
+    $log = $this->User->get_logged_user_if_exists();
+    
+    if($log == null)header("Location: /");
+
+    $this->load_model("Ticket");
+    $ticket = $this->Ticket->get_ticket($id);
+    if($ticket["id_author"] != $log["id"])
+      header("Location: /");
+
+    $this->load_model("Message");
+    $messages = $this->Message->get_messages($id);
+    $this->render('vitrine', 'ticket-answer', array($log, $ticket, $messages));
   }
 }
