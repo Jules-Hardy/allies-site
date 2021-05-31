@@ -10,7 +10,7 @@ class TicketController extends AbstactController
     $this->load_model("User");
     $log = $this->User->get_logged_user_if_exists();
     
-    $this->render('vitrine', 'pageticket', array($log));
+    $this->render('vitrine', 'ticket-index', array($log));
   }
 
   public function nouveauticket(){   

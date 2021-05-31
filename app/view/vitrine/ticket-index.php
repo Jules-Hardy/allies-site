@@ -1,4 +1,4 @@
-<?php $title = 'Créer un ticket'; ?>
+<?php $title = 'Tous les tickets'; ?>
 <?php ob_start(); ?>
 <style>
 table,
@@ -38,7 +38,7 @@ button {
   margin-bottom: 20px;
 }
 </style>
-<img id="pilotes" src="../ressources/images/Stylo.jpg">
+<img id="pilotes" src="../ressources/images/pilotes.png">
 
 <div id="carte_FAQ">
 
