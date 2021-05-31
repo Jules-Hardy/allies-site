@@ -107,6 +107,35 @@ class UserModel extends AbstractModel {
     return $u["role"];
   }
 
+  public function edit_user($user, $firstname, $lastname, $email, $doesPasswordNeedToBeEdited, $password){
+    $sql = "UPDATE user SET firstname=:fs,lastname=:ls,email=:mail";
+    if($doesPasswordNeedToBeEdited == TRUE)
+      $sql = $sql . ",password=:passwd";
+
+    $sql = $sql . " WHERE `user`.`id` = :id;";
+    $stmt = $this->conn->prepare($sql);
+    $result = NULL;
+    $pass =  hash("tiger192,3", $password);
+    if($doesPasswordNeedToBeEdited == TRUE)
+      $result = $stmt->execute([
+        ":fs" => $firstname,
+        ":ls" => $lastname,
+        ":mail" => $email,
+        ":id" => $user["id"],
+        ":passwd" => $pass
+        ]);
+    else
+      $result = $stmt->execute([
+        ":fs" => $firstname,
+        ":ls" => $lastname,
+        ":mail" => $email,
+        ":id" => $user["id"]
+        ]);
+    
+        header("Location: /mon-profil");
+        return $result;
+  }
+
   public function _internalCheckSession(){
     if (session_status() === PHP_SESSION_NONE) {
       session_start();

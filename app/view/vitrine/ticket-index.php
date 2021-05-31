@@ -62,7 +62,7 @@ button {
           </green>
         </td>
         <?php if($ticket["status"] == 1){
-          echo('<td><a href="/support/ticket/' . $ticket['id'] . '" style="color:blue;"><b>Répondre</b></a> | <a href="/support/ticket/' . $ticket['id'] . '" style="color:red;"><b>Fermer</b></a></td>');
+          echo('<td><a href="/support/ticket/' . $ticket['id'] . '" style="color:blue;"><b>Répondre</b></a> | <a href="/support/close/' . $ticket['id'] . '" style="color:red;"><b>Fermer</b></a></td>');
         }else{
           echo('<td><a href="/support/ticket/' . $ticket['id'] . '" style="color:green;"><b>Voir</b></a>');
         }

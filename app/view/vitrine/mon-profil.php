@@ -9,41 +9,34 @@
 <div id="bouton_modifier">
   <button class="bouton_modifier">MODIFIER</button>
 </div>
-
+<form action="" method="POST" id="update" name="update">
 <div id="remplir_champs">
   <div id="remplir_prenom">
     <p>Prénom</p>
-    <input type="text" size="80" />
+    <input type="text" form="update"  name="firstname" size="80" value="<?=$vars[0]['firstname'];?>"/>
   </div>
   <div id="remplir_nom">
     <p>Nom</p>
-    <input type="text" size="80" />
+    <input type="text" form="update"  name="lastname" size="80"value="<?=$vars[0]['lastname'];?>" />
   </div>
   <div id="remplir_age">
-    <p>Âge</p>
-    <input type="text" size="80" />
+    <p>Email</p>
+    <input type="mail" form="update"  name="email" size="80" value="<?=$vars[0]['email'];?>"/>
   </div>
   <div id="remplir_tel">
-    <p>Téléphone</p>
-    <input type="text" size="80" />
-  </div>
-  <div id="remplir_mail">
-    <p>Adresse mail</p>
-    <input type="text" size="80" />
-  </div>
-  <div id="remplir_adresse">
-    <p>Adresse postale</p>
-    <input type="text" size="80" />
-  </div>
-  <div id="remplir_ville">
-    <p>Ville</p>
-    <input type="text" size="80" />
-  </div>
-  <div id="remplir_poste">
-    <p>Code Postal</p>
-    <input type="text" size="80" />
+    <p>Mot de passe</p>
+    <input name="password" form="update" type="password" size="80" value="********" />
+    <button form="update" type="submit" id="modify" class="bouton_modifier">MODIFIER LE PROFIL</button>
+
   </div>
 </div>
+</form>
+<script>
+  document.getElementById("modify").addEventListener("click", function(e){
+    e.preventDefault();
+    document.getElementById("update").submit();
+  });
+</script>
 
 <?php $content = ob_get_clean(); ?>
 
