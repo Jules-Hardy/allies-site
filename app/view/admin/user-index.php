@@ -8,6 +8,22 @@
   <content>
     <h1>Gérer les membres</h1>
     <h2>Tous les utilisateurs</h2>
+    <fieldset>
+      <legend>Rechercher un membre avec plusieurs critères</legend>
+      <label>
+        Nom ou prénom
+        <input type="text" name="name">
+      </label>
+      <label>
+        Rôle
+        <input type="text" name="role">
+      </label>
+      <label style="margin-right:20px">
+        Email
+        <input type="text" name="email">
+      </label>
+      <button id="foC" class="btn-link"><i class="material-icons" style="color:black;">send</i></button>
+    </fieldset>
     <table>
       <thead>
         <tr>
