@@ -51,10 +51,10 @@
       <?php
         }
       ?>
-      <form action="/admin/ticket/2" method="POST" id="fo">
+      <form action="" name="send" id="send" method="POST" id="send">
         <div class="reponse">
-          <textarea type="text" name="message" class="contenu-message" placeholder="Votre réponse"></textarea>
-          <button id="foC" class="btn-link"><i class="material-icons">send</i></button>
+          <textarea type="text" name="message" form="send" class="contenu-message" placeholder="Votre réponse"></textarea>
+          <button id="foC" type="submit" class="btn-link"><i class="material-icons">send</i></button>
         </div>
       </form>
 
@@ -62,7 +62,7 @@
       <script>
         document.getElementById('foC').addEventListener('click', (e) => {
           e.preventDefault();
-          document.getElementById('fo').submit();
+          document.getElementById('send').submit();
         });
         function sendMsg(){
         }

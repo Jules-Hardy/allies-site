@@ -34,9 +34,14 @@ class TicketController extends AbstactController
     else{
       if($u['role'] == 0)
         header("Location: /");
-
+        
       $this->load_model("Ticket");
       $this->load_model("Message");
+
+      if(isset($_POST["message"])){
+        $msg = $_POST["message"];
+        $this->Message->send_message($id, $u, $msg);
+      }
 
       $tickets = $this->Ticket->get_ticket($id);
       $allU = $this->User->get_all_informations();

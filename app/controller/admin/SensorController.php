@@ -77,6 +77,6 @@ class SensorController extends AbstactController
     if($u["role"] != 2)
       header("Location: /admin/");
 
-    $this->render('admin', 'test-seeone'; array($u));
+    $this->render('admin', 'test-seeone', array($u));
   }
 }

@@ -44,4 +44,29 @@ class TicketModel extends AbstractModel {
     return $result;
   }
 
+  public function create_ticket($title, $content, $log){
+    $sql = "INSERT INTO ticket(id,id_author,status,subject,create_date,is_answered) VALUES(0,:ida,1,:subject,NOW(),0); SET @LASTID = SCOPE_IDENTITY()";
+    $stmt = $this->conn->prepare($sql);
+    $stmt->execute([
+      ":ida" => $log['id'],
+      ":subject" => $title
+    ]);
+    
+    $li = $this->conn->lastInsertId();
+    if(!$li){
+      header("Location: /");
+      return;
+    }
+
+    $sql = "INSERT INTO messages(id,id_ticket,id_sender,content,sent_date) VALUES(0,:idt,:ids,:content,NOW()); SET @LASTID = SCOPE_IDENTITY()";
+    $stmt = $this->conn->prepare($sql);
+    $res = $stmt->execute([
+      ":idt" => $li,
+      ":ids" => $log["id"],
+      ":content" => $content
+    ]);
+
+    return $res;
+  }
+
 }

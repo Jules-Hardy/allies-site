@@ -41,9 +41,10 @@ class FaqController extends AbstactController
           else
             $this->Faq->edit_faq($id, $_POST["question"], $_POST["answer"]);
       }
+
       $faq = $this->Faq->get_faq($id);
-      $u = $this->User->get_one_user_informations($id);
-      $this->render('admin', 'faq-seequestion', array($u, $faq, $u));
+      $ua = $this->User->get_one_user_informations($faq["id_author"]);
+      $this->render('admin', 'faq-seequestion', array($u, $faq, $ua));
     }
   }
 }

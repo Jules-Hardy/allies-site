@@ -28,4 +28,21 @@ class MessageModel extends AbstractModel {
     return $result;
   }
 
+  public function send_message($id, $user, $message){
+    /*
+      :idt
+      :ids
+      :content
+    */
+    $sql = "INSERT INTO " . $this->table . "(id,id_ticket,id_sender,content,sent_date) VALUES (0, :idt, :ids, :content, NOW())";
+    $stmt = $this->conn->prepare($sql);
+    $res = $stmt->execute([
+      ":idt" => $id,
+      ":ids" => $user["id"],
+      ":content" => $message
+      ]);
+
+      return $res;
+  }
+
 }
