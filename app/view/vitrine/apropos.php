@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
 
-<div id="blanc">
+<div id="q_r">
 
 
   <img id="teamworking" src="../ressources/images/teamworking.png">

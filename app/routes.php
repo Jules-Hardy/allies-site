@@ -4,6 +4,8 @@ return [
 
   // SITE VITRINE
   '/' => 'PagesController::accueil',
+  '/contact' => 'PagesController::contact',
+
   
   '/connexion' => 'ConnexionController::connexion',
   '/inscription' => 'ConnexionController::inscription',

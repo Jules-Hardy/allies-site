@@ -4,7 +4,8 @@
 <img id="pilotes" src="../ressources/images/pilotes.png">
 <br><br>
 
-<div id="carte">
+<div id="q_r">
+
 
 
   <div id="presentation">
