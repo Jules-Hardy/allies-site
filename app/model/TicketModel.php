@@ -78,4 +78,12 @@ class TicketModel extends AbstractModel {
     return $stmt->fetchAll();
   }
 
+  public function close_ticket($id){
+    $sql = "UPDATE ticket SET status=0 WHERE id=:id";
+    $stmt = $this->conn->prepare($sql);
+    return $stmt->execute([
+      ":id" => $id
+    ]);
+  }
+
 }

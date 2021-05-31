@@ -53,4 +53,19 @@ class TicketController extends AbstactController
     $messages = $this->Message->get_messages($id);
     $this->render('vitrine', 'ticket-answer', array($log, $ticket, $messages));
   }
+
+  public function supprimerticket($id){   
+    $this->load_model("User");
+    $log = $this->User->get_logged_user_if_exists();
+    
+    if($log == null)header("Location: /");
+
+    $this->load_model("Ticket");
+    $ticket = $this->Ticket->get_ticket($id);
+    if($ticket["id_author"] != $log["id"])
+      header("Location: /");
+
+      $this->Ticket->close_ticket($id);
+      header("Location: /support");
+  }
 }

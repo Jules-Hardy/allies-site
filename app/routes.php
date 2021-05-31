@@ -24,6 +24,7 @@ return [
   '/support' => 'TicketController::affichertouslestickets',
   '/support/nouveau' => 'TicketController::nouveauticket',
   '/support/ticket/:id' => 'TicketController::voirunticket',
+  '/support/close/:id' => 'TicketController::supprimerticket',
 
 
 

@@ -7,7 +7,7 @@
   <div id="q_r">
     <!-- essai -->
     <h1 id="titre2"> Répondre au ticket #<?php echo $vars[1]["id"]; ?></h1>
-    <h2> Titre du ticket <span style="color:red"><small><a href=""> Fermer le ticket</a></small></span></h2>
+    <h2> Titre du ticket <span style="color:red"><small><a href="/support/close/<?php echo($vars[1]['id']); ?>"> Fermer le ticket</a></small></span></h2>
     <?php foreach($vars[2] as $m){
 
     ?>
