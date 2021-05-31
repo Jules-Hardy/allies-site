@@ -1,86 +1,41 @@
-<?php $title = 'Créer un ticket'; ?>
+<?php $title = 'Ouvrir un ticket'; ?>
+
 <?php ob_start(); ?>
 <style>
-table,
-th,
-td {
-  border: 1px solid black;
+form {
+  width: 100%;
 }
 
-table,
-th,
-td {
-  border: 1px solid black;
-  border-collapse: collapse;
+textarea {
+  width: 50%;
 }
 
-th,
-td {
-  padding: 15px;
-}
-
-th {
-  text-align: left;
-}
-
-table {
-  border-spacing: 5px;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  padding: 10px;
-  background-color: grey;
+input {
+  background-color: #39565c;
   color: white;
-  margin-bottom: 20px;
+  font-size: 15px;
+  padding: 10px 30px 10px 30px;
 }
 </style>
-<img id="pilotes" src="../ressources/images/Stylo.jpg">
+
 
 <div id="carte_FAQ">
+  <div class="images">
+    <img id="pilotes" src="../ressources/images/Stylo.jpg">
+  </div>
 
   <div id="q_r">
-    <h2>Tous les tickets</h2>
-    <button onclick="window.location.href = '/support/nouveau';">Ouvrir un nouveau ticket</button>
-    <table style="width:100%">
-      <tr>
-        <th>Titre</th>
-        <th>Date et status</th>
-        <th>Action</th>
-      </tr>
-      <tr>
-        <td>Test titre</td>
-        <td>12 mai 2021 - <font color="green"><b>ouvert</b></font>
-          </green>
-        </td>
-        <td><a href="" style="color:blue;"><b>Répondre</b></a> | <a href="" style="color:red;"><b>Fermer</b></a></td>
-      </tr>
-      <tr>
-        <td>Test titre</td>
-        <td>12 mai 2021 - <font color="orange"><b>répondu</b></font>
-          </green>
-        </td>
-        <td><a href="" style="color:blue;"><b>Répondre</b></a> | <a href="" style="color:red;"><b>Fermer</b></a></td>
-      </tr>
-      <tr>
-        <td>Test titre</td>
-        <td>12 mai 2021 - <font color="red"><b>fermé</b></font>
-          </green>
-        </td>
-        <td><a href="" style="color:blue;"><b>Voir</b></a></td>
-      </tr>
-    </table>
+    <!-- essai -->
+    <h2 id="titre2"> Créer un ticket </h2>
 
-
-
-
+    <form action="" name="create" id="create" method="POST">
+      <br>
+      <label>Titre :</label><br> <textarea style="resize: none; width:20%" form="create" name="title"></textarea>
+      <br /><br />
+      <label>Contenu :</label><br> <textarea form="create" name="content"></textarea><br />
+      <br>
+      <input type="submit" name="modify" class="button button--normal info" value="Créer">
+    </form>
   </div>
 </div>
-
-
-<?php $content = ob_get_clean(); ?>
-
-<?php require(ROOT.'/app/view/layoutvitrine.php'); ?>
+<?php $content = ob_get_clean(); ?> <?php require(ROOT.'/app/view/layoutvitrine.php'); ?>
