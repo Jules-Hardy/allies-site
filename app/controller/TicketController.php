@@ -31,7 +31,7 @@ class TicketController extends AbstactController
 
       $this->load_model("Ticket");
       $this->Ticket->create_ticket($title, $content, $log);
-      
+      header("Location: /support");
     }
  
     
