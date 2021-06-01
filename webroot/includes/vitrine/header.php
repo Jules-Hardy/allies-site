@@ -1,6 +1,4 @@
 <?php 
-dump($vars);
-die;
   $logged = false;
   $type = gettype($vars[0]);
   if($type == "array"){
