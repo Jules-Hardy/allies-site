@@ -2,12 +2,12 @@
 
 namespace App\Controller;
 
-use App\Core\AbstactController;
+use App\Core\AbstractController;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-class PagesController extends AbstactController
+class PagesController extends AbstractController
 {
   
   public function index($a, $b)

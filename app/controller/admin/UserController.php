@@ -2,10 +2,10 @@
 
 namespace App\Controller\Admin;
 
-use App\Core\AbstactController;
+use App\Core\AbstractController;
 use \App\Model\UserModel;
 use \App\Utils\Roles; 
-class UserController extends AbstactController
+class UserController extends AbstractController
 {
   
   public function touslesutilisateurs()

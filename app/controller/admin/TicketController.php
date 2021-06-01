@@ -2,9 +2,9 @@
 
 namespace App\Controller\Admin;
 
-use App\Core\AbstactController;
+use App\Core\AbstractController;
 
-class TicketController extends AbstactController
+class TicketController extends AbstractController
 {
   
   public function touslestickets()

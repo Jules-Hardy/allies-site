@@ -2,9 +2,9 @@
 
 namespace App\Controller\Admin;
 
-use App\Core\AbstactController;
+use App\Core\AbstractController;
 
-class AdminController extends AbstactController
+class AdminController extends AbstractController
 {
   
   public function accueil()

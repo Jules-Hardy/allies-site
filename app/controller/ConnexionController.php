@@ -2,9 +2,9 @@
 
 namespace App\Controller;
 
-use App\Core\AbstactController;
+use App\Core\AbstractController;
 
-class ConnexionController extends AbstactController
+class ConnexionController extends AbstractController
 {
   public function connexion(){
     $this->load_model("User");

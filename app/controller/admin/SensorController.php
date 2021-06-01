@@ -2,9 +2,9 @@
 
 namespace App\Controller\Admin;
 
-use App\Core\AbstactController;
+use App\Core\AbstractController;
 
-class SensorController extends AbstactController
+class SensorController extends AbstractController
 {
   
   public function touslescapteurs()

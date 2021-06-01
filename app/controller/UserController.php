@@ -2,9 +2,9 @@
 
 namespace App\Controller;
 
-use App\Core\AbstactController;
+use App\Core\AbstractController;
 
-class UserController extends AbstactController
+class UserController extends AbstractController
 {
   public function affichermonprofil(){
     $this->load_model("User");

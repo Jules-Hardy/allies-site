@@ -2,9 +2,9 @@
 
 namespace App\Controller\Admin;
 
-use App\Core\AbstactController;
+use App\Core\AbstractController;
 
-class FaqController extends AbstactController
+class FaqController extends AbstractController
 {
   
   public function touteslesquestions()

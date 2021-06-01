@@ -2,9 +2,9 @@
 
 namespace App\Controller;
 
-use App\Core\AbstactController;
+use App\Core\AbstractController;
 
-class TicketController extends AbstactController
+class TicketController extends AbstractController
 {
   public function affichertouslestickets(){
     $this->load_model("User");

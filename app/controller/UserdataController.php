@@ -2,9 +2,9 @@
 
 namespace App\Controller;
 
-use App\Core\AbstactController;
+use App\Core\AbstractController;
 
-class UserdataController extends AbstactController
+class UserdataController extends AbstractController
 {
   public function afficher(){
     $this->render('vitrine', 'statistiques');

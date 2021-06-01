@@ -2,9 +2,9 @@
 
 namespace App\Controller;
 
-use App\Core\AbstactController;
+use App\Core\AbstractController;
 
-class ErrorController extends AbstactController
+class ErrorController extends AbstractController
 {
     /**
      * Handle PDO exceptions

@@ -4,7 +4,7 @@ namespace App\Core;
 
 use Exception;
 
-abstract class AbstactController
+abstract class AbstractController
 {
   public $request;
   public $vars = array();
