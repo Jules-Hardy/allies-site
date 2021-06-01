@@ -8,6 +8,7 @@ abstract class AbstactController
 {
   public $request;
   public $vars = array();
+  public $message_template = [];
 
   public function __construct($request)
   {
@@ -15,9 +16,13 @@ abstract class AbstactController
   }
 
 
-  public function render($space, $view, $vars = []) { //On précise si on est dans l'admin ou dans la vitrine
+  public function render($space, $view, $vars = [], $message_template=null) { //On précise si on est dans l'admin ou dans la vitrine
     extract($vars);
     extract($this->vars);
+    if(isset($message_template)){
+      extract($message_template);
+      extract($this->message_template);
+    }
   
     $view = ROOT . '/app/view/' . $space . '/'. $view . '.php';
     
