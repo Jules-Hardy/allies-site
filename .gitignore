@@ -27,3 +27,12 @@ tmp/*
 .env.*
 !.env.schema
 !.env.defaults
+
+
+#Composer
+composer.lock
+vendor/
+
+
+#Database
+app/model/AbstractModel.php

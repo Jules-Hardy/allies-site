@@ -12,7 +12,7 @@ abstract class AbstractModel {
   private string $host = 'localhost';
   private string $db_name = 'website';
   private string $db_user = 'root';
-  private string $db_password = '';
+  private string $db_password = 'root';
 
   protected $conn;
 
