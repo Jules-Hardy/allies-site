@@ -8,7 +8,8 @@
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],
 select,
-textarea {
+textarea,
+input[type=email] {
   width: 100%;
   /* Full width */
   padding: 12px;
@@ -48,6 +49,12 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+.alert{
+  padding: 20px;
+  background: rgba(0, 255, 0, .3);
+  border: 1px solid green;
+}
 </style>
 
 <div id="carte_FAQ">
@@ -56,25 +63,28 @@ input[type=submit]:hover {
   </div>
 
   <div id="q_r">
+  <?php if(isset($vars[1]) && $vars[1] == "success"){
+    echo('  <p class="alert">Votre message a bien été envoyé ! Vous recevrez une réponse sous peu !</p>    ');
+  }?>
     <h2 id="titre2">Contactez nous...</h2>
     <div class="container">
-      <form action="action_page.php">
+      <form action="" method="POST">
 
         <label for="fname">Nom et prénom</label>
-        <input type="text" id="fname" name="firstname" placeholder="Votre nom">
+        <input type="text" id="fname" name="firstname" required placeholder="Votre nom">
 
         <label for="lname">Email</label>
-        <input type="text" id="lname" name="email" placeholder="Votre email">
+        <input type="email" id="lname" name="email" required placeholder="Votre email">
 
         <label for="service">Service</label>
-        <select id="country" name="service">
+        <select id="country" name="service" required>
           <option value="commercial">Commercial</option>
           <option value="technique">Technique</option>
           <option value="administration">Administration</option>
         </select>
 
         <label for="subject">Sujet</label>
-        <textarea id="subject" name="subject" placeholder="Sujet" style="height:200px"></textarea>
+        <textarea id="subject" name="subject" required placeholder="Sujet" style="height:200px"></textarea>
 
         <input type="submit" value="Envoyer">
 

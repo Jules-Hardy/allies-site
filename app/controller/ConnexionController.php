@@ -68,6 +68,8 @@ class ConnexionController extends AbstactController
   }
 
   public function deconnexion(){
+    $this->load_model("User");
+    $this->User->logout();
     $this->render('vitrine', 'accueil');
   }
 
