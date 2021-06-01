@@ -12,8 +12,6 @@ class PagesController extends AbstractController
   
   public function index($a, $b)
   {
-    dump($a, $b);
-    die;
     $this->render('index', [
       'nom' => 'ok',
       'test' => 'test'
