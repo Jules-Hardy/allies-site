@@ -15,6 +15,6 @@ function handler(Throwable $e) {
 }
 
 $routes = require '../app/routes.php';
-$router = new App\Core\Router($routes);
+$router = new \App\Core\Router($routes);
 
 return $router->start();
