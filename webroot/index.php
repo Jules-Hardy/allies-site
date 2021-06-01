@@ -6,7 +6,8 @@ define('DS', DIRECTORY_SEPARATOR);
 define('BASE_URL', dirname(dirname($_SERVER['SCRIPT_NAME'])));
 
 require '../vendor/autoload.php';
-
+dump(get_declared_classes());
+die;
 function handler(Throwable $e) {
   echo '<pre>';
   echo '<h1>Tu es une merde, corrige ton code !</h1>';
