@@ -5,7 +5,6 @@ return [
   // SITE VITRINE
   '/' => 'PagesController::accueil',
   '/contact' => 'PagesController::contact',
-
   
   '/connexion' => 'ConnexionController::connexion',
   '/inscription' => 'ConnexionController::inscription',
@@ -36,11 +35,10 @@ return [
   '/admin/faq/modify/:id' => 'Admin\FaqController::modifier',
 
   '/admin/sensor' => 'Admin\SensorController::touslescapteurs',
-  '/admin/sensor/modify' => 'Admin\SensorController::touslescapteurs',
-  '/admin/sensor/modify/:id' => 'Admin\SensorController::modifiercapteur',
+  '/admin/sensor/all' => 'Admin\SensorController::voircapteurs',
+  '/admin/sensor/:id' => 'Admin\SensorController::modifiercapteur',
   '/admin/test' => 'Admin\SensorController::touslestests',
-  '/admin/test/modify' => 'Admin\SensorController::touslestests',
-  '/admin/test/modify/:id' => 'Admin\SensorController::modifiertest',
+  '/admin/test/:id' => 'Admin\SensorController::modifiertest',
 
   '/admin/ticket' => 'Admin\TicketController::touslestickets',
   '/admin/ticket/answer' => 'Admin\TicketController::touslestickets',

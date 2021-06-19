@@ -43,12 +43,12 @@
     </div>
 
     <div class="container-actions">
-      <a href="#">
+      <a href="/admin/sensor/all">
         <div class="block-action info">
           <h4>Gérer les capteurs</h4>
         </div>
       </a>
-      <a href="#">
+      <a href="/admin/test">
         <div class="block-action alert">
           <h4>Gérer les tests</h4>
         </div>
@@ -68,7 +68,7 @@
         </tr>
       </thead>
       <tbody>
-      <?php 
+        <?php 
         foreach($allTests as $test){
       ?>
         <tr>
@@ -76,19 +76,20 @@
           <td>#<?php echo $test['id']; ?></td>
           <td><?php echo $test['date']; ?></td>
           <td>
-            <a href="/admin/sensor/modify/<?php echo $test['id']; ?>"><button type="button" class="button button--small info">
+            <a href="/admin/sensor/modify/<?php echo $test['id']; ?>"><button type="button"
+                class="button button--small info">
                 Voir le test
               </button>
           </td>
         </tr>
-      <?php
+        <?php
         }
       ?>
       </tbody>
     </table>
 
     <div class="text-align-right">
-      <a href="../sensor/seeall.php" class="button alert button--normal">Tout voir</a>
+      <a href="/admin/test" class="button alert button--normal">Tout voir</a>
     </div>
 
   </content>

@@ -46,6 +46,15 @@ class SensorController extends AbstractController
 
     $this->render('admin', 'sensor-seeone', array($u, $i, $s));
   }
+  
+
+  public function voircapteurs()
+  {
+    $this->load_model("User");
+    $u = $this->User->get_logged_user_if_exists();
+    $this->render('admin', 'sensor-seeall', array($u));
+  }
+
 
   public function touslestests()
   {

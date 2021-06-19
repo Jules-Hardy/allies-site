@@ -26,6 +26,14 @@
       <p>Valeur : NaN</p>
     </div>
 
+    <div class="data-information">
+      <form method="POST">
+        <a href="#"><input type="submit" class="button button--normal info" value="Supprimer le test" name="modify"></a>
+        <!--<a href="/admin/user/delete/<?= $vars[1]['id'] ?>"><input class="button button--normal alert"
+            value="Supprimer le membre" name="delete"></a>-->
+      </form>
+    </div>
+
   </content>
 
   <?php $content = ob_get_clean(); ?>

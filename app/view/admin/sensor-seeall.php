@@ -1,4 +1,4 @@
-<?php $title = 'Tous les tests'; ?>
+<?php $title = 'Tous les capteurs'; ?>
 
 <?php ob_start(); ?>
 
@@ -6,24 +6,22 @@
 
   <content>
     <h1>Gérer les capteurs</h1>
-    <h2>Tous les tests</h2>
+    <h2>Tous les capteurs</h2>
     <table>
       <thead>
         <tr>
-          <th scope="col">Utilisateur</th>
-          <th scope="col">#Test</th>
-          <th scope="col">Date</th>
+          <th scope="col">Capteur</th>
+          <th scope="col">#id</th>
           <th scope="col">Action</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">Jules</th>
+          <th scope="row">Température</th>
           <td>#2</td>
-          <td>12/02/2021</td>
           <td>
             <a href="/admin/test/1"><button type="button" class="button button--small info">
-                Voir le test
+                Gérer le test
               </button>
           </td>
         </tr>
