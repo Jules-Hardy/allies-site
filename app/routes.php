@@ -25,6 +25,12 @@ return [
   '/support/ticket/:id' => 'TicketController::voirunticket',
   '/support/close/:id' => 'TicketController::supprimerticket',
 
+  '/test' => 'UserdataController::seeall',
+  '/test/new' => 'UserdataController::new',
+  '/test/:id' => 'UserdataController::voirtest',
+  '/data' => 'UserdataController::testgetdata',
+
+
 
 
   // ADMINISTRATION 
