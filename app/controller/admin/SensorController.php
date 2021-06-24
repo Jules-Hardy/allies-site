@@ -69,11 +69,12 @@ class SensorController extends AbstractController
     if($u["role"] != 2)
       header("Location: /admin/");
 
+    $this->load_model("Test");
 
-    $this->render('admin', 'test-seeall', array($u));
+    $this->render('admin', 'test-seeall', array($u, $this->Test->get_all_informations(), $this->User->get_all_informations()));
   }
 
-  public function modifiertest()
+  public function modifiertest($id)
   {
     $this->load_model("User");
     $u = $this->User->get_logged_user_if_exists();
@@ -81,11 +82,14 @@ class SensorController extends AbstractController
       header("Location: /");
       return;
     }
-
-    
+ 
     if($u["role"] != 2)
       header("Location: /admin/");
 
-    $this->render('admin', 'test-seeone', array($u));
+    
+    $this->load_model("Test");
+    $this->load_model("Sensor");
+
+    $this->render('admin', 'test-seeone', array($u, $this->User->get_all_informations(), $this->Test->get_one_test_informations($id), $this->Sensor->get_all_informations(), $this->Sensor->get_datas()));
   }
 }

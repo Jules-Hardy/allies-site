@@ -1,34 +1,45 @@
 <?php $title = 'Test - Voir un test'; ?>
 
 <?php ob_start(); ?>
+<?php 
 
+  //vars[0] = Current Logged User
+  //vars[1] = All Users
+  //vars[2] = Test
+  //vars[3] = Sensors
+  //vars[4] = Datas
+  $firstname = "";
+  function get_sensor($vars, $id){
+    foreach($vars[3] as $sensor){
+      if($sensor["id"] == $id)return $sensor;
+    }
+  }
+
+  foreach($vars[1] as $u){
+    if($u["id"] == $vars[2]["id_user"]){
+      $firstname = $u["firstname"];
+    }
+  }
+?>
 <section>
 
   <content>
-    <h1>Gérer les tests</h1>
-    <h2>#1 : Test de Jules <span class="role alert">le 12/02/2021</span></h2>
-
-    <div class="container-sensor">
-      <h3>Capteur : Température</h3>
-      <p>Heure : 15h32</p>
-      <p>Valeur : 18°C</p>
-    </div>
-
-    <div class="container-sensor">
-      <h3>Capteur : Rythme cardique</h3>
-      <p>Heure : 15h34</p>
-      <p>Valeur : 128 bpm</p>
-    </div>
-
-    <div class="container-sensor">
-      <h3>Capteur : Sudation</h3>
-      <p>Heure : 15h36</p>
-      <p>Valeur : NaN</p>
-    </div>
-
+    <h1>Gérer le test</h1>
+    <h2><?php echo "#",$vars[2]["id"]; ?> : Test de <?php echo $firstname; ?> <span class="role alert">le <?php echo $vars[2]["date"]; ?></span></h2>
+    <?php
+     foreach($vars[4] as $data){
+        if($data["id_test"] != $vars[2]["id"])continue;
+        echo(' <div class="container-sensor">
+        <h3>Capteur : ' . get_sensor($vars, $data["id_sensor"])["name"].'</h3>
+        <p>Heure : ' . $data["date"] . '</p>
+        <p>Valeur : ' . $data["value"] . '</p>
+      </div>');
+    }
+    ?>
+   
     <div class="data-information">
       <form method="POST">
-        <a href="#"><input type="submit" class="button button--normal info" value="Supprimer le test" name="modify"></a>
+        <a href="#"><input type="submit" class="button button--normal info" value="Supprimer le test" name="delete"></a>
         <!--<a href="/admin/user/delete/<?= $vars[1]['id'] ?>"><input class="button button--normal alert"
             value="Supprimer le membre" name="delete"></a>-->
       </form>

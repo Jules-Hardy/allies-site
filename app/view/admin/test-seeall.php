@@ -1,7 +1,13 @@
 <?php $title = 'Tous les tests'; ?>
 
 <?php ob_start(); ?>
-
+<?php 
+function get_user_for($vars, $id){
+  foreach($vars[2] as $u){
+    if($u["id"] == $id)return $u;
+  }
+}
+?>
 <section>
 
   <content>
@@ -17,36 +23,22 @@
         </tr>
       </thead>
       <tbody>
+      <?php 
+        foreach($vars[1] as $test){
+      ?>
         <tr>
-          <th scope="row">Jules</th>
-          <td>#2</td>
-          <td>12/02/2021</td>
-          <td>
-            <a href="/admin/test/1"><button type="button" class="button button--small info">
-                Voir le test
-              </button>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">Jules</th>
-          <td>#2</td>
-          <td>12/02/2021</td>
-          <td>
-            <a href="/admin/test/1"><button type="button" class="button button--small info">
-                Voir le test
-              </button>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">Jules</th>
-          <td>#2</td>
-          <td>12/02/2021</td>
-          <td>
-            <a href="/admin/test/1"><button type="button" class="button button--small info">
-                Voir le test
-              </button>
-          </td>
-        </tr>
+            <th scope="row"><?php echo get_user_for($vars, $test["id_user"])["firstname"];?></th>
+            <td><?php echo "#",$test["id"]; ?></td>
+            <td><?php echo $test["date"]; ?></td>
+            <td>
+              <a href="/admin/test/<?php echo $test['id']; ?>"><button type="button" class="button button--small info">
+                  Voir le test
+                </button>
+            </td>
+          </tr>
+      <?php
+        }
+      ?>
       </tbody>
     </table>
 

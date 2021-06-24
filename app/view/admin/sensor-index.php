@@ -28,7 +28,7 @@
           <p>Capteurs actifs</p>
         </div>
       </a>
-      <a href="#">
+      <a href="/admin/test">
         <div class="block-info info">
           <h3><?php echo $numberOfTest; ?></h3>
           <p>Tests effectués</p>

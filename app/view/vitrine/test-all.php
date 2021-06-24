@@ -51,12 +51,19 @@ button {
         <th>Date</th>
         <th>Action</th>
       </tr>
-      <tr>
-        <td>Sujet</td>
-        <td>12/05/2021 à 05h54
+      <?php 
+      foreach($vars[1] as $ticket){
+        ?>
+         <tr>
+        <td><?php echo "Test #",$ticket["id"]; ?></td>
+        <td><?php echo $ticket["date"]; ?>
         </td>
-        <td><a href="/support/ticket/' . $ticket['id'] . '" style="color:blue;"><b>Voir</b></a></td>
+        <td><a href="/test/<?php echo($ticket["id"]); ?>" style="color:blue;"><b>Voir</b></a></td>
       </tr>
+        <?php
+      }
+      ?>
+     
     </table>
   </div>
 </div>

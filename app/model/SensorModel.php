@@ -35,4 +35,12 @@ class SensorModel extends AbstractModel {
     $result = $stmt->fetchAll();
     return $result;
   }
+
+  public function get_datas(){
+    $sql = "SELECT * FROM data";
+    $stmt = $this->conn->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll();
+    return $result;
+  }
 }

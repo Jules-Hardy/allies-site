@@ -20,7 +20,7 @@ class TestModel extends AbstractModel {
       return $result;
   }
 
-  public function get_one_sensor_informations($id) : Array {
+  public function get_one_test_informations($id) : Array {
     $sql = "SELECT * FROM " . $this->table . " as s WHERE s.id=:id";
     $stmt = $this->conn->prepare($sql);
     $stmt->execute([":id" => $id]);
