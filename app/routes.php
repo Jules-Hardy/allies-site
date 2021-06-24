@@ -57,4 +57,6 @@ return [
   '/admin/user/delete/' => 'Admin\UserController::touslesutilisateurs',
   '/admin/user/delete/:id' => 'Admin\UserController::supprimerutilisateur',
   '/admin/user/search' => 'Admin\UserController::recherche',
+  '/admin/light' => 'UserdataController::getlightstatus'
+
 ];

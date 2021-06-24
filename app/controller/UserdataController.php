@@ -36,6 +36,48 @@ class UserdataController extends AbstractController
       header("Location: /connexion");
   }
 
+  public function getlightstatus(){
+
+    $this->load_model("User");
+    $u = $this->User->get_logged_user_if_exists();
+    if($u == null)header("Location: /");
+    if($u["role"] != 2){
+      header("Location: /admin");
+      return;
+    }
+    else{
+      $ch = curl_init();
+      curl_setopt(
+      $ch,
+      CURLOPT_URL, "http://projets-tomcat.isep.fr:8080/appService/?ACTION=GETLOG&TEAM=A1CC");
+      curl_setopt($ch, CURLOPT_HEADER, FALSE); curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE); $data = curl_exec($ch);
+      curl_close($ch);
+
+
+      $data_tab = str_split($data,33);
+      $i=0;
+      for($i, $size=count($data_tab); $i<$size; $i++){
+        $count=$i+1;
+      }
+
+      $max_req = $count-1;
+      $trame = $data_tab[$max_req];
+      // décodage avec des substring
+      $t = substr($trame,0,1); $o = substr($trame,1,4); // ...
+      // décodage avec sscanf
+      list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) = sscanf($trame,"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
+      $value = 0;
+      if($v == 0000){
+        $value = 1;
+      }
+      if ($v == 0001){
+        $value = 2;
+      }
+      $this->render('admin', 'light', array($u, $value));
+    }
+
+  }
+
   public function testgetdata()
   {
     $ch = curl_init();
