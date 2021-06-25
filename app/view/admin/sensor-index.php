@@ -76,8 +76,7 @@
           <td>#<?php echo $test['id']; ?></td>
           <td><?php echo $test['date']; ?></td>
           <td>
-            <a href="/admin/sensor/modify/<?php echo $test['id']; ?>"><button type="button"
-                class="button button--small info">
+            <a href="/admin/test/<?php echo $test['id']; ?>"><button type="button" class="button button--small info">
                 Voir le test
               </button>
           </td>
