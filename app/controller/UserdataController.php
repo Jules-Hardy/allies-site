@@ -78,6 +78,28 @@ class UserdataController extends AbstractController
 
   }
 
+  public function voirtest($id){
+    $this->load_model("User");
+    $log = $this->User->get_logged_user_if_exists();
+    if ($log !== NULL){
+      $this->load_model("Sensor");
+      $this->load_model("Test");
+
+      $test = $this->Test->get_one_test_informations($id);
+      $datas = $this->Sensor->get_datas($id);
+      $sensors = $this->Sensor->get_all_informations();
+
+      $final = array();
+      foreach($datas as $t){
+        if($t["id_test"] == $id){
+          array_push($final, $t);
+        }
+      }
+      $this->render('vitrine', 'test-seeone', array($log, $datas, $test, $sensors));
+    }else
+      header("Location: /connexion");
+  }
+
   public function testgetdata()
   {
     $ch = curl_init();

@@ -52,10 +52,35 @@ class SensorController extends AbstractController
   {
     $this->load_model("User");
     $u = $this->User->get_logged_user_if_exists();
-    $this->render('admin', 'sensor-seeall', array($u));
+    if($u["role"] != 2){
+      header("Location: /");
+      return;
+    }
+    $this->load_model("Sensor");
+    if(isset($_POST["add"]) && isset($_POST["sensorName"])){
+      $name = $_POST["sensorName"];
+      $this->Sensor->create($name);
+    }
+
+    $this->render('admin', 'sensor-seeall', array($u, $this->Sensor->get_all_informations()));
   }
 
+  public function delete($id){
+    $this->load_model("User");
+    $u = $this->User->get_logged_user_if_exists();
+    if($u == null){
+      header("Location: /");
+      return;
+    }
 
+    
+    if($u["role"] != 2)
+      header("Location: /admin/");
+
+      $this->load_model("Sensor");
+      $this->Sensor->delete($id);
+      header("Location: /admin/sensor/all");
+  }
   public function touslestests()
   {
     $this->load_model("User");
